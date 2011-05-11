@@ -1,0 +1,4 @@
+\select@language {brazil}
+\contentsline {chapter}{Introdu\c c\~ao}{1}
+\contentsline {chapter}{\numberline {1}Compiladores}{3}
+\contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{3}

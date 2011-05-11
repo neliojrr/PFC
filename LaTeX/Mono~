@@ -1,0 +1,36 @@
+\documentclass[a4paper, titlepage, openany, oneside, 12pt]{book}
+\usepackage{fancyvrb}
+\usepackage[pdftex]{graphicx}
+\usepackage{pfc}
+\usepackage{float}
+
+\newcommand{\cod}[1]{{\renewcommand{\baselinestretch}{1}\scriptsize\VerbatimInput[xleftmargin=8mm,numbers=left,obeytabs=true]{cod/#1}}}
+
+%===== Códigos Fonte =====
+\newenvironment{codeverbatim}{\VerbatimEnvironment \small
+   \begin{Verbatim}[xleftmargin=20mm]}
+   {\end{Verbatim}}
+%=======
+\floatstyle{plain}  % tipos: plain, boxed, ruled
+\newfloat{codigo}{tbp}{lop}[section] % numera os captions com  número de seção.
+\floatname{codigo}{Código}
+% nome para ser usado no sumário
+\newcommand{\listofcodename}{Lista de Códigos}
+%=========================
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                       DADOS PESSOAIS                           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titulo{Autenticação Segura Baseada em Biometria Voltada para a
+Dinâmica da Digitação} \area{Segurança da Informação}
+\pchaveA{Biometria} \pchaveB{Dinâmica da Digitação}
+\pchaveC{Segurança da Informação} \autor{Gustavo Batista da C.
+Almeida} \autorsobrenomenome{Almeida, Gustavo Batista da C.}
+\autorsobrenomeiniciais{Almeida, Gustavo Batista da C.}
+\orientador{Márcio de Souza Dias} \avaliadorA{Professor 1}
+\avaliadorB{Professor 2} \ano{2009} \mes{Junho}
+
+\end{document}

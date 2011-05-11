@@ -1,0 +1,104 @@
+\documentclass[a4paper, titlepage, openany, oneside, 12pt]{book}
+\usepackage{fancyvrb}
+\usepackage[pdftex]{graphicx}
+\usepackage{pfc}
+\usepackage{float}
+
+\newcommand{\cod}[1]{{\renewcommand{\baselinestretch}{1}\scriptsize\VerbatimInput[xleftmargin=8mm,numbers=left,obeytabs=true]{cod/#1}}}
+
+%===== Códigos Fonte =====
+\newenvironment{codeverbatim}{\VerbatimEnvironment \small
+   \begin{Verbatim}[xleftmargin=20mm]}
+   {\end{Verbatim}}
+%=======
+\floatstyle{plain}  % tipos: plain, boxed, ruled
+\newfloat{codigo}{tbp}{lop}[section] % numera os captions com  número de seção.
+\floatname{codigo}{Código}
+% nome para ser usado no sumário
+\newcommand{\listofcodename}{Lista de Códigos}
+%=========================
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                       DADOS PESSOAIS                           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titulo{Estudo de um compilador sob a perspectiva de um sistema online de programação}
+\area{Compiladores}
+\pchaveA{Compilador} \pchaveB{Sistemas Web}
+\pchaveC{Linguagem de Programação} \autor{Nélio Carneiro Júnior}
+\autorsobrenomenome{Carneiro, Gustavo Batista da C.}
+\autorsobrenomeiniciais{Almeida, Gustavo Batista da C.}
+\orientador{Thiago Jabur} \avaliadorA{Professor 1}
+\avaliadorB{Professor 2} \ano{2011} \mes{Junho}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                     ELABORA DOCUMENTO                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\fazcapa
+\newpage
+\folharosto
+\newpage
+\fichacatalografica
+\newpage
+\paginaassinatura
+\newpage
+\vfill
+
+\begin{flushright}
+\begin{minipage}[b]{10cm}
+\it{Dedico este trabalho}
+\end{minipage}
+\end{flushright}
+
+\newpage
+\vfill
+
+\centro{AGRADECIMENTOS}
+
+
+Por fim, agradeço a todos que de forma direta ou indireta que
+cotribuíram para a minha formação.
+
+\newpage
+
+\begin{flushright}
+\begin{minipage}[b]{10cm}
+\it{``Os desafios.}
+\end{minipage}
+
+{\it{Sulamita}}
+\end{flushright}
+
+\newpage
+
+%\paginaresumo % escreva seu resumo no arquivo resumo.tex
+
+\pagestyle{plain}
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+%\listoftables
+%\listofalgorithms %requer \usepackage{algorithm} \usepackage{algorithmic}
+%\listof{codigo}{\listofcodename}  % Lista de Códigos
+\newpage
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% INCLUA AQUI SEUS CAPÍTULOS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+\addcontentsline{toc}{chapter}{Introdução}
+\chapter*{Introdução}
+\input{intro}
+
+\chapter{Compiladores}
+\input{primeiro}
+
+
+\end{document}

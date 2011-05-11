@@ -1,0 +1,71 @@
+\usepackage{amssymb}
+
+\ProvidesPackage{lgm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PRINCIPAIS MACROS E AMBIENTES UTILIZADOS POR L. G. M. %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% MACROS %%%
+\newcommand{\natual}{\ensuremath{\mathbb{N}}} % conjunto dos numeros natuais
+\newcommand{\real}{\ensuremath{\mathbb{R}}} % conjunto dos números reais
+\newcommand{\inteiro}{\ensuremath{\mathbb{Z}}} % conjunto dos numeros inteiros
+\newcommand{\see}{\ensuremath{\Leftrightarrow}} % se e somente se
+\newcommand{\zn}[1]{\ensuremath{\mathbb{Z}_{#1}}} % gropo Zn, com n passado como parametro
+\newcommand{\ordem}[1]{\ensuremath{|#1|}} % ordem de uma grupo passado como parametro
+\newcommand{\F}{\ensuremath{\mathbb{F}}} % corpo finito
+\newcommand{\Fq}[1]{\ensuremath{\mathbb{F}_{#1}}} % corpo Fq, com q passado como parametro
+\newcommand{\piso}[1]{\ensuremath{\left\lfloor#1\right\rfloor}} % piso de um número
+\newcommand{\teto}[1]{\ensuremath{\left\lceil#1\right\rceil}} % teto...
+\newcommand{\sgg}[1]{\ensuremath{\left\langle#1\right\rangle}} % subgrupo gerado pelo elemento g
+\newcommand{\mdc}[2]{\ensuremath{{\mathrm{ mdc}} \left( #1, #2 \right)}} % mdc
+\newcommand{\EFq}[1]{\ensuremath{E(\Fq{#1})}} % curva E sobre o corpo Fq
+\newcommand{\ordE}[1]{\ensuremath{\#\EFq{#1}}} % ordem de uma curva definida sobre Fq
+\newcommand{\centro}[1]{\begin{center} #1 \end{center}} % centraliza o argumento passado
+
+\def\cy{\ensuremath{\varepsilon}} % carry
+\def\p{\ensuremath{\mathcal{P}} } % classe P
+\def\np{\ensuremath{\mathcal{NP}}} % classe NP
+\def\mod{\ensuremath{\ \mathrm{mod} \  }} % módulo de um numero
+\def\alfa{\ensuremath{\mathcal{A}}} % alfabeto
+\def\mens{\ensuremath{\mathcal{M} } } % espaço das mensagens
+\def\cipher{\ensuremath{\mathcal{C}} } % espaço dos textos cifrados
+\def\key{\ensuremath{\mathcal{K}}} % espaço das chaves
+\def\implica{\ensuremath{\Rightarrow}} % implicação lógica
+\def\afim{\ensuremath{\mathbb{A}^2}}
+
+
+%%% NOVOS AMBIENTES %%%
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{definicao}{Definição}[chapter]
+\newtheorem{exemp}{Exemplo}[chapter]
+\newenvironment{exemplo}{\begin{exemp} \rm}{$\square$ \end{exemp}}
+\newtheorem{proposicao}{Proposição}[chapter]
+\newenvironment{prova}{{ \bf Prova}}{$ \ \blacksquare$\\}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ADEQUAÇÃO DOS TERMOS DO AMBIENTE DE ALGORITMOS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\floatname{algorithm}{Algoritmo}
+
+\renewcommand{\listalgorithmname}{Lista de Algoritmos}
+
+\renewcommand{\algorithmicif}{\textbf{se}}
+\renewcommand{\algorithmicelse}{\textbf{senão}}
+\renewcommand{\algorithmicthen}{\textbf{então}}
+\renewcommand{\algorithmicend}{\textbf{fim}}
+\renewcommand{\algorithmicfor}{\textbf{para}}
+\renewcommand{\algorithmicdo}{\textbf{faça}}
+\renewcommand{\algorithmicwhile}{\textbf{enquanto}}
+\renewcommand{\algorithmicendwhile}{\textbf{fim enquanto}}
+\renewcommand{\algorithmicreturn}{\textbf{retorna}}
+\renewcommand{\algorithmicrequire}{\textbf{Entrada:}}
+\renewcommand{\algorithmicensure}{\textbf{Saída:}}
+\renewcommand{\algorithmicforall}{\textbf{para todo}}
+%\def\RETURN{\textbf{retorna} }
+\renewcommand{\algorithmiccomment}[1]{//{\em #1}}
+\def\recebe{\ensuremath{\leftarrow}}
+
+

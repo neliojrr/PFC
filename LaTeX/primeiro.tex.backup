@@ -1,0 +1,32 @@
+\section{Introdução}
+
+Criado por volta dos anos 50, o nome Compilador se refere ao processo 
+de composição de um programa através da reunião de várias rotinas de bibliotecas. 
+O processo de tradução (de uma linguagem fonte para uma linguagem objeto), 
+considerado hoje a função central de um compilador, era então conhecido como 
+programação automática[Rangel, 1999]
+
+Também definido em [AHO, 1995], um compilador é um programa que lê outro programa 
+escrito em uma linguagem --- a linguagem de origem --- e o traduz em um programa 
+equivalente em outra linguagem --- a linguagem de destino. Como uma importante 
+parte no processo de tradução, o compilador reporta ao seu usuário a presença 
+de erros no programa origem.
+
+Ainda segundo [Rangel, 1999], existem duas tarefas triviais a serem executadas 
+por um compilador nesse processo de tradução:
+
+\begin{itemize}
+ \item \textit{análise}, em que o texto de entrada (na linguagem fonte) é 
+examinado, verificado e compreendido
+ \item \textit{síntese}, ou \textit{geração de código}, em que o texto de saída 
+(na linguagem objeto) é gerado, de forma a corresponder ao texto de entrada.
+\end{itemize}
+
+Geralmente, pensamos nessas tarefas como fases que ocorram durante o processo de
+ compilação. No entanto, não se faz totalmente necessário que a análise de todo 
+o programa seja realizada antes que o primeiro trecho de código objeto seja gerado. 
+Ou seja, estas duas fases podem ser intercaladas. Por exemplo, o compilador pode 
+analisar cada comando do programa de entrada e então gerar de imediato o código 
+de saída correspondente ao respectivo comando. Ou ainda, o compilador pode esperar 
+pelo fim da análise de cada bloco de comando --- ou unidade de rotina 
+(rotina, procedimentos, funções) --- para então gerar o código correspondente ao bloco.

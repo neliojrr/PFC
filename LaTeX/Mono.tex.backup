@@ -1,0 +1,119 @@
+\documentclass[a4paper, titlepage, openany, oneside, 12pt]{book}
+\usepackage{fancyvrb}
+\usepackage[pdftex]{graphicx}
+\usepackage{pfc}
+\usepackage{float}
+
+\newcommand{\cod}[1]{{\renewcommand{\baselinestretch}{1}\scriptsize\VerbatimInput[xleftmargin=8mm,numbers=left,obeytabs=true]{cod/#1}}}
+
+%===== Códigos Fonte =====
+\newenvironment{codeverbatim}{\VerbatimEnvironment \small
+   \begin{Verbatim}[xleftmargin=20mm]}
+   {\end{Verbatim}}
+%=======
+\floatstyle{plain}  % tipos: plain, boxed, ruled
+\newfloat{codigo}{tbp}{lop}[section] % numera os captions com  número de seção.
+\floatname{codigo}{Código}
+% nome para ser usado no sumário
+\newcommand{\listofcodename}{Lista de Códigos}
+%=========================
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                       DADOS PESSOAIS                           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titulo{Autenticação Segura Baseada em Biometria Voltada para a
+Dinâmica da Digitação} \area{Segurança da Informação}
+\pchaveA{Biometria} \pchaveB{Dinâmica da Digitação}
+\pchaveC{Segurança da Informação} \autor{Gustavo Batista da C.
+Almeida} \autorsobrenomenome{Almeida, Gustavo Batista da C.}
+\autorsobrenomeiniciais{Almeida, Gustavo Batista da C.}
+\orientador{Márcio de Souza Dias} \avaliadorA{Professor 1}
+\avaliadorB{Professor 2} \ano{2009} \mes{Junho}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                     ELABORA DOCUMENTO                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\fazcapa
+\newpage
+\folharosto
+\newpage
+\fichacatalografica
+\newpage
+\paginaassinatura
+\newpage
+\vfill
+
+\begin{flushright}
+\begin{minipage}[b]{10cm}
+\it{Dedico este trabalho a minha Mãe Maria José, ao  meu Pai
+Leonides e ao meu Irmão Chester}
+\end{minipage}
+\end{flushright}
+
+\newpage
+\vfill
+
+\centro{AGRADECIMENTOS}
+
+Agradeço primeiramente a Deus, por ser o meu porto seguro e por me
+dar forças para conseguir vencer os obstáculos.
+
+Agradeço aos meus pais, Leonides e Maria José por todo amor,
+carinho e incentivo durante toda a minha vida! Sem eles nada disso
+seria possível.
+
+Agradeço ao meu irmão Chester, pelo companherismo e apoio.
+
+Agradeço  também à minha namorada Bianca Leão, por sua compreensão
+e afeto durante topo o tempo.
+
+Agradeço aos colegas da graduação,que sempre me ajudaram quando
+mais precisei. Em especial aos amigos Nélio Júnior e ao Danilo
+Reis pelo sincero companheirismo.
+
+Agradeço a todos os mestres da graduação e em especial ao meu
+orientador
+ professor Ms. Márcio Souza Dias, por acreditar em mim
+e tornar possivel a realização deste trabalho.
+Agradeço a todos os tios e tias, primos e primas por pelo apoio incondicional.
+
+Por fim, agradeço a todos que de forma direta ou indireta que
+cotribuíram para a minha formação.
+
+\newpage
+
+\begin{flushright}
+\begin{minipage}[b]{10cm}
+\it{``Os desafios foram feitos para serem vencidos. pois se não
+houvessem desafios, não existiriam vitórias".}
+\end{minipage}
+
+{\it{Sulamita}}
+\end{flushright}
+
+\newpage
+
+%\paginaresumo % escreva seu resumo no arquivo resumo.tex
+
+\pagestyle{plain}
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+%\listoftables
+%\listofalgorithms %requer \usepackage{algorithm} \usepackage{algorithmic}
+%\listof{codigo}{\listofcodename}  % Lista de Códigos
+\newpage
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% INCLUA AQUI SEUS CAPÍTULOS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

@@ -1,0 +1,250 @@
+\typeout{*********************************************************************}
+\typeout{*Estilo para o PFC - Atencao com a ficha catalografica na impressao!*}
+\typeout{*********************************************************************}
+
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[chapter]{algorithm} % numeração dos algoritmos por capitulo
+\usepackage{algorithmic}
+\usepackage[normalem]{ulem} % habilita que se sublinhe
+\usepackage[pdftex]{graphicx}
+\usepackage{indentfirst} % indenta o primeiro parágrafo
+\usepackage{lgm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COMANDOS RELATIVOS AO FORMATO DA MONOGRAFIA %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%definição de margens
+\setlength{\textwidth}{16cm} % largura da pagina
+\setlength{\textheight}{25cm} % altura da pagina
+\setlength{\topmargin}{-1.5cm} % margem superior --> 1 polegada mais o valor colocado
+\setlength{\oddsidemargin}{0cm} % margem esquerda para pagina impar
+\setlength{\evensidemargin}{0cm} %margem esquerda para pagina par
+
+\linespread{1.3}
+
+\def\titulo#1{\gdef\@titulo{#1}}
+\def\area#1{\gdef\@area{#1}}
+
+\def\pchaveA#1{\gdef\@pchaveA{#1}}
+\def\pchaveB#1{\gdef\@pchaveB{#1}}
+\def\pchaveC#1{\gdef\@pchaveC{#1}}
+
+\def\autor#1{\gdef\@autor{#1}}
+\def\autorsobrenomenome#1{\gdef\@autorsobrenomenome{#1}}
+\def\autorsobrenomeiniciais#1{\gdef\@autorsobrenomeiniciais{#1}}
+
+\def\orientador#1{\gdef\@orientador{#1}}
+\def\ano#1{\gdef\@ano{#1}}
+\def\mes#1{\gdef\@mes{#1}}
+
+\def\avaliadorA#1{\gdef\@avaliadorA{#1}}
+\def\avaliadorB#1{\gdef\@avaliadorB{#1}}
+
+
+
+% As paginas %
+
+\def\fazcapa{
+
+  \pagestyle{empty}
+
+  \begin{center}
+
+    {\large  \textbf{UNIVERSIDADE FEDERAL DE GOIÁS -- UFG} }
+    \vskip 12pt
+    
+       {\large \textbf{CAMPUS CATALÃO -- CaC }}
+    
+       \vskip 12pt
+    
+          {\large \textbf{DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO -- DCC}}
+        
+          \vskip 24pt
+        
+        
+             {\large Bacharelado em Ciência da Computação}
+             \vskip 12pt
+                {\large Projeto Final de Curso}
+                
+                
+                \vskip 116pt
+                
+                       {\Large {\bf \@titulo}}
+                
+                       \vskip 60pt
+                
+                       \hfill Autor: \@autor \par
+                
+                       \vskip 12pt
+                
+                       \hfill Orientador: \@orientador \par
+                
+                       \vfill
+  \end{center}
+
+  \begin{center}
+    Catalão - \@ano
+  \end{center}
+}
+
+
+\def\folharosto{
+  \begin{center}
+
+    {\bf \@autor}
+
+    \vskip 24pt
+
+       {\bf \@titulo}
+    
+  \end{center}
+
+  \begin{flushright}
+    Monografia apresentada ao Curso de \\
+    Bacharelado em Ciência da Computação da \\
+    Universidade Federal de Goiás ­ Campus Catalão \\
+    como requisito parcial para obtenção do título de \\
+    Bacharel em Ciência da Computação \\
+    \vskip 24pt
+
+           {\bf Área de Concentração:} \@area \\
+           {\bf Orientador:} \@orientador \\
+           %Co-orientador (se houver): Nome
+    
+  \end{flushright}
+
+  \vfill
+
+  \begin{center}
+    Catalão - \@ano
+  \end{center}
+}
+
+\def\fichacatalografica{
+
+  \vskip 120pt
+
+  \fbox{
+
+    \begin{minipage}{15cm}
+
+      \@autorsobrenomenome
+
+      \vskip 12pt
+
+         {\bf \@titulo/\@orientador - Catalão - \@ano }
+    
+         \vskip 12pt
+    
+         Número de paginas: \pageref{ultimapagina}
+    
+         \vskip 12pt
+    
+         Projeto Final de Curso (Bacharelado) ­ Universidade Federal de Goiás, Campus
+         Catalão, Curso de Bacharelado em Ciência da Computação, \@ano .
+    
+         \vskip 12pt
+    
+         Palavras-Chave: 1. \@pchaveA. 2. \@pchaveB. 3. \@pchaveC
+    
+    \end{minipage}
+  }
+
+}
+
+\def\paginaassinatura{
+
+
+  \begin{center}
+
+    {\bf \@autor }
+
+    \vskip 24 pt
+
+       {\bf \@titulo}
+    
+  \end{center}
+
+  \vskip 24pt
+
+  Monografia apresentada e aprovada em  \hspace{12pt} \hrulefill  \hspace{12pt} de   \hspace{12pt} \hrulefill  \hspace{12pt}
+
+  Pela Banca Examinadora constituída pelos professores.
+
+  \vskip 60pt
+
+  \begin{center}
+
+    \hspace{60pt}  \rule{8cm}{0.2mm}  \hspace{60pt}
+
+    \@orientador \ -- Presidente da Banca \par \vskip 60pt
+
+    \hspace{60pt}  \rule{8cm}{0.2mm}  \hspace{60pt}
+
+    \@avaliadorA \par \vskip 60pt
+
+    \hspace{60pt}  \rule{8cm}{0.2mm}  \hspace{60pt}
+
+    \@avaliadorB \par \vskip 60pt
+
+  \end{center}
+
+}
+
+\def\paginaresumo{
+
+  \begin{center}
+    {\Large RESUMO}
+  \end{center}
+
+  %\begin{flushleft}
+      {\bf \@autorsobrenomeiniciais} {\bf \@titulo}. Curso de Ciência da Computação,
+      Campus Catalão, UFG, Catalão, Brasil, \@ano , \pageref{ultimapagina}p.
+      %\end{flushleft}
+
+      \vskip 36pt
+
+      \input{resumo}
+
+      \vskip 36pt
+
+         {\bf Palavras-Chaves}: \@pchaveA, \@pchaveB, \@pchaveC
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% REDEFINIÇÃO DO ESTILO DA BIBLIOGRAFIA %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\and}{, }
+% to avoid [...] in the bibliography
+% \item[] instead of \item[\@biblabel{#1}\hfill]
+\def\@lbibitem[#1]#2{\item[]\if@filesw
+      {\let\protect\noexpand
+       \immediate
+       \write\@auxout{\string\bibcite{#2}{#1}}}\fi\ignorespaces}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname
+        \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            %% changed!
+               \itemindent -\leftmargin
+               \itemsep 6pt
+            %%%%%%%%%%%
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
