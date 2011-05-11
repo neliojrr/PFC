@@ -30,3 +30,11 @@ analisar cada comando do programa de entrada e então gerar de imediato o código
 de saída correspondente ao respectivo comando. Ou ainda, o compilador pode esperar 
 pelo fim da análise de cada bloco de comando --- ou unidade de rotina 
 (rotina, procedimentos, funções) --- para então gerar o código correspondente ao bloco.
+Para aproveitar melhor a memória durante a execução, compiladores costumavam ser divididos
+em várias etapas, executados em sequência. Cada etapa constitui uma parte do processo de
+tradução, transformando assim o código fonte em alguma estrutura intermediária adequada,
+cada vez mais próxima do código objeto final.
+
+É natural que a análise retorne como resultado uma representação do programa fonte que
+contenha informação necessária para a geração do programa objeto que o corresponda.
+
