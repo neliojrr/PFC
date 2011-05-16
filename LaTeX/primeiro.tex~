@@ -6,11 +6,36 @@ O processo de tradução (de uma linguagem fonte para uma linguagem objeto),
 considerado hoje a função central de um compilador, era então conhecido como 
 programação automática[Rangel, 1999]
 
-Também definido em [AHO, 1995], um compilador é um programa que lê outro programa 
+Definido em [AHO, 1995], um compilador é um programa que lê outro programa 
 escrito em uma linguagem --- a linguagem de origem --- e o traduz em um programa 
 equivalente em outra linguagem --- a linguagem de destino. Como uma importante 
 parte no processo de tradução, o compilador reporta ao seu usuário a presença 
 de erros no programa origem.
+
+Ao longo dos anos 50, os compiladores foram considerados programas notoriamente
+difíceis de escrever. O primeiro compilador Fortran, por exemplo, consumiu
+18-homens ano para implementar[Backus, 1957]. Desde então, foram descobertas
+técnicas sistemáticas para o tratamento de muitas das mais importantes
+tarefas desenvolvidas por um compilador.
+
+A variedade de compiladores nos dias de hoje é muito grande. Existem inúmeras
+linguagens fontes, as quais poderiam ser citadas em várias páginas deste trabalho. Isso
+se deve principalmente ao fato de que com o aumento do uso dos computadores, aumentou
+também, as necessidades de cada indivíduo, sendo estas específicas, exigindo por sua vez
+linguagens de programação diferentes. Este processo --- juntamente com
+a evolução da tecnologia de desenvolvimento de compiladores --- levou à criação de várias
+técnicas diferentes para a construção de um compilador, ou seja, passou a existir
+diferentes maneiras de se implementar um compilador. No entanto, a despeito dessa
+aparente complexidade, as tarefas básicas que qualquer compilador precisa realizar
+são essencialmente as mesmas.
+
+A grande maioria dos compiladores de hoje fazem uso da técnica chamada: \textit{tradução
+dirigida pela sintaxe}. Nesta técnica as regras de contrução do programa fonte são utilizadas
+para guiar todo o processo de compilação.
+Algumas das técnicas mais antigas utilizadas na contrução dos primeiros compiladores (da
+linguagem Fortran) pode ser obtido em [Rosen, 1967].
+
+\section{Modelo de Compilação de Análise e Síntese}
 
 Ainda segundo [Rangel, 1999], existem duas tarefas triviais a serem executadas 
 por um compilador nesse processo de tradução:
@@ -21,6 +46,10 @@ examinado, verificado e compreendido
  \item \textit{síntese}, ou \textit{geração de código}, em que o texto de saída 
 (na linguagem objeto) é gerado, de forma a corresponder ao texto de entrada.
 \end{itemize}
+
+Em [Aho, 1995], \textit{análise} é colocada como uma tarefa que divide o programa
+fonte nas partes constituintes e cria uma representação intermediária do mesmo. E
+\textit{síntese} constrói o programa alvo desejado, a partir da representação intermediária.
 
 Geralmente, pensamos nessas tarefas como fases que ocorram durante o processo de
  compilação. No entanto, não se faz totalmente necessário que a análise de todo 
@@ -41,4 +70,31 @@ Quase sempre, essa representação (conhecida como \textit{representação intermedi
 tem como complemento tabelas que contêm informações adicionais sobre o programa fonte.
 Pode ter casos em que a representação intermediária toma a forma de um programa em uma
 \textit{linguagem intermediária}, deixando assim mais fácil a tradução para a linguagem
-objeto desejada
+objeto desejada.
+
+Não importando a maneira pela qual se toma a representação intermediária, ela tem de conter
+necessariamente toda a informação para a geração do código objeto. Uma das características da
+representação intermediária é que as estruturas de dados implementadas devem dar garantia de 
+acesso eficiente as informações.
+
+Imagem - Rangel[1999]
+
+Segundo [Rangel, 1999], uma das formas mais comuns de tabela utilizada nessa representação
+intermediária é a \textit{tabela de símbolos}, em que se guarda para cada identificador(\textit{símbolo})
+usado no programa as informações correspondentes.
+
+Há também um modelo possível em [Ullman, 1977], o qual se faz a separação total entre o \textit{front-end},
+encarregado da fase de análise, e o \textit{back-end}, encarregado pela geração de código.
+Com isso tem-se que:
+
+\begin{itemize}
+ \item front-end e back-end se comunicam apenas da representação intermediária;
+ \item o front-end depende exclusivamente da linguagem fonte
+ \item o back-end depende exclusivamente da linguagem objeto.
+\end{itemize}
+
+Essa idéia tem como objetivo simplificar a implementação de diferentes linguagens de programação para
+diferentes máquinas. Basta-se então escrever um front-end para cada linguagem e um back-end para cada
+máquina. Ou seja, se deseja implementar \textit{x} linguagens para \textit{y} máquinas, precisa-se fazer
+\textit{x} front-ends e \textit{y} back-ends. Este esquema se torna mais fácil de aplicar quando há
+semelhança entre as máquinas e o mesmo acontece com as linguagens.

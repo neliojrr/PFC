@@ -2,3 +2,4 @@
 \contentsline {chapter}{Introdu\c c\~ao}{1}
 \contentsline {chapter}{\numberline {1}Compiladores}{3}
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{3}
+\contentsline {section}{\numberline {1.2}Modelo de Compila\c c\~ao de An\'alise e S\IeC {\'\i }ntese}{4}
