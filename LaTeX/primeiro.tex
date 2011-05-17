@@ -98,3 +98,23 @@ diferentes máquinas. Basta-se então escrever um front-end para cada linguagem e 
 máquina. Ou seja, se deseja implementar \textit{x} linguagens para \textit{y} máquinas, precisa-se fazer
 \textit{x} front-ends e \textit{y} back-ends. Este esquema se torna mais fácil de aplicar quando há
 semelhança entre as máquinas e o mesmo acontece com as linguagens.
+
+\section{Análise}
+
+É normal associar a \textit{sintaxe} a idéia de forma, em oposição a \textit{semântica} que se
+associa a significado, conteúdo. Tem-se então que a sintaxe de uma linguagem de programação
+deve descrever todos os aspectos relativos à forma de construção de programas corretos na linguagem,
+enquanto a semântica deve descrever o que acontece quando o programa é executado. Portanto, toda
+análise está relacionada com sintaxe, e a semântica deveria corresponder apenas à geração de código,
+que deve preservar o significado do programa fonte, contruindo um programa objeto com o mesmo
+significado[Rangel, 1999]
+
+É necessário ressaltar uma diferença existente entre a teoria e a prática. Quando falamos em teoria,
+somente os programas corretos pertencem à linguagem, não havendo interesse nos programas incorretos.
+O fato é que um programa ou é da linguagem (está correto) ou não é da linguagem (está incorreto).
+No entanto, em se tratando de prática, no momento em que decide-se que um programa está incorreto,
+um bom compilador deverá ser capaz de avisar sobre tal erro e de alguma forma, ajudar o usuário
+a corrigí-lo. Se faz necessário que o tratamento de erros inclua mensagens informativas e
+uma recuperação, para que a análise possa continuar e assim outros erros sejam sinalizados.
+
+Em [AHO, 1995] vemos que
