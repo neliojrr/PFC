@@ -3,3 +3,12 @@
 \contentsline {chapter}{\numberline {1}Compiladores}{3}
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{3}
 \contentsline {section}{\numberline {1.2}Modelo de Compila\c c\~ao de An\'alise e S\IeC {\'\i }ntese}{4}
+\contentsline {chapter}{\numberline {2}Portugol}{6}
+\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{6}
+\contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{6}
+\contentsline {subsection}{\numberline {2.2.1}Coment\'arios}{6}
+\contentsline {subsection}{\numberline {2.2.2}Tipos b\'asicos}{6}
+\contentsline {subsubsection}{Num\'erico}{7}
+\contentsline {subsubsection}{Literal}{7}
+\contentsline {subsubsection}{L\'ogico}{7}
+\contentsline {subsubsection}{Vetores e Matrizes}{7}

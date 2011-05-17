@@ -1,0 +1,42 @@
+\section{Introdução}
+
+O Portugol como linguagem não é tão bem definida, ficando muito mais sujeita a uma
+linguagem de aprendizado, voltada para o ensino e não para projetos de
+grande porte. Algumas vezes é somente uma tradução simplificada de Pascal
+para o português.
+
+O Portugol aqui definido será baseado em [Farrer, ]. O Livro utilizado para
+o estudo de algoritmos e de introdução a programação, é perfeito para
+este trabalho. O compilador desenvolvido, bem como o sistema Web, visa estudar
+como o processo de compilação online se dará, sendo necessário uma linguagem
+simples que não tome o foco do objetivo principal.
+
+Nas seções subsequentes veremos como o portugol foi proposto para este compilador.
+Suas características, sua sintaxe e a estrutura da linguagem.
+
+\section{Estrutura da Linguagem}
+
+\subsection{Comentários}
+
+Mais de uma forma de comentar o código será aceito, estimulando o seu uso em todo o
+código. O // usado em linguagens como C e Java e também a \# (cerquilha), utilizada em 
+linguagens como o Ruby são aceitos como comentários de uma só linha. Os {} (colchetes)
+são a única forma aceita de comentários para várias linhas ou comentários de bloco.
+
+\subsection{Tipos básicos}
+
+Os tipos básicos são simples e restritos, pois visam o ensino da lógica de programação.
+Isso promove também a independência de linguagem e de máquina.
+
+\subsubsection{Numérico}
+
+O tipo numérico resume todos os tipos para o cálculo aritmético. Não existe distinção entre
+números inteiros ou números reais (ponto flutuante). Caso haja a necessidade de que algum
+algoritmo utilize uma propriedade específica de algum destes tipos, deverá esta ser obtida
+através de funções. A vírgula é o símbolo utilizado para a separação da parte decimal.
+Não se escrevem os separadores de milhar.
+
+\subsubsection{Literal}
+
+Este tipo é responsável por armazenar sequências de letras e símbolos --- em muitas
+linguagens é o tipo \textit{String}. 
