@@ -29,6 +29,9 @@ diferentes maneiras de se implementar um compilador. No entanto, a despeito dess
 aparente complexidade, as tarefas básicas que qualquer compilador precisa realizar
 são essencialmente as mesmas.
 
+A grande maioria dos compiladores de hoje fazem uso da técnica chamada: \textit{tradução
+dirigida pela sintaxe}. Nesta técnica as regras de contrução do programa fonte são utilizadas
+para guiar todo o processo de compilação.
 Algumas das técnicas mais antigas utilizadas na contrução dos primeiros compiladores (da
 linguagem Fortran) pode ser obtido em [Rosen, 1967].
 
@@ -79,3 +82,51 @@ Imagem - Rangel[1999]
 Segundo [Rangel, 1999], uma das formas mais comuns de tabela utilizada nessa representação
 intermediária é a \textit{tabela de símbolos}, em que se guarda para cada identificador(\textit{símbolo})
 usado no programa as informações correspondentes.
+
+Há também um modelo possível em [Ullman, 1977], o qual se faz a separação total entre o \textit{front-end},
+encarregado da fase de análise, e o \textit{back-end}, encarregado pela geração de código.
+Com isso tem-se que:
+
+\begin{itemize}
+ \item front-end e back-end se comunicam apenas da representação intermediária;
+ \item o front-end depende exclusivamente da linguagem fonte
+ \item o back-end depende exclusivamente da linguagem objeto.
+\end{itemize}
+
+Essa idéia tem como objetivo simplificar a implementação de diferentes linguagens de programação para
+diferentes máquinas. Basta-se então escrever um front-end para cada linguagem e um back-end para cada
+máquina. Ou seja, se deseja implementar \textit{x} linguagens para \textit{y} máquinas, precisa-se fazer
+\textit{x} front-ends e \textit{y} back-ends. Este esquema se torna mais fácil de aplicar quando há
+semelhança entre as máquinas e o mesmo acontece com as linguagens.
+
+\section{Análise}
+
+É normal associar a \textit{sintaxe} a idéia de forma, em oposição a \textit{semântica} que se
+associa a significado, conteúdo. Tem-se então que a sintaxe de uma linguagem de programação
+deve descrever todos os aspectos relativos à forma de construção de programas corretos na linguagem,
+enquanto a semântica deve descrever o que acontece quando o programa é executado. Portanto, toda
+análise está relacionada com sintaxe, e a semântica deveria corresponder apenas à geração de código,
+que deve preservar o significado do programa fonte, contruindo um programa objeto com o mesmo
+significado[Rangel, 1999]
+
+É necessário ressaltar uma diferença existente entre a teoria e a prática. Quando falamos em teoria,
+somente os programas corretos pertencem à linguagem, não havendo interesse nos programas incorretos.
+O fato é que um programa ou é da linguagem (está correto) ou não é da linguagem (está incorreto).
+No entanto, em se tratando de prática, no momento em que decide-se que um programa está incorreto,
+um bom compilador deverá ser capaz de avisar sobre tal erro e de alguma forma, ajudar o usuário
+a corrigí-lo. Se faz necessário que o tratamento de erros inclua mensagens informativas e
+uma recuperação, para que a análise possa continuar e assim outros erros sejam sinalizados.
+
+Em [AHO, 1995] vemos que a análise se constitui em 3 fases:
+
+\begin{itemize}
+ \item \textit{Análise Linear}, na qual um fluxo de caracteres constituindo um programa é lido
+da esquerda para a direita e agrupado em \textit{tokens}, que são sequências de caracteres tendo
+um significado coletivo.
+ \item \textit{Análise Hierárquica}, na qual os caracteres ou \textit{tokens} são agrupados
+hierarquicamente em coleções aninhadas com significado coletivo.
+ \item \textit{Análise Semântica}, na qual certas verificações são realizadas a fim de se
+assegurar que os componentes de um programa se combinam de forma significativa.
+\end{itemize}
+
+Como pode ser visto
