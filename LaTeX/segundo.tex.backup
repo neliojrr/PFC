@@ -40,3 +40,69 @@ Não se escrevem os separadores de milhar.
 
 Este tipo é responsável por armazenar sequências de letras e símbolos --- em muitas
 linguagens é o tipo \textit{String}. 
+
+\subsubsection{Lógico}
+
+Responsável pelo armazenamento das constantes verdadeiro e falso. Este tipo é muito
+importante em projetos de linguagens de programação, visto que ele é bastante
+utilizado, sendo o tipo de retorno de várias operações.
+
+\subsubsection{Vetores e Matrizes}
+
+É permitida a criação de vetores e matrizes de quaisquer tipos básicos. As operações realizadas
+com matrizes e vetores deverão ser realizadas de forma condizente com a linguagem Portugol.
+As operações básicas deste tipo seguem as mesmas permitidas em seus tipos básicos. A palavra-chave
+\textit{matriz} é reservada para este tipo. O número inicial dos índices é sempre 1.
+
+Exemplo:
+
+ 
+\begin{lstlisting}
+a matriz numérico[30]  // Cria uma matriz 30x1
+b matriz lógico[3][3]  // Cria uma matriz 3x3
+ 
+\end{lstlisting}
+
+
+\subsubsection{Registros}
+
+É sempre definido pela palavra reservada \textbf{registro}. Representa um bloco composto
+por declarações de variáveis. Se encerra com a palavra \textbf{fimregistro}.
+
+Exemplo:
+
+\begin{lstlisting}
+ registro
+   num1, num2 numérico
+   estaPresente lógico
+   endereco literal
+ fimregistro
+\end{lstlisting}
+
+\subsection{Variáveis e Identificadores}
+
+As variáveis são parte importante de uma linguagem. Qualquer identificador, sendo este válido, tem
+como primeiro símbolo uma letra. Números e \_ (sublinha) são aceitos após o primeiro caractere. O
+tamanho máximo válido é definido em 32 caracteres.
+
+É necessário lembrar que alguns símbolos, normalmente ignorados ou proibidos em outras linguagens,
+são aceitos em Portugol. Símbolos estes presentes na língua portuguesa, como por exemplo, os acentos:
+á, ê, í, à, õ, ..., ç.
+
+Vale ressaltar da diferença existente entre variáveis declaradas com acento e variáveis sem acento.
+Ou seja, a variável 'pé' é diferente da variável 'pe'.
+
+\subsection{Declaração de variáveis}
+
+Não existe um local específico para declaração de variáveis, mas fica a recomendação de que esta
+seja feita no início de uma seção, seja o programa principal ou um procedimento/função. A
+palavra-chave \textbf{declare} será utilizada para declarar variáveis em Portugol. É possível
+declarar variáveis de mesmo tipo em uma mesma linha, nunca variáveis de tipos diferentes.
+
+Exemplo:
+
+\begin{lstlisting}
+ declare num1, num2, num3 numérico
+ declare palavra literal
+ 
+\end{lstlisting}

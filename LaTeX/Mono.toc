@@ -13,3 +13,7 @@
 \contentsline {subsubsection}{Literal}{8}
 \contentsline {subsubsection}{L\'ogico}{8}
 \contentsline {subsubsection}{Vetores e Matrizes}{8}
+\contentsline {subsubsection}{Registros}{8}
+\contentsline {subsection}{\numberline {2.2.3}Vari\'aveis e Identificadores}{9}
+\contentsline {subsection}{\numberline {2.2.4}Declara\c c\~ao de vari\'aveis}{9}
+\contentsline {subsection}{\numberline {2.2.5}Atribui\c c\~ao}{9}
