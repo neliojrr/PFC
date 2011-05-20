@@ -104,5 +104,237 @@ Exemplo:
 \begin{lstlisting}
  declare num1, num2, num3 numérico
  declare palavra literal
- 
+ declare a, b, c lógico
+ declare r registro
+		    dia, mes numérico
+		    nome literal
+		    estaPresente lógico
+	   fimregistro
+\end{lstlisting}
+
+Exemplo de declaração inválida:
+
+\begin{lstlisting}
+ declare num1 numérico, palavra literal
+\end{lstlisting}
+
+A visibilidade de uma palavra segue o mesmo padrão de outras conhecidas linguagens, ou seja, é
+dependente do escopo a qual foi definida.
+
+\subsection{Atribuição}
+
+A atribuição de valores a uma variável será denotada pelo símbolo '':=''. Será permitido 
+apenas a atribuição de um valor por vez. Uma atribuição será válida quando possuir
+um identificador válido do lado esquerdo e uma expressão válida e, do mesmo tipo, do
+lado direito.
+
+Exemplo:
+
+\begin{lstlisting}
+ declare num1, num2 numérico
+ declare palavra literal
+
+ num1 := 3
+ num2 := 1,5
+ palavra := "Olá Mundo"
+\end{lstlisting}
+
+\subsection{Operadores}
+
+\subsubsection{Operadores Aritméticos}
+
+Os operadores são:
+
+\begin{center}
+\textbf{Tabela 2.1 - Operadores Aritméticos}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+\textbf{Operação} & \textbf{Símbolo}\\
+\hline
+Adição & +\\
+\hline
+Subtração & -\\
+\hline
+Multiplicação & *\\
+\hline
+Divisão & /\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Operadores Lógicos}
+
+Os Operadores são:
+
+\begin{center}
+\textbf{Tabela 2.2 - Operadores Lógicos}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+\textbf{Operação} & \textbf{Símbolo}\\
+\hline
+inversão - não & não\\
+\hline
+junção & e\\
+\hline
+disjunção & ou\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Operadores Relacionais}
+
+Os Operadores são:
+
+\begin{center}
+\textbf{Tabela 2.3 - Operadores Relacionais}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+\textbf{Operação} & \textbf{Símbolo}\\
+\hline
+Igualdade & =\\
+\hline
+Maior & >\\
+\hline
+Menor & <\\
+\hline
+Maior ou Igual & >=\\
+\hline
+Menor ou Igual& <=\\
+\hline
+Diferença& != ou <>\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Operadores Relacionais}
+
+Os Operadores são:
+
+\begin{center}
+\textbf{Tabela 2.4 - Operadores Literais}
+\end{center}
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+\textbf{Operação} & \textbf{Símbolo}\\
+\hline
+Concatenação & +\\
+\hline
+Igualdade & =\\
+\hline
+Maior & >\\
+\hline
+Menor & <\\
+\hline
+Maior ou Igual & >=\\
+\hline
+Menor ou Igual& <=\\
+\hline
+Diferença& != ou <>\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Estrutura Sequencial}
+
+O programa tem início com a palavra \textbf{programa} e tem fim com a palavra
+\textbf{fimprograma}. Caso queira importar outros módulos, estes devem ser feitos
+através de comando, após a declaração do programa.
+
+Em Portugol não se faz necessária a utilização de algum símbolo especial ou visual
+para marcar o fim de linha. Basta que o ''Retorno'' --- mais conhecido pela tecla
+''ENTER'' --- seja pressionado. Este símbolo é definido na posição 13 da tabela
+ASCII.
+
+Qualquer que seja o símbolo ou comando declarado fora do escopo do programa, será
+considerado erro. Funções e procedimentos devem ser declarados externamente e então, 
+importados pelo programa que necessite utilizá-los. Isto fará com que se estimule
+a modularização de código, bem como a criação de arquivos de menor tamanho e mais
+fáceis de entender.
+
+\subsection{Estruturas Condicionais}
+
+São definidas duas: \textbf{se} e o \textbf{caso}.
+
+O \textbf{se} é utilizado quando se quer avaliar uma condição ou expressão
+lógica e retorna obrigatoriamente um valor lógico. Conforme o retorno a
+execução passa para o bloco \textbf{então} --- caso seja verdadeiro ---
+ou para o bloco \textbf{senão} --- caso seja falso.
+
+É definido também em Portugol o \textbf{fimentão} e o \textbf{senão}, responsáveis
+pelo fechamento dos blocos \textbf{então} e \textbf{senão} respectivamentes.
+
+Exemplo:
+
+\begin{lstlisting}
+ se num1 > num2
+     então num1 = 1
+     fimentão
+     senão num2 = 2
+     fimsenão
+ fimse
+\end{lstlisting}
+
+A estrutura \textbf{caso} permite avaliar vários valores e admite váriavel
+dos tipos lógicos, numérico e literal.
+
+\begin{lstlisting}
+ caso tamanho
+     10: i := 10
+     11: i := 11
+     12: i := 12
+ fimcaso
+\end{lstlisting}
+
+\subsection{Estruturas de Repetição}
+
+Três estruturas são definidas em Portugol: \textbf{faça}, \textbf{enquanto}, \textbf{repita}.
+
+O \textbf{faça} é similar ao \textit{for} de outras linguagens. Sua construção é demonstrada
+abaixo:
+
+\begin{lstlisting}
+ faça i de 1 até 10
+     <instruções>
+ fimfaça
+\end{lstlisting}
+
+O bloco acima irá executar as instruções dez vezes, incrementando o valor do ''i'' de 1 até 10.
+É recomendável como boas práticas de programação que a váriavel de controle --- no bloco
+acima é o ''i'' --- não tenha seu valor alterado pelas instruções internas. O valor do ''i'' é
+incrementado em 1 sempre quando se chega ao ''fimfaça''. O valor do ''i'' após o ''fimfaça'' é
+igual ao valor máximo estipulado no início, no caso 10.
+
+O \textbf{enquanto} substitui o \textit{while} de outras linguagens de programação.
+Exemplo:
+
+\begin{lstlisting}
+ enquanto num1 > num2
+     <instruções>
+ fimenquanto
+\end{lstlisting}
+
+A estrutura de repetição \textbf{enquanto} executa o bloco de código até que a condição seja
+falsa. Pode acontecer das instruções nem serem executadas, caso a condição seja falsa logo
+de início.
+
+A estrutura \textbf{repita} tem como característica o fato de ser básica. A verificação e a
+interrupção do bloco de código é livre, sendo especificada pelo comando \textbf{interrompa}.
+Veja:
+
+\begin{lstlisting}
+ repita
+     <comandos>
+     interrompa
+ fimrepita
 \end{lstlisting}
