@@ -120,16 +120,16 @@ uma recuperação, para que a análise possa continuar e assim outros erros sejam s
 Em [AHO, 1995] vemos que a análise se constitui em 3 fases:
 
 \begin{itemize}
- \item \textit{Análise Linear}, na qual um fluxo de caracteres constituindo um programa é lido
+ \item \textit{Análise Linear - Análise Léxica}, na qual um fluxo de caracteres constituindo um programa é lido
 da esquerda para a direita e agrupado em \textit{tokens}, que são sequências de caracteres tendo
 um significado coletivo.
- \item \textit{Análise Hierárquica}, na qual os caracteres ou \textit{tokens} são agrupados
+ \item \textit{Análise Hierárquica - Análise Sintática}, na qual os caracteres ou \textit{tokens} são agrupados
 hierarquicamente em coleções aninhadas com significado coletivo.
  \item \textit{Análise Semântica}, na qual certas verificações são realizadas a fim de se
 assegurar que os componentes de um programa se combinam de forma significativa.
 \end{itemize}
 
-Sabe-se da possibilidade de total representação da sintaxe uma linguagem de programação
+Sabe-se da possibilidade de total representação da sintaxe de uma linguagem de programação
 através de uma gramática sensível ao contexto [Wijngaarden, 1969]. No entanto, não
 há algoritmos práticos para tratar estas gramáticas, fazendo com que haja preferência
 em usar gramáticas livres de contexto. Sendo assim, fica claro que a separação entre
@@ -143,3 +143,69 @@ verificação das regras restantes. Essas regras tratam quase sempre da verificaçã
 que os objetos são usados no programa da maneira prevista em suas declarações, por exemplo
 verificando que não há erros de tipos [Rangel, 1999].
 
+Não há ainda um modelo matemático que se adeque inteiramente na função de descrever o que deve
+ser verificado durante a análise semântica, ao contrário do que ocorre nas outras duas fases. No
+entanto, alguns mecanismos, como gramática de atributos, tem sido utilizados com sucesso no processo
+de simplificação da construção de analisadores semânticos.
+
+\subsection{Análise Léxica}
+
+Segundo [AHO, 1995], o analisador léxico é a primeira fase de um compilador. Sua tarefa principal é
+a de ler os caracteres de entrada e produzir uma sequência de \textit{tokens} que o \textit{parser}
+utiliza para a análise sintática. Essa interação é comumente implementada fazendo com que o analisador
+léxico seja uma subrotina do \textit{parser}. Ao receber do \textit{parser} um comando 'obter o próximo
+\textit{token}', o analisador léxico lê os caracteres de entrada até que possa identificar o próximo
+\textit{token}.
+
+Já em [Ullman, 1977], vemos que a análise léxica é responsável por separar e identificar os elementos componentes
+do código fonte. A análise léxica também elimina os elementos considerados 'decorativos' ou mesmo desnecessários
+para este processo, tais como espaços em branco, marcas de formatação de texto e comentários.
+
+Em [Rangel, 1995] temos o seguinte exemplo em Pascal:
+
+\begin{lstlisting}
+ if x > 0 then        {x e' positivo}
+     modx := x
+ else                 {x e' negativo}
+     modx := (-x)
+\end{lstlisting}
+
+Após a análise léxica, a sequência de \textit{tokens} identificadas é:
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+\textbf{Tipo do \textit{token}} & \textbf{Valor do \textit{token}}\\
+\hline
+palavra reservada if & if\\
+\hline
+identificador x & x\\
+\hline
+operador maior & >\\
+\hline
+literal numérico & 0\\
+\hline
+palavra reservada then & then\\
+\hline
+identificador & modx\\
+\hline
+operador de atribuição & :=\\
+\hline
+identificador & x\\
+\hline
+palavra reservada else & else\\
+\hline
+identificador & modx\\
+\hline
+operador de atribuição & :=\\
+\hline
+delimitador abre parêntese & (\\
+\hline
+operador menos unário & -\\
+\hline
+identificador & x\\
+\hline
+delimitador fecha parenteses & )\\
+\hline
+\end{tabular}
+\end{center}

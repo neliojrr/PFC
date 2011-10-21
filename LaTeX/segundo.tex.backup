@@ -335,6 +335,41 @@ Veja:
 \begin{lstlisting}
  repita
      <comandos>
-     interrompa
+     interrompa 
  fimrepita
 \end{lstlisting}
+
+Após a leitura do interrompa, a execução do programa se dará para o trecho de código abaixo
+do ''fimrepita''.
+
+Como pode ser observado, a maioria das estruturas definidas são fechadas sempre utilizando o
+''fim\textit{estrutura}''. A não utilização de tal comando acarretará em um erro de código, 
+podendo ser este léxico ou sintático.
+
+\subsection{Funções}
+
+As funções aqui definidas seguem as mesmas regras de um programa, não podendo apenas importar módulos.
+
+A declaração de uma função pode ser vista abaixo:
+
+\begin{lstlisting}
+ funcao soma(a numerico, b numerico)
+     <comandos>
+ fimfuncao
+\end{lstlisting}
+
+Assim como ocorre em outras linguagens de programação, as variáveis declaradas em uma determinada função
+são internas a ela, possuindo assim escopo local.
+
+Decidi por não utilizar uma estrutura do tipo procedimento - estrutura esta existente em outras linguagens -
+pelo fato de simplificar o uso da linguagem, visto que ela se designa ao ensino de programação. O mesmo se
+faz irrelevante neste trabalho, já que a principal diferença entre uma função e um procedimento é que a 
+função retorna um resultado.
+
+\section{Conclusão}
+
+A linguagem Portugol é por sua própria natureza simples. Na maioria das vezes em que é utilizada a finalidade é sempre
+o aprendizado de programação de computadores. O Portugol utilizado para a construção deste trabalho também
+tem a simplicidade em sua essência, no entanto, oferece as condições necessárias para uma introdução a programação,
+além de também atender ao propósito deste trabalho de final de curso.
+

@@ -4,25 +4,27 @@
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{3}
 \contentsline {section}{\numberline {1.2}Modelo de Compila\c c\~ao de An\'alise e S\IeC {\'\i }ntese}{4}
 \contentsline {section}{\numberline {1.3}An\'alise}{5}
-\contentsline {chapter}{\numberline {2}Portugol}{7}
-\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{7}
-\contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{7}
-\contentsline {subsection}{\numberline {2.2.1}Coment\'arios}{7}
-\contentsline {subsection}{\numberline {2.2.2}Tipos b\'asicos}{7}
-\contentsline {subsubsection}{Num\'erico}{8}
-\contentsline {subsubsection}{Literal}{8}
-\contentsline {subsubsection}{L\'ogico}{8}
-\contentsline {subsubsection}{Vetores e Matrizes}{8}
-\contentsline {subsubsection}{Registros}{8}
-\contentsline {subsection}{\numberline {2.2.3}Vari\'aveis e Identificadores}{9}
-\contentsline {subsection}{\numberline {2.2.4}Declara\c c\~ao de vari\'aveis}{9}
-\contentsline {subsection}{\numberline {2.2.5}Atribui\c c\~ao}{9}
-\contentsline {subsection}{\numberline {2.2.6}Operadores}{10}
-\contentsline {subsubsection}{Operadores Aritm\'eticos}{10}
-\contentsline {subsubsection}{Operadores L\'ogicos}{10}
-\contentsline {subsubsection}{Operadores Relacionais}{10}
+\contentsline {subsection}{\numberline {1.3.1}An\'alise L\'exica}{6}
+\contentsline {chapter}{\numberline {2}Portugol}{8}
+\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{8}
+\contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{8}
+\contentsline {subsection}{\numberline {2.2.1}Coment\'arios}{8}
+\contentsline {subsection}{\numberline {2.2.2}Tipos b\'asicos}{8}
+\contentsline {subsubsection}{Num\'erico}{9}
+\contentsline {subsubsection}{Literal}{9}
+\contentsline {subsubsection}{L\'ogico}{9}
+\contentsline {subsubsection}{Vetores e Matrizes}{9}
+\contentsline {subsubsection}{Registros}{9}
+\contentsline {subsection}{\numberline {2.2.3}Vari\'aveis e Identificadores}{10}
+\contentsline {subsection}{\numberline {2.2.4}Declara\c c\~ao de vari\'aveis}{10}
+\contentsline {subsection}{\numberline {2.2.5}Atribui\c c\~ao}{10}
+\contentsline {subsection}{\numberline {2.2.6}Operadores}{11}
+\contentsline {subsubsection}{Operadores Aritm\'eticos}{11}
+\contentsline {subsubsection}{Operadores L\'ogicos}{11}
 \contentsline {subsubsection}{Operadores Relacionais}{11}
-\contentsline {subsection}{\numberline {2.2.7}Estrutura Sequencial}{11}
-\contentsline {subsection}{\numberline {2.2.8}Estruturas Condicionais}{11}
-\contentsline {subsection}{\numberline {2.2.9}Estruturas de Repeti\c c\~ao}{12}
-\contentsline {subsection}{\numberline {2.2.10}Procedimentos e Fun\c c\~oes}{13}
+\contentsline {subsubsection}{Operadores Relacionais}{12}
+\contentsline {subsection}{\numberline {2.2.7}Estrutura Sequencial}{12}
+\contentsline {subsection}{\numberline {2.2.8}Estruturas Condicionais}{12}
+\contentsline {subsection}{\numberline {2.2.9}Estruturas de Repeti\c c\~ao}{13}
+\contentsline {subsection}{\numberline {2.2.10}Fun\c c\~oes}{14}
+\contentsline {section}{\numberline {2.3}Conclus\~ao}{14}

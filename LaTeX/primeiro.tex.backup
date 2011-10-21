@@ -120,13 +120,40 @@ uma recuperação, para que a análise possa continuar e assim outros erros sejam s
 Em [AHO, 1995] vemos que a análise se constitui em 3 fases:
 
 \begin{itemize}
- \item \textit{Análise Linear}, na qual um fluxo de caracteres constituindo um programa é lido
+ \item \textit{Análise Linear - Análise Léxica}, na qual um fluxo de caracteres constituindo um programa é lido
 da esquerda para a direita e agrupado em \textit{tokens}, que são sequências de caracteres tendo
 um significado coletivo.
- \item \textit{Análise Hierárquica}, na qual os caracteres ou \textit{tokens} são agrupados
+ \item \textit{Análise Hierárquica - Análise Sintática}, na qual os caracteres ou \textit{tokens} são agrupados
 hierarquicamente em coleções aninhadas com significado coletivo.
  \item \textit{Análise Semântica}, na qual certas verificações são realizadas a fim de se
 assegurar que os componentes de um programa se combinam de forma significativa.
 \end{itemize}
 
-Como pode ser visto
+Sabe-se da possibilidade de total representação da sintaxe de uma linguagem de programação
+através de uma gramática sensível ao contexto [Wijngaarden, 1969]. No entanto, não
+há algoritmos práticos para tratar estas gramáticas, fazendo com que haja preferência
+em usar gramáticas livres de contexto. Sendo assim, fica claro que a separação entre
+análise sintática e análise semântica é dependente da implementação.
+
+Sendo assim, a análise léxica tem como finalidade separar e identificar os elementos
+componentes do programa fonte, o qual estes geralmente, são especificados através de
+expressões regulares. A análise sintática deve reconhecer a estrutura global do programa,
+descrita através de gramáticas livre de contexto. A análise semântica se encarrega da
+verificação das regras restantes. Essas regras tratam quase sempre da verificação de
+que os objetos são usados no programa da maneira prevista em suas declarações, por exemplo
+verificando que não há erros de tipos [Rangel, 1999].
+
+Não há ainda um modelo matemático que se adeque inteiramente na função de descrever o que deve
+ser verificado durante a análise semântica, ao contrário do que ocorre nas outras duas fases. No
+entanto, alguns mecanismos, como gramática de atributos, tem sido utilizados com sucesso no processo
+de simplificação da construção de analisadores semânticos.
+
+\subsection{Análise Léxica}
+
+Segundo [AHO, 1995], o analisador léxico é a primeira fase de um compilador. Sua tarefa principal é
+a de ler os caracteres de entrada e produzir uma sequência de \textit{tokens} que o \textit{parser}
+utiliza para a análise sintática. Essa interação é comumente implementada fazendo com que o analisador
+léxico seja uma subrotina do \textit{parser}. Ao receber do \textit{parser} um comando 'obter o próximo
+\textit{token}', o analisador léxico lê os caracteres de entrada até que possa identificar o próximo
+\textit{token}.
+
