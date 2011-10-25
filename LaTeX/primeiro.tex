@@ -215,3 +215,52 @@ ou por códigos numéricos apropriados.
 
 O que vemos na grande maioria das vezes é que a implementação de um analisador léxico é baseada em um autômato
 finito capaz de reconhecer as diversas construções.
+
+\subsection{Análise Sintática}
+
+As linguagens de programação possuem regras que descrevem a estrutura sintática dos programas bem-formados.
+Desta maneira, a partir da sequência de \textit{tokens} gerada pelo analisador léxico, o analisador sintático
+realiza o seu trabalho, verificando se esta sequência pode ser gerada pela gramática da linguagem-fonte.
+
+A análise sintática envolve o agrupamento dos \textit{tokens} do programa fonte em frases gramaticais, que são
+usadas pelo compilador, a fim de sintetizar a saída. Usualmente, as frases gramaticais do programa fonte são
+representadas por uma árvore gramatical [AHO, 1995].
+
+Já em [Rangel, 1999] temos que a análise sintática deve reconhecer a estrutura global do programa, por exemplo,
+verificando que programas, comandos, declarações, expressões, etc têm as regras de composição respeitadas.
+
+Vejamos o exemplo:
+
+\begin{lstlisting}
+ se x > 0 entao
+     modx = x
+ senao
+     modx = -x
+ fimsenao
+\end{lstlisting}
+
+Caberia a análise sintática reconhecer a estrutura deste trecho, reconhecendo de que se trata de um \textit{<comando>}
+, que no caso é um \textit{<comando-se>}, composto pela palavra reserva \textit{se}, seguido de uma \textit{<expressão},
+seguida também de uma palavra reservada \textit{entao}, e assim por diante. 
+
+Ainda segundo [Rangel, 1999], quase universalmente, a sintaxe das linguagens de programação é descrita por gramáticas
+livres de contexto, em uma notação chamada BNF (\textit{Forma de Backus-Naur} ou ainda \textit{Forma Normal de Backus},
+ou em alguma variante ou extensão dessa notação. Essa notação foi introduzida por volta de 1960, para a descrição da
+linguagem Algol [Naur, 1963].
+
+Existem três tipos gerais de analisadores sintáticos. Os métodos universais de análise sintática, tais como o algoritmo
+de \textit{Cocke-Younger-Casami} e o de \textit{Earley}, podem tratar qualquer gramática. Esses métodos, entretanto, são
+muito ineficientes para se usar num compilador de produção. Os métodos mais comumentes usados nos compiladores
+são classificados como \textit{top-down} ou \textit{bottom-up}. Como indicado por seus nomes, os analisadores
+sintáticos \textit{top-down} constroem árvores do topo(raiz) para o fundo(folhas), enquanto que os \textit{bottom-up}
+começam pelas folhas e trabalham árvore acima até a raiz. Em ambos os casos, a entrada é varrida da esquerda para
+a direita, um símbolo de cada vez [AHO, 1995]
+
+Os métodos de análise sintática mais eficientes, tanto \textit{top-down} quanto \textit{bottom-up}, trabalham
+somente em determinadas subclasses de gramáticas, mas várias dessas subclasses, como as das grámaticas LL e LR, são
+suficientemente expressivas para descrever a maioria das construções sintáticas das linguagens de programação.
+Os analisadores implementados manualmente trabalham frequentemente com gramáticas LL. Os da classe mais ampla
+das gramáticas LR são usualmente contruídos através de ferramentas automatizadas. [AHO, 1995]
+
+
+
