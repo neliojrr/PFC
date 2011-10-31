@@ -29,3 +29,6 @@
 \contentsline {subsection}{\numberline {2.2.9}Estruturas de Repeti\c c\~ao}{15}
 \contentsline {subsection}{\numberline {2.2.10}Fun\c c\~oes}{16}
 \contentsline {section}{\numberline {2.3}Conclus\~ao}{16}
+\contentsline {chapter}{\numberline {3}Estado da Arte}{17}
+\contentsline {section}{\numberline {3.1}Introdu\c c\~ao}{17}
+\contentsline {section}{\numberline {3.2}Compiladores}{17}
