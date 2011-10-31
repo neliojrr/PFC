@@ -1,0 +1,57 @@
+\relax 
+\catcode`"\active
+\select@language{brazil}
+\@writefile{toc}{\select@language{brazil}}
+\@writefile{lof}{\select@language{brazil}}
+\@writefile{lot}{\select@language{brazil}}
+\@writefile{toc}{\contentsline {chapter}{Introdu\c c\~ao}{1}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Compiladores}{3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Modelo de Compila\c c\~ao de An\'alise e S\IeC {\'\i }ntese}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}An\'alise}{5}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Tokens, Padr\~oes e Lexemas}{6}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Express\~oes Regulares}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}An\'alise L\'exica}{7}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}An\'alise Sint\'atica}{8}}
+\citation{AHO1995}
+\citation{AHO1995}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {subsubsection}{Tratamento dos Erros de Sintaxe}{9}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {subsubsection}{Gram\'aticas Livres de Contexto}{11}}
+\citation{AHO1995}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}S\IeC {\'\i }ntese ou Gera\c c\~ao de C\'odigo}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Gera\c c\~ao de C\'odigo Intermedi\'ario}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Posi\c c\~ao do gerador de c\'odigo intermedi\'ario}}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Portugol}{13}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Coment\'arios}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Tipos b\'asicos}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{Num\'erico}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Literal}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{L\'ogico}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Vetores e Matrizes}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Registros}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Vari\'aveis e Identificadores}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Declara\c c\~ao de vari\'aveis}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Atribui\c c\~ao}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Operadores}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Operadores Aritm\'eticos}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Operadores L\'ogicos}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Operadores Relacionais}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Operadores Relacionais}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.7}Estrutura Sequencial}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.8}Estruturas Condicionais}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.9}Estruturas de Repeti\c c\~ao}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.10}Fun\c c\~oes}{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Conclus\~ao}{19}}
+\bibdata{Mono}

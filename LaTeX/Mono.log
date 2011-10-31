@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.5.24)  25 OCT 2011 01:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.5.24)  31 OCT 2011 02:39
 entering extended mode
  %&-line parsing enabled.
 **Mono.tex
@@ -260,40 +260,58 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
- [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 167.
 
+Overfull \hbox (22.54823pt too wide) in paragraph at lines 67--74
+\OT1/cmr/m/n/12 Quase sem-pre, essa re-pre-senta^^Xc~ao (co-nhe-cida como \OT1/
+cmr/m/it/12 re-pre-senta^^Xc~ao in-ter-medi^^Saria\OT1/cmr/m/n/12 [[]])
+ []
 
-(/usr/share/texmf/tex/latex/base/omlcmr.fd
+[4] [5] [6]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 200.
+
+ (/usr/share/texmf/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 167.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 200.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
- [7] [8]) [9]
-Cap\'{\i }tulo 2.
-(./segundo.tex [10
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
+ [7] [8] [9] [10]
+Overfull \hbox (8.60953pt too wide) in paragraph at lines 362--364
+[]\OT1/cmr/m/n/12 A prin-ci-pal pro-pri-e-dade que dis-ting^^?ue uma gram^^Sati
+ca li-vre de con-texto de uma gram^^Satica
+ []
 
-] [11] [12] [13] [14] [15]) [16] (./Mono.aux) ) 
+[11] <imagens/fig1.jpg, id=73, 710.655pt x 123.46124pt>
+File: imagens/fig1.jpg Graphic file (type jpg)
+ <use imagens/fig1.jpg>
+[12 <./imagens/fig1.jpg>] <imagens/fig2.jpg, id=77, 752.8125pt x 228.855pt>
+File: imagens/fig2.jpg Graphic file (type jpg)
+
+<use imagens/fig2.jpg> [13 <./imagens/fig2.jpg>]) [14]
+Cap\'{\i }tulo 2.
+(./segundo.tex [15
+
+] [16] [17] [18] [19] [20]) [21] (./Mono.bbl) [22]
+(./Mono.aux) ) 
 Here is how much of TeX's memory you used:
- 3943 strings out of 256216
- 49429 string characters out of 1917072
+ 3970 strings out of 256216
+ 49773 string characters out of 1917072
  126035 words of memory out of 1500000
- 7161 multiletter control sequences out of 10000+200000
+ 7181 multiletter control sequences out of 10000+200000
  13583 words of font info for 52 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 37i,7n,40p,242b,1617s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bl
-uesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmbxti10.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/sh
-are/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmti12.pfb>
-Output written on Mono.pdf (25 pages, 112787 bytes).
+ 37i,7n,40p,242b,1709s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmbxti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf
+/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmt
+i12.pfb>
+Output written on Mono.pdf (31 pages, 188897 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

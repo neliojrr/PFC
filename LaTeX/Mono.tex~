@@ -134,6 +134,13 @@ cotribuíram para a minha formação.
 \chapter{Portugol}
 \input{segundo}
 
+\newpage
+%%%%%%%%%%%%%%%%%%%%
+%%% BIBLIOGRAFIA %%%
+%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{chapter}{Referências}
+\bibliographystyle{apalike2}
+\bibliography{Mono}
 
 
 \label{ultimapagina}

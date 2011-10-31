@@ -4,9 +4,9 @@ Criado por volta dos anos 50, o nome Compilador se refere ao processo
 de composição de um programa através da reunião de várias rotinas de bibliotecas. 
 O processo de tradução (de uma linguagem fonte para uma linguagem objeto), 
 considerado hoje a função central de um compilador, era então conhecido como 
-programação automática[Rangel, 1999]
+programação automática \cite{RANGEL1999}.
 
-Definido em [AHO, 1995], um compilador é um programa que lê outro programa 
+Definido em \cite{AHO1995}, um compilador é um programa que lê outro programa 
 escrito em uma linguagem --- a linguagem de origem --- e o traduz em um programa 
 equivalente em outra linguagem --- a linguagem de destino. Como uma importante 
 parte no processo de tradução, o compilador reporta ao seu usuário a presença 
@@ -37,7 +37,7 @@ linguagem Fortran) pode ser obtido em [Rosen, 1967].
 
 \section{Modelo de Compilação de Análise e Síntese}
 
-Ainda segundo [Rangel, 1999], existem duas tarefas triviais a serem executadas 
+Ainda segundo \cite{RANGEL1999}, existem duas tarefas triviais a serem executadas 
 por um compilador nesse processo de tradução:
 
 \begin{itemize}
@@ -66,7 +66,7 @@ cada vez mais próxima do código objeto final.
 
 É natural que a análise retorne como resultado uma representação do programa fonte que
 contenha informação necessária para a geração do programa objeto que o corresponda.
-Quase sempre, essa representação (conhecida como \textit{representação intermediária}[Rangel, 1999])
+Quase sempre, essa representação (conhecida como \textit{representação intermediária}\cite{RANGEL1999})
 tem como complemento tabelas que contêm informações adicionais sobre o programa fonte.
 Pode ter casos em que a representação intermediária toma a forma de um programa em uma
 \textit{linguagem intermediária}, deixando assim mais fácil a tradução para a linguagem
@@ -79,7 +79,7 @@ acesso eficiente as informações.
 
 Imagem - Rangel[1999]
 
-Segundo [Rangel, 1999], uma das formas mais comuns de tabela utilizada nessa representação
+Segundo \cite{RANGEL1999}, uma das formas mais comuns de tabela utilizada nessa representação
 intermediária é a \textit{tabela de símbolos}, em que se guarda para cada identificador(\textit{símbolo})
 usado no programa as informações correspondentes.
 
@@ -107,7 +107,7 @@ deve descrever todos os aspectos relativos à forma de construção de programas co
 enquanto a semântica deve descrever o que acontece quando o programa é executado. Portanto, toda
 análise está relacionada com sintaxe, e a semântica deveria corresponder apenas à geração de código,
 que deve preservar o significado do programa fonte, contruindo um programa objeto com o mesmo
-significado[Rangel, 1999]
+significado\cite{RANGEL1999}
 
 É necessário ressaltar uma diferença existente entre a teoria e a prática. Quando falamos em teoria,
 somente os programas corretos pertencem à linguagem, não havendo interesse nos programas incorretos.
@@ -117,7 +117,7 @@ um bom compilador deverá ser capaz de avisar sobre tal erro e de alguma forma, a
 a corrigí-lo. Se faz necessário que o tratamento de erros inclua mensagens informativas e
 uma recuperação, para que a análise possa continuar e assim outros erros sejam sinalizados.
 
-Em [AHO, 1995] vemos que a análise se constitui em 3 fases:
+Em \cite{AHO1995} vemos que a análise se constitui em 3 fases:
 
 \begin{itemize}
  \item \textit{Análise Linear - Análise Léxica}, na qual um fluxo de caracteres constituindo um programa é lido
@@ -141,16 +141,49 @@ expressões regulares. A análise sintática deve reconhecer a estrutura global do 
 descrita através de gramáticas livre de contexto. A análise semântica se encarrega da
 verificação das regras restantes. Essas regras tratam quase sempre da verificação de
 que os objetos são usados no programa da maneira prevista em suas declarações, por exemplo
-verificando que não há erros de tipos [Rangel, 1999].
+verificando que não há erros de tipos \cite{RANGEL1999}.
 
 Não há ainda um modelo matemático que se adeque inteiramente na função de descrever o que deve
 ser verificado durante a análise semântica, ao contrário do que ocorre nas outras duas fases. No
 entanto, alguns mecanismos, como gramática de atributos, tem sido utilizados com sucesso no processo
 de simplificação da construção de analisadores semânticos.
 
+\subsection{Tokens, Padrões e Lexemas}
+
+É necessário que antes de começar a falar de análise léxica tenha-se bem definido o significado de
+\textit{tokens}, padrões e lexemas.
+
+\textit{Tokens} são símbolos terminais na gramática de uma linguagem. Falando em linguagens de programação, 
+na maioria delas, as seguintes construções são tratadas como \textit{tokens}: palavras-chave, operadores,
+identificadores, constantes, cadeias, literais(\textit{strings}), e símbolos de pontuação como parênteses,
+vírgulas e pontos.
+
+Padrão(\textit{pattern} constitui-se em uma regra que define o conjunto de lexemas representam um \textit{token}
+na linguagem. Normalmente tais regras são descritas na forma de expressões regulares.
+
+Lexemas são sequências de caracteres descritas por um padrão de um \textit{token}. Lexema é então o valor do
+\textit{token}, aparecendo na maioria das vezes como um atributo a ser utilizado nas fases seguintes de compilação.
+Enquanto o analisador léxico faz a procura por \textit{tokens}, temos que na geração de código os lexemas
+para produzir significado.
+
+\subsection{Expressões Regulares}
+
+Como já foi dito a análise léxica é responsável por gerar uma lista de tokens tendo como base
+o código fonte original. Desta forma um meio de representarmos o que a linguagem aceita, ou não,
+pode ser neste primeiro passo de abstração representado através de Expressões Regulares.
+
+Expressões regulares são uma forma muito interessante de descrever
+padrões, especialmente aqueles que consistem em cadeias de caracteres. Através
+destas expressões podemos especificar que seqüências de caracteres são aceitas
+em um token, especificando caracteres opcionais e o número de repetições aceitos.
+
+Segundo [S.R] as expressões regulares são muito eficientes no que tange a representação ou espe-
+cificação de tokens. Sendo assim neste primeiro momento o uso destas expressões são suficientemente
+boas para podermos representar os tokens que são aceitos pela linguagem em questão.
+
 \subsection{Análise Léxica}
 
-Segundo [AHO, 1995], o analisador léxico é a primeira fase de um compilador. Sua tarefa principal é
+Segundo \cite{AHO1995}, o analisador léxico é a primeira fase de um compilador. Sua tarefa principal é
 a de ler os caracteres de entrada e produzir uma sequência de \textit{tokens} que o \textit{parser}
 utiliza para a análise sintática. Essa interação é comumente implementada fazendo com que o analisador
 léxico seja uma subrotina do \textit{parser}. Ao receber do \textit{parser} um comando 'obter o próximo
@@ -224,9 +257,9 @@ realiza o seu trabalho, verificando se esta sequência pode ser gerada pela gramá
 
 A análise sintática envolve o agrupamento dos \textit{tokens} do programa fonte em frases gramaticais, que são
 usadas pelo compilador, a fim de sintetizar a saída. Usualmente, as frases gramaticais do programa fonte são
-representadas por uma árvore gramatical [AHO, 1995].
+representadas por uma árvore gramatical \cite{AHO1995}.
 
-Já em [Rangel, 1999] temos que a análise sintática deve reconhecer a estrutura global do programa, por exemplo,
+Já em \cite{RANGEL1999} temos que a análise sintática deve reconhecer a estrutura global do programa, por exemplo,
 verificando que programas, comandos, declarações, expressões, etc têm as regras de composição respeitadas.
 
 Vejamos o exemplo:
@@ -243,7 +276,7 @@ Caberia a análise sintática reconhecer a estrutura deste trecho, reconhecendo de
 , que no caso é um \textit{<comando-se>}, composto pela palavra reserva \textit{se}, seguido de uma \textit{<expressão},
 seguida também de uma palavra reservada \textit{entao}, e assim por diante. 
 
-Ainda segundo [Rangel, 1999], quase universalmente, a sintaxe das linguagens de programação é descrita por gramáticas
+Ainda segundo \cite{RANGEL1999}, quase universalmente, a sintaxe das linguagens de programação é descrita por gramáticas
 livres de contexto, em uma notação chamada BNF (\textit{Forma de Backus-Naur} ou ainda \textit{Forma Normal de Backus},
 ou em alguma variante ou extensão dessa notação. Essa notação foi introduzida por volta de 1960, para a descrição da
 linguagem Algol [Naur, 1963].
@@ -254,13 +287,199 @@ muito ineficientes para se usar num compilador de produção. Os métodos mais comu
 são classificados como \textit{top-down} ou \textit{bottom-up}. Como indicado por seus nomes, os analisadores
 sintáticos \textit{top-down} constroem árvores do topo(raiz) para o fundo(folhas), enquanto que os \textit{bottom-up}
 começam pelas folhas e trabalham árvore acima até a raiz. Em ambos os casos, a entrada é varrida da esquerda para
-a direita, um símbolo de cada vez [AHO, 1995]
+a direita, um símbolo de cada vez \cite{AHO1995}
 
 Os métodos de análise sintática mais eficientes, tanto \textit{top-down} quanto \textit{bottom-up}, trabalham
 somente em determinadas subclasses de gramáticas, mas várias dessas subclasses, como as das grámaticas LL e LR, são
 suficientemente expressivas para descrever a maioria das construções sintáticas das linguagens de programação.
 Os analisadores implementados manualmente trabalham frequentemente com gramáticas LL. Os da classe mais ampla
-das gramáticas LR são usualmente contruídos através de ferramentas automatizadas. [AHO, 1995]
+das gramáticas LR são usualmente contruídos através de ferramentas automatizadas. \cite{AHO1995}
+
+\subsubsection{Tratamento dos Erros de Sintaxe}
+
+Seria muito mais fácil e simples se um compilador tivesse que processar apenas programas corretos. No entanto, 
+frequentemente os programadores escrevem programas errados que necessitam ser corrigidos e, um bom compilador
+deve ajudar a encontrá-los. Porém, \cite{AHO1995} cita que a maioria das linguagens de programação não descreve como
+um compilador deveria responder aos erros, deixando tal tarefa para o projetista do compilador. O planejamento
+do tratamento de erros exatamente desde o início poderia tanto simplificar a estrutura de um compilador quanto
+melhorar sua resposta aos erros.
+
+Os programas podem conter erros em níveis diferentes. Por exemplo:
+
+\begin{itemize}
+ \item Léxicos, tais como errar a grafia de um identificador ou palavra-chave
+ \item Sintáticos, tais como uma expressão aritmética com parênteses não fechados
+ \item Lógicos, tais como uma entrada em um \textit{looping} infinito.
+\end{itemize}
+
+Em \cite{AHO1995} temos que boa parte da detecção e recuperação de erros num compilador gira em torno da fase
+de análise sintática. Isto porque os erros ou são sintáticos por natureza ou são expostos quando o fluxo
+de \textit{tokens} proveniente do analisador léxico desobedece às regras gramaticas que definem a linguagem
+de programação. Outra razão está na precisão dos modernos métodos de análise sintática, sendo estes capazes
+de detectar muito eficientemente a presença de erros sintáticos num programa.
+
+Podemos concluir que o tratamento de erros em um analisador sintático tem metas simples de serem estabelecidas:
+
+\begin{itemize}
+ \item Relatar de maneira clara e objetiva qualquer presença de erros
+ \item Recuperar-se o mais rápido possível de algum erro para que assim, possa detectar erros subsequentes
+ \item E por fim, não deve atrasar de maneira significativa o processamento de programas corretos.
+\end{itemize}
+
+Realizar efetivamente tais metas não constitui em uma tarefa fácil.
+
+Felizmente, o que se vê é que os erros frequentes são simples e na maioria das vezes basta um método de tratamento
+de erros relativamente direto. Em alguns casos, porém, pode acontecer de um erro ter ocorrido antes mesmo de
+que sua presença fosse detectada e identificar precisamente a sua natureza pode ser muito difícil. Não é raro
+que em alguns casos difíceis, o tratador de erros tenha que adivinhar a idéia do programador quando o programa
+foi escrito.
+
+Vários métodos de análise sintática, tais como os métodos LL e LR, detectam os erros tão cedo quanto possível.
+Mais precisamente, possuem a \textit{propriedade do prefixo viável}, significando que detectam que um erro
+ocorreu tão logo tenham examinado um prefixo da entrada que não seja o de qualquer cadeia da linguagem.
+
+Com o intuito de se conhecer os tipos de erros que ocorrem na prática, vamos examinar os erros
+que [Ripley e Druseikis, 1978] encontraram em uma amostra de programa Pascal de estudantes.
+
+[Ripley e Druseikis, 1978] descobriram que os erros não ocorrem com tanta frequência. 60\% dos programas compilados
+estavam semântica e sintaticamente corretos. Mesmo quando os erros ocorriam de fato, eram um tanto dispersos. 80\%
+dos enunciados contendo erros possuíam apenas um, 13\% dois. Finalmente, a maioria constituia de erros triviais.
+90\% eram erros em um único \textit{token}.
+
+Ainda segundo [Ripley e Druseikis, 1978], muitos dos erros poderiam ser classificados simplificadamente. 60\% eram
+erros de pontuação, 20\% de operadores e operandos, 15\% de palavras-chave e os 5\% restantes de outros tipos.
+O grosso dos erros de pontuação girava em torno do uso incorreto do ponto e vírgula.
+
+\subsubsection{Gramáticas Livres de Contexto}
+
+Tradicionalmente, gramáticas livres de contexto têm sido utilizadas para realizar a análise sintática de linguagens
+de programação. Nem sempre é possível representar neste tipo de gramática restrições necessárias a algumas
+linguagens -- por exemplo, exigir que todas as variáveis estejam declaradas antes de seu uso ou verificar se os tipos
+envolvidos em uma expressão são compatíveis. Entretanto, há mecanismos que podem ser incorporados às ações durante
+a análise -- por exemplo, interações com tabelas de símbolos -- que permitem complementar a funcionalidade da análise
+sintática.
+
+A principal propriedade que distingüe uma gramática livre de contexto de uma gramática regular é a auto-incorporação.
+Uma gramática livre de contexto que não contenha auto-incorporação pode ser convertida em uma gramática regular.
+
+Segundo [WIRTH, 1996], o termo livre de contexto deve-se a Chomsky
+e indica que a substituição do símbolo à esquerda da
+pela seqüência derivada da direita é sempre permitida, independente do contexto em que o símbolo foi inserido.
+Esta restrição de liberdade de contexto é aceitável e desejável para linguagens de
+programação.
+
+Várias linguagens de programação apresentam estruturas que são por sua natureza recursivas e podem ser definidas
+por gramáticas livres de contexto.
+Podemos dar como exemplo uma declaração condicional definida por uma regra como:
+
+\begin{lstlisting}
+ se E entao
+     S1
+ senao
+     S2
+ fimsenao
+\end{lstlisting}
+
+Tal forma de declaração condicional não pode ser escrita por uma expressão regular. No entanto, utilizando
+uma variável sintática \textit{cmd} com função de atribuir a classe da declaração e \textit{expr} para denotar
+a classe de expressões, pode-se então expressar a declaração condicional como:
+
+\begin{lstlisting}
+ stmt -> se expr então stmt senão stmt fimsenao
+\end{lstlisting}
 
 
+\section{Síntese ou Geração de Código}
+
+Em um compilador a fase final é a geração do código alvo, que consiste em código de montagem ou código
+de máquina relocável. Nesta fase acontece a tradução para a linguagem de máquina da máquina alvo ou para
+a linguagem destino. Algumas das tarefas do gerador de código são:
+
+\begin{itemize}
+ \item Gerenciamento de memória;
+ \item Seleção de instruções;
+ \item Alocação de registradores.
+\end{itemize}
+
+\subsection{Geração de Código Intermediário}
+
+Segundo \cite{AHO1995}, no modelo de análise e síntese de um compilador, os módulos da vanguarda traduzem o programa fonte
+numa representação intermediária, a partir da qual os módulos da retaguarda geram o código alvo. Na medida do
+possível, os detalhes da linguagem alvo são confinados ao máximo nos módulos da retaguarda. Apesar de se poder
+traduzir o programa fonte diretamente na linguagem alvo, alguns dos benefícios em se usar uma forma intermediária
+independente da máquina são:
+
+\begin{itemize}
+ \item O redirecionamento é facilitado: Um compilador para uma máquina diferente pode ser criado atrelando-se
+à vanguarda existente uma retaguarda para a nova máquina.
+ \item Um otimizador de código independente da máquina pode ser aplicado à representação intermediária.
+\end{itemize}
+
+Na figura abaixo vemos a posição do gerador de código intermediário no processo de compilação:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/fig1.jpg}
+ \caption{Posição do gerador de código intermediário \cite{AHO1995}}
+\end{figure}
+
+\subsection{Geração de Código}
+
+A fase final de um compilador é o gerador de código. Este recebe como entrada a representação intermediária
+do programa fonte e produz como saída um programa alvo equivalente, como indicado na figura 1.2. 
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.6]{imagens/fig2.jpg}
+ \caption{Posição do gerador de código intermediário \cite{AHO1995}}
+\end{figure}
+
+As exigências tradicionalmente impostas a um gerador de código são severas. O código de saída precisa ser correto
+e de alta qualidade, significando que o mesmo deve tornar efetivo o uso dos recursos da máquina alvo. Sobretudo,
+o próprio gerador de código deve rodar eficientemente \cite{AHO1995}.
+
+Matematicamente, o problema de se gerar um código ótimo não pode ser solucionado. Na prática, devemos nos contentar
+com técnicas heurísticas que geram um código bom, mas não necessariamente ótimo. A escolha dos métodos heurísticos
+é importante, na medida em que um algoritmo de geração de código cuidadosamente projetado pode produzir um código
+que seja várias vezes mais rápido do que aquele que produzido por um algoritmo concebido às pressas \cite{AHO1995}.
+
+Cabe ao projetista do gerador de código decidir como implementar a geração de código de maneira a fazer bom
+uso dos recursos disponíveis na máquina. Cabe também ao projetista decidir se a geração do código deve ser feita
+com cuidado, gerando diretamente código de qualidade aceitável, ou se é preferível usar um esquema mais simples de
+geração de código, seguido por uma 'otimização' do código depois de gerado \cite{RANGEL1999}.
+
+
+\subsubsection{Entrada para o Gerador de Código}
+
+O gerador de código recebe como entrada a representação intermediária do programa fonte, que foi produzida
+anteriormente pela vanguarda do compilador, em conjunto com informações presentes na tabela de símbolos,
+que tem como finalidade determinar os endereços, em tempo de execução, dos objetos de dados, os quais são
+denotados pelos nomes na representação intermediária.
+
+Assumi-se que a geração prévia de código, a partir da vanguarda do compilador, analisou léxica e sintaticamente
+o programa fonte, bem como o traduziu numa forma razoavelmente detalhada de representação intermediária, de forma
+que os nomes que figuram na linguagem intermediária possam ser representados por quantidades que a máquina alvo
+possa diretamente manipular. Também assumimos que a necessária verificação de tipos já teve lugar, de forma que
+os operadores de conversão de tipo já foram inseridos onde quer que fossem necessários e que os erros semânticos
+óbvios já foram detectados. A fase de geração de código pode, por conseguinte, prosseguir na suposição de que sua
+entrada está livre de erros. Em alguns compiladores, esse tipo de verificação semântica é feito junto com a geração
+de código \cite{AHO1995}.
+
+\subsubsection{Programas Alvo}
+
+A saída do gerador de código é o programa alvo. Como o código intermediário, essa saída pode assumir uma variedade
+de formas: linguagem absoluta de máquina, linguagem relocável de máquina ou linguagem de montagem.
+
+Como saída, a produção de um programa em linguagem absoluta de máquina possui a vantagem do mesmo poder ser carregado
+numa localização fixa de memória e executado imediatamente. Um pequeno programa pode ser compilado e imediatamente
+executado \cite{AHO1995}.
+
+A produção de um programa em linguagem de montagem como saída torna o processo de geração de código um tanto mais
+fácil. Podemos gerar instruções simbólicas e usar as facilidades de processamento de macros do montador para
+auxiliar a geração de código. O preço pago está no passo de montagem após a geração de código. Como a produção
+do código de montagem não duplica toda a tarefa do compilador, essa escolha é outra alternativa razoável,
+especialmente para uma máquina com uma memória pequena, onde o compilador precisa realizar diversas passagens
+\cite{AHO1995}.
+
+\section{Conclusão}
 
