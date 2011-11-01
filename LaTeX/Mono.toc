@@ -15,6 +15,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Gera\c c\~ao de C\'odigo}{13}
 \contentsline {subsubsection}{Entrada para o Gerador de C\'odigo}{13}
 \contentsline {subsubsection}{Programas Alvo}{14}
+\contentsline {section}{\numberline {1.5}Conclus\~ao}{14}
 \contentsline {chapter}{\numberline {2}Portugol}{15}
 \contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{15}
 \contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{15}
@@ -38,4 +39,7 @@
 \contentsline {subsection}{\numberline {2.2.9}Estruturas de Repeti\c c\~ao}{20}
 \contentsline {subsection}{\numberline {2.2.10}Fun\c c\~oes}{21}
 \contentsline {section}{\numberline {2.3}Conclus\~ao}{21}
-\contentsline {chapter}{Refer\^encias}{22}
+\contentsline {chapter}{\numberline {3}Estado da Arte}{22}
+\contentsline {section}{\numberline {3.1}Introdu\c c\~ao}{22}
+\contentsline {section}{\numberline {3.2}Compiladores}{22}
+\contentsline {chapter}{Refer\^encias}{24}
