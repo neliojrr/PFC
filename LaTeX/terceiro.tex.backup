@@ -4,6 +4,16 @@ A contrução de compiladores, bem como o estudo do mesmo é algo antigo que aconte
 visto que desde sempre, fez-se necessário a comunicação com as máquinas e, a evolução dos compiladores e também
 das linguagens de programação se baseou no estudo de técnicas que visavam melhorar tal comunicação.
 
+Posto de forma simples, um compilador é um programa fonte que lê um programa escrito numa linguagem - a linguagem -
+fonte e o traduz em um programa equivalente em uma outra linguagem - a linguagem alvo (como visto na figura abaixo)
+\cite{AHO1995}.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.6]{imagens/fig3.jpg}
+ \caption{Um Compilador \cite{AHO1995}.}
+\end{figure}
+
 \section{Compiladores}
 
 
@@ -15,6 +25,12 @@ rotinas de montagem para facilitar a tarefa de uso das subrotinas e de endereçam
 Maurice V. Wilkes. Para isso foi inventada uma pseudo linguagem de máquina. Uma rotina interpretativa iria processar
 essas instruções, emulando um computador hipotético  [Gol72] [Knu69]. Esse é o sentido do termo 'compilador' até
 aqui usado \cite{Cleuzio2007}.
+
+Nos primórdios dos computadores, programar era uma tarefa extremamente complicada e, de certa forma, extenuante.
+Aos programadores era exigido um conhecimento detalhado das instruções, registos e outros aspectos ligados com 
+a unidade de processamento central (CPU) do computador onde era escrito o código. Os programas consistiam numa série
+de instruções numéricas, denominadas por código binário. Posteriormente, desenvolveram-se algumas mnemónicas que
+resultaram no designado assembly \cite{Abel2000}.
 
 AUTOCODE foi o primeiro 'compilador' real, que tomava uma declaração algébrica e a traduzia em linguagem de máquina.
 Seu desconhecido autor, Alick E. Glennie, das forças armadas da Inglaterra, declarava em Cambridge, em 1953, sua
@@ -39,17 +55,30 @@ grandes compiladores que viriam a partir do ano de 1955 como o FORTRAN e o ALGOL
 notação formal para a descrição sintática de linguagens de programação, denominada BNF, Backus Normal Form
 \cite{Cleuzio2007}.
 
-Nos primórdios dos computadores, programar era uma tarefa extremamente complicada e, de certa forma, extenuante.
-Aos programadores era exigido um conhecimento detalhado das instruções, registos e outros aspectos ligados com 
-a unidade de processamento central (CPU) do computador onde era escrito o código. Os programas consistiam numa série
-de instruções numéricas, denominadas por código binário. Posteriormente, desenvolveram-se algumas mnemónicas que
-resultaram no designado assembly. No período entre 1954-1957 uma equipa de 13 programadores liderados por John Backus
+ No período entre 1954-1957 uma equipa de 13 programadores liderados por John Backus
 desenvolveu uma das primeiras linguagens de alto nível para o computador IBM 704, o FORTRAN (FORmula TRANslation).
 O objetivo deste projecto era produzir uma linguagem de fácil interpretação, mas ao mesmo tempo, com uma eficiência
-idêntica à linguagem assembly [Abel, 2000].
+idêntica à linguagem assembly \cite{Abel2000}.
 
 A linguagem Fortran foi ao mesmo tempo revolucionária e inovadora. Os programadores libertaram-se assim da tarefa
 extenuante de usar a linguagem assembler e passaram a ter oportunidade de se concentrar mais na resolução do problema.
 Mas, talvez mais importante, foi o fato dos computadores passarem a ficar mais acessíveis a qualquer pessoa com
 vontade de despender um esforço mínimo para conhecer a linguagem Fortran. A partir dessa altura, já não era preciso
-ser um especialista em computadores para escrever programas para computador [Abel, 2000].
+ser um especialista em computadores para escrever programas para computador \cite{Abel2000}.
+
+\section{Trabalhos Relacionados}
+
+Existem alguns trabalhos semelhantes a este. Uns mais, outro menos, mas todos com a proposta de colocar um compilador
+disponível de maneira online, apenas através de um navegador. A questão a ser discutida sempre é sobre a proposta
+do trabalho, ou seja, qual o motivo de tê-lo, é isto que muda a perspectiva do trabalho e maneira de implementá-lo.
+Com certeza o projeto que mais se parece com este, o qual tem uma ótima proposta e foi muito bem feito é o
+\textit{CodeSchool}. O ponto que é o difere é a proposta de venda de informação, através de cursos online, sendo
+o compilador uma parte de um todo. Vejamos agora nas seções abaixo alguns trabalhos relacionados.
+
+\subsection{Codepad}
+
+O [codepad, 2011] é um compilador e interpretador online, além de ser uma simples ferramenta de colaboração. Tem 
+a função de \textit{pastebin}* que executa código para o usuário. O usuário cola o código e o [codepad, 2011]
+o compila, dando ao usuário um URL que você pode usar para compartilhar o resultado com outros. O usuário pode
+também, simplesmente, colocar algum código e compilar, quando este não estiver com um compilador instalado em 
+seu computador. O [codepad, 2011] funciona em alguns celulares e \textit{tablets}.
