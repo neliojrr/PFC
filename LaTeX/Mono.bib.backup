@@ -1,7 +1,23 @@
 @book{AHO1995,
  author = {Alfred V. Aho and Ravi Sethi and Jeffrey D. Ullman},
- title = {Compiladores Princípios, Técnicas e Ferramentas},
+ title = {Compilers, Principles, Techniques and Tools},
  year = {1995},
- publisher = {Addison-Wesley},
+ publisher = {Company, Reading},
+ address = {Massachusetts, USA},
  }
 
+@book{RANGEL1999,
+ author = {José Lucas Rangel},
+ title = {Compiladores},
+ year = {1999},
+ publisher = {PUC-Rio},
+ address = {Rio de Janeiro, RJ, Brasil},
+ }
+
+@book{Cleuzio2007,
+ author = {Cléuzio Fonseca Filho},
+ title = {História da Computação},
+ year = {2007},
+ publisher = {EDIPUCRS},
+ address = {Porto Alegre, RS, Brasil},
+ }

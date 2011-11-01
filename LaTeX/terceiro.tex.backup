@@ -6,6 +6,39 @@ das linguagens de programação se baseou no estudo de técnicas que visavam melhor
 
 \section{Compiladores}
 
+
+Conforme Knuth e Trabb  [KP80],  o termo compilador não era ainda utilizado nessa época. Na verdade falava-se
+sobre programação automática. No início da programação em linguagem de máquina foram desenvolvidas subrotinas de uso
+comum para entrada e saída, para aritmética de ponto flutuante e funções  transcendentais. Junto com a idéia de um
+endereçamento realocável - pois tais subrotinas seriam usadas em diferentes partes de um programa - foram criadas
+rotinas de montagem para facilitar a tarefa de uso das subrotinas e de endereçamento relativo, idéia desenvolvida por
+Maurice V. Wilkes. Para isso foi inventada uma pseudo linguagem de máquina. Uma rotina interpretativa iria processar
+essas instruções, emulando um computador hipotético  [Gol72] [Knu69]. Esse é o sentido do termo 'compilador' até
+aqui usado \cite{Cleuzio2007}.
+
+AUTOCODE foi o primeiro 'compilador' real, que tomava uma declaração algébrica e a traduzia em linguagem de máquina.
+Seu desconhecido autor, Alick E. Glennie, das forças armadas da Inglaterra, declarava em Cambridge, em 1953, sua
+motivação para elaborá-lo: 'A dificuldade da programação tornou-se a principal dificuldade para o uso das máquinas.
+Aiken expressou sua opinião dizendo que a solução para esta dificuldade deveria ser buscada pela construção de uma
+máquina especial para codificar(...) Para tornar isso fácil deve-se elaborar um código compreensível. Tal coisa 
+somente pode ser feita melhorando-se a notação da programação' [KP80]. John Backus [Wex80] discute essa distinção
+que Knuth faz, citando J. Halcomb Laning, Jr. e Niel Zierler como os inventores do primeiro 'compilador' algébrico,
+para o computador Whirlwind. Como esta, são muitas as discussões ainda hoje sobre quem foi o pioneiro no assunto.
+De qualquer maneira esses primeiros sistemas denominados genericamente de programação automática (acima citada)
+eram muito lentos e não fizeram muito sucesso, embora tivessem sido fundamentais para preparar a base do 
+desenvolvimento que se seguiu \cite{Cleuzio2007}.
+
+Este veio com o A-0, agora sim o primeiro compilador propriamente dito, desenvolvido por Grace Murray Hopper e
+equipe, aprimorado para A-1 e A-2 subseqüentemente. O próximo passo seria o A-3, desenvolvido em 1955, produzido ao
+mesmo tempo com o tradutor algébrico AT-3, mais tarde chamado MATH-MATIC \cite{Cleuzio2007}.
+
+Em 1952 a IBM construía o computador 701 e em 1953 foi montada uma equipe liderada por John Backus para desenvolver
+um código automático que facilitasse a programação. O resultado foi o Speedcoding. Backus tornou-se uma das principais
+figuras na história da evolução das linguagens de programação, tendo um papel fundamental no desenvolvimento dos
+grandes compiladores que viriam a partir do ano de 1955 como o FORTRAN e o ALGOL, além do estabelecimento da moderna
+notação formal para a descrição sintática de linguagens de programação, denominada BNF, Backus Normal Form
+\cite{Cleuzio2007}.
+
 Nos primórdios dos computadores, programar era uma tarefa extremamente complicada e, de certa forma, extenuante.
 Aos programadores era exigido um conhecimento detalhado das instruções, registos e outros aspectos ligados com 
 a unidade de processamento central (CPU) do computador onde era escrito o código. Os programas consistiam numa série
