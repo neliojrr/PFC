@@ -112,3 +112,69 @@ Na figura abaixo podemos ver a tela inicial do [codepad, 2011]:
 \end{figure}
 
 \subsection{Ideone}
+
+Este é um dos mais completos e robustos compiladores online. Possui uma grande variedade de linguagens suportadas (até
+a data deste trabalho, mais de 40), e inclusive, marcação de sintaxe(\textit{sintax highlight}), funcionando como
+um bom editor de programação. Ele também pode ser utilizado como um \textit{pastebin}, mas é muito mais do que isso, 
+funcionando muitas vezes até como um debugger.
+
+Suas características principais são:
+
+\begin{itemize}
+ \item Compartilhamento de código;
+ \item Compilar código diretamente do navegador em mais de 40 linguagens de programação;
+ \item Possui uma API para que o usuário possa construir seu próprio compilador online;
+ \item Oferece a possibilidade de gerenciar programas já feitos através de um cadastro anterior.
+\end{itemize}
+
+Abaixo a tela do Ideone:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/fig5.jpg}
+ \caption{ideone.com}
+\end{figure}
+
+\subsection{CodeSchool}
+
+Este é mais do que apenas um compilador online, o Code School tem um objetivo diferente. Ele não é apenas um
+campo de texto no qual o usuário digita seu código e tudo é compilado, ele é mais do que isso. O Code School é
+uma plataforma de ensino, no qual o usuário pode ler textos, ver vídeos e programar na prática determinada
+linguagem, facilitando seu aprendizado. Abaixo um trecho dos criadores sobre o Code School:
+
+'A maioria das pessoas não aprendem programação e \textit{design} para a web lendo livros. Aprendizados verdadeiros
+acontecem quando você começa a experimentar o código no navegador e usa conceitos de design em um website.
+Na nossa opinião, a melhor maneira de aprender é fazendo. Code School abre as portas para uma nova maneira de
+aprendizado, combinando vídeos, codificação no navegador e jogos para fazer o aprendizado de uma nova tecnologia
+divertido'.
+
+Code School foi criado pelos cientistas da \textit{Envy Labs}, uma equipe de desenvolvedores de software web.
+Abaixo uma imagem da tela do Code School:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.4]{imagens/fig6.png}
+ \caption{codeschool.com}
+\end{figure}
+
+\subsection{Rails for Zombies}
+
+Este é o mais alternativo de todos acima apresentado. Sua intenção é a de ensinar o \textit{Ruby on Rails} através
+de uma metodologia simples e bem humorada, através de uma interface diferente, com vídeos divertidos e tudo
+muito bem feito. O \textit{Rails for Zombies} foi feito para quem está começando com programação. O usuário
+vai passando por níveis a medida que codifica os exercícios da maneira correta. O seu editor é bem simples e fácil
+de usar e, o compilador, responde de maneira muito rápida.
+
+Este website ficou muito famoso devido a sua técnica utilizada para o ensino e também por causa da velocidade
+que seu compilador apresentava, ficando fácil e rápido escrever o código dentro dele.
+
+Abaixo uma imagem da tela do \textit{Rails for Zombies}:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.8]{imagens/fig7.jpg}
+ \caption{codeschool.com}
+\end{figure}
+
+
+\section{Conclusão}

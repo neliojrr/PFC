@@ -82,3 +82,81 @@ a função de \textit{pastebin}* que executa código para o usuário. O usuário cola
 o compila, dando ao usuário um URL que você pode usar para compartilhar o resultado com outros. O usuário pode
 também, simplesmente, colocar algum código e compilar, quando este não estiver com um compilador instalado em 
 seu computador. O [codepad, 2011] funciona em alguns celulares e \textit{tablets}.
+
+O [codepad, 2011] foi escrito(e ainda é mantido) por Steven Hazel. O site [codepad, 2011] foi escrito em
+\textit{Python}, usando \textit{Pylons} e \textit{SQLAlchemy}.
+
+O [codepad, 2011] possui suporte a várias linguagens. São elas(com seus respectivos compiladores):
+
+\begin{itemize}
+ \item C: gcc 4.1.2
+ \item C++: g++ 4.1.2
+ \item D: Digital Mars D Compiler v1.026
+ \item Haskell: Hugs, Setembro 2006
+ \item Lua: Lua 5.1.3
+ \item OCaml: Objective Caml version 3.10.1
+ \item PHP: PHP 5.2.5
+ \item Perl: Perl v5.8.0
+ \item Python Python 2.5.1
+ \item Ruby: Ruby 1.8.6
+ \item Scheme: MzScheme v372 [cgc]
+ \item Tcl: tclsh 8.4.16
+\end{itemize}
+
+Na figura abaixo podemos ver a tela inicial do [codepad, 2011]:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.4]{imagens/fig4.jpg}
+ \caption{codepad.org}
+\end{figure}
+
+\subsection{Ideone}
+
+Este é um dos mais completos e robustos compiladores online. Possui uma grande variedade de linguagens suportadas (até
+a data deste trabalho, mais de 40), e inclusive, marcação de sintaxe(\textit{sintax highlight}), funcionando como
+um bom editor de programação. Ele também pode ser utilizado como um \textit{pastebin}, mas é muito mais do que isso, 
+funcionando muitas vezes até como um debugger.
+
+Suas características principais são:
+
+\begin{itemize}
+ \item Compartilhamento de código;
+ \item Compilar código diretamente do navegador em mais de 40 linguagens de programação;
+ \item Possui uma API para que o usuário possa construir seu próprio compilador online;
+ \item Oferece a possibilidade de gerenciar programas já feitos através de um cadastro anterior.
+\end{itemize}
+
+Abaixo a tela do Ideone:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/fig5.jpg}
+ \caption{ideone.com}
+\end{figure}
+
+\subsection{CodeSchool}
+
+Este é mais do que apenas um compilador online, o Code School tem um objetivo diferente. Ele não é apenas um
+campo de texto no qual o usuário digita seu código e tudo é compilado, ele é mais do que isso. O Code School é
+uma plataforma de ensino, no qual o usuário pode ler textos, ver vídeos e programar na prática determinada
+linguagem, facilitando seu aprendizado. Abaixo um trecho dos criadores sobre o Code School:
+
+'A maioria das pessoas não aprendem programação e \textit{design} para a web lendo livros. Aprendizados verdadeiros
+acontecem quando você começa a experimentar o código no navegador e usa conceitos de design em um website.
+Na nossa opinião, a melhor maneira de aprender é fazendo. Code School abre as portas para uma nova maneira de
+aprendizado, combinando vídeos, codificação no navegador e jogos para fazer o aprendizado de uma nova tecnologia
+divertido'.
+
+Code School foi criado pelos cientistas da \textit{Envy Labs}, uma equipe de desenvolvedores de software web.
+Abaixo uma imagem da tela do Code School:
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.4]{imagens/fig6.png}
+ \caption{codeschool.com}
+\end{figure}
+
+\section{Rails for Zombies}
+
+Este 

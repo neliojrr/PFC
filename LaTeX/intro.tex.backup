@@ -2,7 +2,7 @@
 Percebe-se também que estes usuários, estão cada vez mais necessitados de que suas ferramentas, 
 antes usadas em seus desktops, fiquem disponíveis online, de prontidão, sempre que se fizer 
 necessário, mesmo estando conectados longe de casa. Fez-se então necessário que o desenvolvimento
-de softwares caminhasse neste mesmo sentido.
+de softwares caminhasse neste mesmo sentido. [carece de fontes]
 
 Um aspecto interessante deste processo a ser analisado são as aplicações que dependem de um compilador, 
 ou seja, programas que quando instalados na máquina sempre fazem uso de um compilador ou então, são eles
@@ -11,7 +11,7 @@ Como iria se comportar tal compilador ao ser usado na internet? Como se daria a 
 compilador? Quais aspectos a serem tratados? E como seria o sistema na web que necessitasse deste compilador?
 
 O objetivo principal deste trabalho é analisar o comportamento de um compilador feito para a 
-linguagem Portugol, trabalhando sob um sistema de progamação na Web. A proposta é fazer
+linguagem Portugol[fontes], trabalhando sob um sistema de progamação na Web. A proposta é fazer
 um estudo detalhado da implementação deste compilador, tendo assim uma base sólida para o desenvolvimento
 do mesmo, visando na prática tirar conclusões à respeito das técnicas utilizadas.
 

@@ -2,44 +2,46 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: Mono.aux
 The style file: apalike.bst
 Database file #1: Mono.bib
-You've used 4 entries,
+Warning--empty publisher in Rosen1967
+You've used 11 entries,
             1935 wiz_defined-function locations,
-            497 strings with 4141 characters,
-and the built_in function-call counts, 1195 in all, are:
-= -- 108
-> -- 39
-< -- 3
-+ -- 12
-- -- 12
-* -- 81
-:= -- 226
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 22
-chr.to.int$ -- 4
-cite$ -- 4
-duplicate$ -- 56
-empty$ -- 93
-format.name$ -- 16
-if$ -- 231
+            538 strings with 4862 characters,
+and the built_in function-call counts, 3264 in all, are:
+= -- 297
+> -- 105
+< -- 9
++ -- 38
+- -- 32
+* -- 224
+:= -- 606
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 60
+chr.to.int$ -- 11
+cite$ -- 12
+duplicate$ -- 154
+empty$ -- 254
+format.name$ -- 45
+if$ -- 633
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 8
-newline$ -- 23
-num.names$ -- 12
-pop$ -- 32
+missing$ -- 22
+newline$ -- 58
+num.names$ -- 33
+pop$ -- 87
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 71
 quote$ -- 0
-skip$ -- 40
+skip$ -- 109
 stack$ -- 0
-substring$ -- 48
-swap$ -- 4
+substring$ -- 138
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
-warning$ -- 0
-while$ -- 8
+type$ -- 44
+warning$ -- 1
+while$ -- 22
 width$ -- 0
-write$ -- 53
+write$ -- 142
+(There was 1 warning)

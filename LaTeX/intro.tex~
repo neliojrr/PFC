@@ -2,7 +2,7 @@
 Percebe-se também que estes usuários, estão cada vez mais necessitados de que suas ferramentas, 
 antes usadas em seus desktops, fiquem disponíveis online, de prontidão, sempre que se fizer 
 necessário, mesmo estando conectados longe de casa. Fez-se então necessário que o desenvolvimento
-de softwares caminhasse neste mesmo sentido. [carece de fontes]
+de softwares caminhasse neste mesmo sentido.
 
 Um aspecto interessante deste processo a ser analisado são as aplicações que dependem de um compilador, 
 ou seja, programas que quando instalados na máquina sempre fazem uso de um compilador ou então, são eles
@@ -11,12 +11,12 @@ Como iria se comportar tal compilador ao ser usado na internet? Como se daria a 
 compilador? Quais aspectos a serem tratados? E como seria o sistema na web que necessitasse deste compilador?
 
 O objetivo principal deste trabalho é analisar o comportamento de um compilador feito para a 
-linguagem Portugol[fontes], trabalhando sob um sistema de progamação na Web. A proposta é fazer
- um estudo detalhado da implementação deste compilador, tendo assim uma base sólida para o desenvolvimento
- do mesmo, visando na prática tirar conclusões à respeito das técnicas utilizadas.
+linguagem Portugol, trabalhando sob um sistema de progamação na Web. A proposta é fazer
+um estudo detalhado da implementação deste compilador, tendo assim uma base sólida para o desenvolvimento
+do mesmo, visando na prática tirar conclusões à respeito das técnicas utilizadas.
 
 Este trabalho também tem como objetivo desenvolver uma aplicação Web que irá utilizar o compilador.
- A aplicação será um editor o qual o usuário fará seus programas em Portugol, tendo de imediato a 
+A aplicação será um editor o qual o usuário fará seus programas em Portugol, tendo de imediato a 
 resposta do compilador. A intenção é analisar como irá se comportar o compilador, bem como, 
 verificar a viabilidade de uso de tal aplicação, ao se implementar utilizando as técnicas descritas 
 ao longo deste trabalho. A aplicação terá um caráter educativo, no qual o usuário fará programas e, 
@@ -40,3 +40,5 @@ No capítulo 5 é abordado todo o processo de testes, além de ser realizado uma an
 Por fim há uma conclusão do trabalho realizado, levantando os objetivos alcançados, pontos positivos, 
 pontos negativos, dificuldades e trabalhos futuros.
 
+Ainda é possível encontrar o código fonte do compilador e da aplicação Web criada, além de toda a documentação
+ de testes elaborada no apêndice desta monografia.

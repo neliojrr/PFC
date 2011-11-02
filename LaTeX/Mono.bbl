@@ -5,6 +5,18 @@ Aho, A.~V., Sethi, R., and Ullman, J.~D. (1995).
 \newblock {\em Compilers, Principles, Techniques and Tools}.
 \newblock Company, Reading, Massachusetts, USA.
 
+\bibitem[Backus, 1957]{Backus1957}
+Backus, J.~W. (1957).
+\newblock {\em The FORTRAN Automatic Coding System}.
+\newblock Western joint computer conference: Techniques for reliability, Los
+  Angeles, California, USA.
+
+\bibitem[Farrer, 1999]{Farrer1999}
+Farrer, H. (1999).
+\newblock {\em Algoritmos Estruturados: Programação Estruturada de
+  Computadores}.
+\newblock LTC - GRUPO GEN.
+
 \bibitem[Filho, 2007]{Cleuzio2007}
 Filho, C.~F. (2007).
 \newblock {\em História da Computação}.
@@ -15,9 +27,34 @@ Henriques, A. A.~R. (2000).
 \newblock {\em Breve história da linguagem Fortran}.
 \newblock Disponível em: http://paginas.fe.up.pt/~aarh/pc/PC-capitulo2.pdf.
 
+\bibitem[Naur, 1963]{Naur1963}
+Naur, P. (1963).
+\newblock {\em Revised report on the algorithmic language Algol 60}.
+\newblock Comm. ACM, USA.
+
 \bibitem[Rangel, 1999]{RANGEL1999}
 Rangel, J.~L. (1999).
 \newblock {\em Compiladores}.
 \newblock PUC-Rio, Rio de Janeiro, RJ, Brasil.
+
+\bibitem[Ripley and Druseikis, 1978]{Ripley1978}
+Ripley, G. and Druseikis, F. (1978).
+\newblock {\em A Statistical Analysis of Syntax Errors}.
+\newblock J. Computer Languages, Vol. 3, USA.
+
+\bibitem[Rosen, 1967]{Rosen1967}
+Rosen, S. (1967).
+\newblock {\em Programming Systems and Languages}.
+\newblock USA.
+
+\bibitem[Ullman et~al., 1977]{Ullman1977}
+Ullman, J.~D., Aho, A.~V., and Sethi, R. (1977).
+\newblock {\em Compilers, Principles, Techniques and Tools}.
+\newblock Company, Reading, Firs Edition, Massachusetts, USA.
+
+\bibitem[Wirth, 1996]{Wirth1996}
+Wirth, N. (1996).
+\newblock {\em A Statistical Analysis of Syntax Errors}.
+\newblock Addison-Wesley Pub, Zurich, Suiça.
 
 \end{thebibliography}

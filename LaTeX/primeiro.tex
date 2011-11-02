@@ -14,7 +14,7 @@ de erros no programa origem.
 
 Ao longo dos anos 50, os compiladores foram considerados programas notoriamente
 difíceis de escrever. O primeiro compilador Fortran, por exemplo, consumiu
-18-homens ano para implementar[Backus, 1957]. Desde então, foram descobertas
+18-homens ano para implementar \cite{Backus1957}. Desde então, foram descobertas
 técnicas sistemáticas para o tratamento de muitas das mais importantes
 tarefas desenvolvidas por um compilador.
 
@@ -33,7 +33,7 @@ A grande maioria dos compiladores de hoje fazem uso da técnica chamada: \textit{
 dirigida pela sintaxe}. Nesta técnica as regras de contrução do programa fonte são utilizadas
 para guiar todo o processo de compilação.
 Algumas das técnicas mais antigas utilizadas na contrução dos primeiros compiladores (da
-linguagem Fortran) pode ser obtido em [Rosen, 1967].
+linguagem Fortran) pode ser obtido em \cite{Rosen1967}.
 
 \section{Modelo de Compilação de Análise e Síntese}
 
@@ -47,7 +47,7 @@ examinado, verificado e compreendido
 (na linguagem objeto) é gerado, de forma a corresponder ao texto de entrada.
 \end{itemize}
 
-Em [Aho, 1995], \textit{análise} é colocada como uma tarefa que divide o programa
+Em \cite{AHO1995}, \textit{análise} é colocada como uma tarefa que divide o programa
 fonte nas partes constituintes e cria uma representação intermediária do mesmo. E
 \textit{síntese} constrói o programa alvo desejado, a partir da representação intermediária.
 
@@ -77,13 +77,17 @@ necessariamente toda a informação para a geração do código objeto. Uma das carac
 representação intermediária é que as estruturas de dados implementadas devem dar garantia de 
 acesso eficiente as informações.
 
-Imagem - Rangel[1999]
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/fig0.jpg}
+ \caption{Estrutura do Compilador \cite{RANGEL1999}}
+\end{figure}
 
 Segundo \cite{RANGEL1999}, uma das formas mais comuns de tabela utilizada nessa representação
 intermediária é a \textit{tabela de símbolos}, em que se guarda para cada identificador(\textit{símbolo})
 usado no programa as informações correspondentes.
 
-Há também um modelo possível em [Ullman, 1977], o qual se faz a separação total entre o \textit{front-end},
+Há também um modelo possível em \cite{Ullman1977}, o qual se faz a separação total entre o \textit{front-end},
 encarregado da fase de análise, e o \textit{back-end}, encarregado pela geração de código.
 Com isso tem-se que:
 
@@ -190,11 +194,11 @@ léxico seja uma subrotina do \textit{parser}. Ao receber do \textit{parser} um c
 \textit{token}', o analisador léxico lê os caracteres de entrada até que possa identificar o próximo
 \textit{token}.
 
-Já em [Ullman, 1977], vemos que a análise léxica é responsável por separar e identificar os elementos componentes
+Já em \cite{Ullman1977}, vemos que a análise léxica é responsável por separar e identificar os elementos componentes
 do código fonte. A análise léxica também elimina os elementos considerados 'decorativos' ou mesmo desnecessários
 para este processo, tais como espaços em branco, marcas de formatação de texto e comentários.
 
-Em [Rangel, 1995] temos o seguinte exemplo em Pascal:
+Em \cite{RANGEL1999} temos o seguinte exemplo em Pascal:
 
 \begin{lstlisting}
  if x > 0 then        {x e' positivo}
@@ -279,7 +283,7 @@ seguida também de uma palavra reservada \textit{entao}, e assim por diante.
 Ainda segundo \cite{RANGEL1999}, quase universalmente, a sintaxe das linguagens de programação é descrita por gramáticas
 livres de contexto, em uma notação chamada BNF (\textit{Forma de Backus-Naur} ou ainda \textit{Forma Normal de Backus},
 ou em alguma variante ou extensão dessa notação. Essa notação foi introduzida por volta de 1960, para a descrição da
-linguagem Algol [Naur, 1963].
+linguagem Algol \cite{Naur1963}.
 
 Existem três tipos gerais de analisadores sintáticos. Os métodos universais de análise sintática, tais como o algoritmo
 de \textit{Cocke-Younger-Casami} e o de \textit{Earley}, podem tratar qualquer gramática. Esses métodos, entretanto, são
@@ -339,14 +343,14 @@ Mais precisamente, possuem a \textit{propriedade do prefixo viável}, significand
 ocorreu tão logo tenham examinado um prefixo da entrada que não seja o de qualquer cadeia da linguagem.
 
 Com o intuito de se conhecer os tipos de erros que ocorrem na prática, vamos examinar os erros
-que [Ripley e Druseikis, 1978] encontraram em uma amostra de programa Pascal de estudantes.
+que \cite{Ripley1978} encontraram em uma amostra de programa Pascal de estudantes.
 
-[Ripley e Druseikis, 1978] descobriram que os erros não ocorrem com tanta frequência. 60\% dos programas compilados
+\cite{Ripley1978} descobriram que os erros não ocorrem com tanta frequência. 60\% dos programas compilados
 estavam semântica e sintaticamente corretos. Mesmo quando os erros ocorriam de fato, eram um tanto dispersos. 80\%
 dos enunciados contendo erros possuíam apenas um, 13\% dois. Finalmente, a maioria constituia de erros triviais.
 90\% eram erros em um único \textit{token}.
 
-Ainda segundo [Ripley e Druseikis, 1978], muitos dos erros poderiam ser classificados simplificadamente. 60\% eram
+Ainda segundo \cite{Ripley1978}, muitos dos erros poderiam ser classificados simplificadamente. 60\% eram
 erros de pontuação, 20\% de operadores e operandos, 15\% de palavras-chave e os 5\% restantes de outros tipos.
 O grosso dos erros de pontuação girava em torno do uso incorreto do ponto e vírgula.
 
@@ -362,7 +366,7 @@ sintática.
 A principal propriedade que distingüe uma gramática livre de contexto de uma gramática regular é a auto-incorporação.
 Uma gramática livre de contexto que não contenha auto-incorporação pode ser convertida em uma gramática regular.
 
-Segundo [WIRTH, 1996], o termo livre de contexto deve-se a Chomsky
+Segundo \cite{Wirth1996}, o termo livre de contexto deve-se a Chomsky
 e indica que a substituição do símbolo à esquerda da
 pela seqüência derivada da direita é sempre permitida, independente do contexto em que o símbolo foi inserido.
 Esta restrição de liberdade de contexto é aceitável e desejável para linguagens de
@@ -483,3 +487,10 @@ especialmente para uma máquina com uma memória pequena, onde o compilador precis
 
 \section{Conclusão}
 
+A história dos compiladores se confunde com a história da computação, visto que esta é a maneira de se comunicar
+com os computadores de maneira fácil e eficiente. A medida que a tecnologia vai avançando os computadores também
+o vão, bem como as técnicas e ferramentas utilizadas na construção do mesmo.
+
+É fato então que os compiladores são ferramentas muito importantes para o mundo da computação e, seu estudo se faz
+necessário, visto a grande necessidade que temos hoje - devido ao aumento dos inúmeros dispositivos tecnológicos e 
+das linguagens de programação - de comunicação com os computadores.
