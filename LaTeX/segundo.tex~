@@ -5,13 +5,13 @@ linguagem de aprendizado, voltada para o ensino e não para projetos de
 grande porte. Algumas vezes é somente uma tradução simplificada de Pascal
 para o português.
 
-O Portugol aqui definido será baseado em [Farrer, ]. O Livro utilizado para
-o estudo de algoritmos e de introdução a programação, é perfeito para
+O Portugol aqui definido é baseado em \cite{Farrer1999}. O Livro utilizado para
+o estudo de algoritmos e de introdução a programação é perfeito para
 este trabalho. O compilador desenvolvido, bem como o sistema Web, visa estudar
 como o processo de compilação online se dará, sendo necessário uma linguagem
 simples que não tome o foco do objetivo principal.
 
-Nas seções subsequentes veremos como o portugol foi proposto para este compilador.
+Nas seções subsequentes é possível ver como o portugol foi proposto para este compilador.
 Suas características, sua sintaxe e a estrutura da linguagem.
 
 \section{Estrutura da Linguagem}
@@ -202,15 +202,15 @@ Os Operadores são:
 \hline
 Igualdade & =\\
 \hline
-Maior & >\\
+Maior & $>$\\
 \hline
-Menor & <\\
+Menor & $<$\\
 \hline
-Maior ou Igual & >=\\
+Maior ou Igual & $\geq$\\
 \hline
-Menor ou Igual& <=\\
+Menor ou Igual& $\leq$\\
 \hline
-Diferença& != ou <>\\
+Diferença& != ou $<>$\\
 \hline
 \end{tabular}
 \end{center}
@@ -232,15 +232,15 @@ Concatenação & +\\
 \hline
 Igualdade & =\\
 \hline
-Maior & >\\
+Maior & $>$\\
 \hline
-Menor & <\\
+Menor & $<$\\
 \hline
-Maior ou Igual & >=\\
+Maior ou Igual & $\geq$\\
 \hline
-Menor ou Igual& <=\\
+Menor ou Igual& $\leq$\\
 \hline
-Diferença& != ou <>\\
+Diferença& != ou $<>$\\
 \hline
 \end{tabular}
 \end{center}

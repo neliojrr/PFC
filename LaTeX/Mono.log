@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.5.24)  2 NOV 2011 01:44
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.5.24)  10 NOV 2011 07:34
 entering extended mode
  %&-line parsing enabled.
 **Mono.tex
@@ -261,7 +261,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
 
-Overfull \hbox (22.54823pt too wide) in paragraph at lines 67--74
+Overfull \hbox (22.54823pt too wide) in paragraph at lines 69--76
 \OT1/cmr/m/n/12 Quase sem-pre, essa re-pre-senta^^Xc~ao (co-nhe-cida como \OT1/
 cmr/m/it/12 re-pre-senta^^Xc~ao in-ter-medi^^Saria\OT1/cmr/m/n/12 [[]])
  []
@@ -270,93 +270,170 @@ cmr/m/it/12 re-pre-senta^^Xc~ao in-ter-medi^^Saria\OT1/cmr/m/n/12 [[]])
 File: imagens/fig0.jpg Graphic file (type jpg)
  <use imagens/fig0.jpg>
 [5 <./imagens/fig0.jpg>] [6] [7]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 204.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 206.
 
  (/usr/share/texmf/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 204.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 206.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 204.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
 
 [8] [9] [10]
-Overfull \hbox (8.87195pt too wide) in paragraph at lines 348--352
+Overfull \hbox (8.87195pt too wide) in paragraph at lines 355--359
 []\OT1/cmr/m/n/12 [[]] des-co-bri-ram que os er-ros n~ao ocor-rem com tanta fre
 qu^encia.
  []
 
 
-Overfull \hbox (8.60953pt too wide) in paragraph at lines 366--368
+Overfull \hbox (8.60953pt too wide) in paragraph at lines 373--375
 []\OT1/cmr/m/n/12 A prin-ci-pal pro-pri-e-dade que dis-ting^^?ue uma gram^^Sati
 ca li-vre de con-texto de uma gram^^Satica
  []
 
-[11] <imagens/fig1.jpg, id=77, 710.655pt x 123.46124pt>
+[11] [12] <imagens/fig1.jpg, id=81, 710.655pt x 123.46124pt>
 File: imagens/fig1.jpg Graphic file (type jpg)
- <use imagens/fig1.jpg>
-[12] <imagens/fig2.jpg, id=81, 752.8125pt x 228.855pt>
+
+<use imagens/fig1.jpg> <imagens/fig2.jpg, id=82, 752.8125pt x 228.855pt>
 File: imagens/fig2.jpg Graphic file (type jpg)
- <use imagens/fig2.jpg>
-[13 <./imagens/fig1.jpg> <./imagens/fig2.jpg>] [14]) [15]
+
+<use imagens/fig2.jpg> [13 <./imagens/fig1.jpg> <./imagens/fig2.jpg>] [14])
+[15]
 Cap\'{\i }tulo 2.
 (./segundo.tex [16
 
 ] [17] [18] [19] [20] [21]) [22]
 Cap\'{\i }tulo 3.
-(./terceiro.tex <imagens/fig3.jpg, id=115, 439.6425pt x 156.585pt>
+(./terceiro.tex <imagens/fig3.jpg, id=116, 439.6425pt x 156.585pt>
 File: imagens/fig3.jpg Graphic file (type jpg)
 
 <use imagens/fig3.jpg> [23
 
  <./imagens/fig3.jpg>] [24] [25]
-<imagens/fig4.jpg, id=125, 1370.11874pt x 531.9875pt>
+<imagens/fig4.jpg, id=126, 1370.11874pt x 531.9875pt>
 File: imagens/fig4.jpg Graphic file (type jpg)
  <use imagens/fig4.jpg>
-Overfull \hbox (92.79372pt too wide) in paragraph at lines 110--111
+Overfull \hbox (92.79372pt too wide) in paragraph at lines 117--118
  [][] 
  []
 
-
-Overfull \hbox (5.09003pt too wide) in paragraph at lines 125--126
+[26 <./imagens/fig4.jpg>]
+Overfull \hbox (5.09003pt too wide) in paragraph at lines 135--136
 []\OT1/cmr/m/n/12 Compilar c^^Sodigo di-re-ta-mente do na-ve-ga-dor em mais de 
 40 lin-gua-gens de pro-grama^^Xc~ao; 
  []
 
-[26 <./imagens/fig4.jpg>]
-<imagens/fig5.jpg, id=129, 1010.77625pt x 583.17876pt>
+<imagens/fig5.jpg, id=130, 1010.77625pt x 583.17876pt>
 File: imagens/fig5.jpg Graphic file (type jpg)
  <use imagens/fig5.jpg>
-Overfull \hbox (50.1428pt too wide) in paragraph at lines 134--135
+Overfull \hbox (50.1428pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-[27 <./imagens/fig5.jpg>] <imagens/fig6.png, id=134, 1027.84pt x 767.86874pt>
+[27 <./imagens/fig5.jpg>] <imagens/fig6.png, id=135, 1027.84pt x 767.86874pt>
 File: imagens/fig6.png Graphic file (type png)
 
-<use imagens/fig6.png> <imagens/fig7.jpg, id=135, 383.93437pt x 279.29344pt>
+<use imagens/fig6.png> [28 <./imagens/fig6.png>]
+<imagens/fig7.jpg, id=140, 383.93437pt x 279.29344pt>
 File: imagens/fig7.jpg Graphic file (type jpg)
+ <use imagens/fig7.jpg>)
+[29 <./imagens/fig7.jpg>]
+Cap\'{\i }tulo 4.
+(./quarto.tex
+Overfull \hbox (10.572pt too wide) in paragraph at lines 17--20
+[]\OT1/cmr/m/n/12 O com-pi-la-dor foi cri-ado uti-li-zando a lin-gua-gem C++, v
+isto que tal lin-gua-gem apresentou-
+ []
 
-<use imagens/fig7.jpg>) [28 <./imagens/fig6.png>] [29 <./imagens/fig7.jpg>]
-(./Mono.bbl) [30] (./Mono.aux) ) 
+[30
+
+] <imagens/fig10.jpg, id=147, 298.11375pt x 334.24875pt>
+File: imagens/fig10.jpg Graphic file (type jpg)
+
+<use imagens/fig10.jpg> <imagens/fig11.jpg, id=148, 425.59pt x 108.405pt>
+File: imagens/fig11.jpg Graphic file (type jpg)
+
+<use imagens/fig11.jpg> [31] [32 <./imagens/fig10.jpg> <./imagens/fig11.jpg>]
+<imagens/tela1.jpg, id=155, 1371.1225pt x 513.92pt>
+File: imagens/tela1.jpg Graphic file (type jpg)
+ <use imagens/tela1.jpg>
+Overfull \hbox (24.65599pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+[33 <./imagens/tela1.jpg>]
+<imagens/tela2.jpg, id=160, 1371.1225pt x 625.33624pt>
+File: imagens/tela2.jpg Graphic file (type jpg)
+ <use imagens/tela2.jpg>
+Overfull \hbox (24.65599pt too wide) in paragraph at lines 125--126
+ [][] 
+ []
+
+<imagens/tela3.jpg, id=161, 1371.1225pt x 549.05125pt>
+File: imagens/tela3.jpg Graphic file (type jpg)
+ <use imagens/tela3.jpg>
+Overfull \hbox (24.65599pt too wide) in paragraph at lines 138--139
+ [][] 
+ []
+
+<imagens/tela4.jpg, id=162, 1370.11874pt x 556.0775pt>
+File: imagens/tela4.jpg Graphic file (type jpg)
+ <use imagens/tela4.jpg>
+Overfull \hbox (24.30467pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+<imagens/tela5.jpg, id=163, 1371.1225pt x 516.93124pt>
+File: imagens/tela5.jpg Graphic file (type jpg)
+ <use imagens/tela5.jpg>
+Overfull \hbox (24.65599pt too wide) in paragraph at lines 154--155
+ [][] 
+ []
+
+<imagens/tela6.jpg, id=164, 1367.1075pt x 542.025pt>
+File: imagens/tela6.jpg Graphic file (type jpg)
+ <use imagens/tela6.jpg>
+Overfull \hbox (23.25072pt too wide) in paragraph at lines 164--165
+ [][] 
+ []
+
+[34 <./imagens/tela2.jpg>]
+
+LaTeX Warning: Text page 35 contains only floats.
+
+[35 <./imagens/tela3.jpg> <./imagens/tela4.jpg> <./imagens/tela5.jpg>]
+<imagens/tela7.jpg, id=171, 1369.115pt x 522.95375pt>
+File: imagens/tela7.jpg Graphic file (type jpg)
+ <use imagens/tela7.jpg>
+Overfull \hbox (23.95335pt too wide) in paragraph at lines 175--176
+ [][] 
+ []
+
+) [36 <./imagens/tela6.jpg> <./imagens/tela7.jpg>]
+Cap\'{\i }tulo 5.
+(./quinto.tex) [37
+
+] (./Mono.bbl) [38] (./Mono.aux) ) 
 Here is how much of TeX's memory you used:
- 4013 strings out of 256216
- 50460 string characters out of 1917072
+ 4073 strings out of 256216
+ 51505 string characters out of 1917072
  126035 words of memory out of 1500000
- 7214 multiletter control sequences out of 10000+200000
+ 7259 multiletter control sequences out of 10000+200000
  13583 words of font info for 52 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 37i,7n,40p,242b,1617s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/font
-s/type1/bluesky/cm/cmbxti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts
-/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb
-></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmti12.pfb>
-Output written on Mono.pdf (40 pages, 973212 bytes).
+ 37i,8n,40p,242b,1617s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx
+10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fo
+nts/type1/bluesky/cm/cmbxti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi
+10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fo
+nts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.p
+fb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/
+type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb
+>
+Output written on Mono.pdf (48 pages, 2778111 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

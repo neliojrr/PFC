@@ -21,7 +21,7 @@ tarefas desenvolvidas por um compilador.
 A variedade de compiladores nos dias de hoje é muito grande. Existem inúmeras
 linguagens fontes, as quais poderiam ser citadas em várias páginas deste trabalho. Isso
 se deve principalmente ao fato de que com o aumento do uso dos computadores, aumentou
-também, as necessidades de cada indivíduo, sendo estas específicas, exigindo por sua vez
+também, as necessidades de cada indivíduo, sendo essas específicas, exigindo por sua vez
 linguagens de programação diferentes. Este processo --- juntamente com
 a evolução da tecnologia de desenvolvimento de compiladores --- levou à criação de várias
 técnicas diferentes para a construção de um compilador, ou seja, passou a existir
@@ -30,10 +30,10 @@ aparente complexidade, as tarefas básicas que qualquer compilador precisa realiz
 são essencialmente as mesmas.
 
 A grande maioria dos compiladores de hoje fazem uso da técnica chamada: \textit{tradução
-dirigida pela sintaxe}. Nesta técnica as regras de contrução do programa fonte são utilizadas
+dirigida pela sintaxe}. Nessa técnica as regras de contrução do programa fonte são utilizadas
 para guiar todo o processo de compilação.
 Algumas das técnicas mais antigas utilizadas na contrução dos primeiros compiladores (da
-linguagem Fortran) pode ser obtido em \cite{Rosen1967}.
+linguagem Fortran) podem ser obtidas em \cite{Rosen1967}.
 
 \section{Modelo de Compilação de Análise e Síntese}
 
@@ -42,19 +42,21 @@ por um compilador nesse processo de tradução:
 
 \begin{itemize}
  \item \textit{análise}, em que o texto de entrada (na linguagem fonte) é 
-examinado, verificado e compreendido
+examinado, verificado e compreendido;
  \item \textit{síntese}, ou \textit{geração de código}, em que o texto de saída 
 (na linguagem objeto) é gerado, de forma a corresponder ao texto de entrada.
 \end{itemize}
 
-Em \cite{AHO1995}, \textit{análise} é colocada como uma tarefa que divide o programa
-fonte nas partes constituintes e cria uma representação intermediária do mesmo. E
+Em \cite{AHO1995}, a \textit{análise} é colocada como uma tarefa que divide o programa
+fonte nas partes constituintes e cria uma representação intermediária do mesmo. A
 \textit{síntese} constrói o programa alvo desejado, a partir da representação intermediária.
 
 Geralmente, pensamos nessas tarefas como fases que ocorram durante o processo de
  compilação. No entanto, não se faz totalmente necessário que a análise de todo 
 o programa seja realizada antes que o primeiro trecho de código objeto seja gerado. 
-Ou seja, estas duas fases podem ser intercaladas. Por exemplo, o compilador pode 
+Ou seja, estas duas fases podem ser intercaladas. 
+
+Pode-se ter como exemplo que o compilador pode
 analisar cada comando do programa de entrada e então gerar de imediato o código 
 de saída correspondente ao respectivo comando. Ou ainda, o compilador pode esperar 
 pelo fim da análise de cada bloco de comando --- ou unidade de rotina 
@@ -92,15 +94,15 @@ encarregado da fase de análise, e o \textit{back-end}, encarregado pela geração 
 Com isso tem-se que:
 
 \begin{itemize}
- \item front-end e back-end se comunicam apenas da representação intermediária;
- \item o front-end depende exclusivamente da linguagem fonte
- \item o back-end depende exclusivamente da linguagem objeto.
+ \item \textit{frontend} e \textit{backend} se comunicam apenas da representação intermediária;
+ \item o \textit{frontend} depende exclusivamente da linguagem fonte
+ \item o \textit{backend} depende exclusivamente da linguagem objeto.
 \end{itemize}
 
 Essa idéia tem como objetivo simplificar a implementação de diferentes linguagens de programação para
-diferentes máquinas. Basta-se então escrever um front-end para cada linguagem e um back-end para cada
+diferentes máquinas. Basta-se então escrever um \textit{frontend} para cada linguagem e um \textit{backend} para cada
 máquina. Ou seja, se deseja implementar \textit{x} linguagens para \textit{y} máquinas, precisa-se fazer
-\textit{x} front-ends e \textit{y} back-ends. Este esquema se torna mais fácil de aplicar quando há
+\textit{x} \textit{frontends} e \textit{y} \textit{backends}. Esse esquema se torna mais fácil de aplicar quando há
 semelhança entre as máquinas e o mesmo acontece com as linguagens.
 
 \section{Análise}
@@ -117,7 +119,7 @@ significado\cite{RANGEL1999}
 somente os programas corretos pertencem à linguagem, não havendo interesse nos programas incorretos.
 O fato é que um programa ou é da linguagem (está correto) ou não é da linguagem (está incorreto).
 No entanto, em se tratando de prática, no momento em que decide-se que um programa está incorreto,
-um bom compilador deverá ser capaz de avisar sobre tal erro e de alguma forma, ajudar o usuário
+um bom compilador deve ser capaz de avisar sobre tal erro e de alguma forma, ajudar o usuário
 a corrigí-lo. Se faz necessário que o tratamento de erros inclua mensagens informativas e
 uma recuperação, para que a análise possa continuar e assim outros erros sejam sinalizados.
 
@@ -162,7 +164,7 @@ na maioria delas, as seguintes construções são tratadas como \textit{tokens}: pa
 identificadores, constantes, cadeias, literais(\textit{strings}), e símbolos de pontuação como parênteses,
 vírgulas e pontos.
 
-Padrão(\textit{pattern} constitui-se em uma regra que define o conjunto de lexemas representam um \textit{token}
+Padrão (\textit{pattern} constitui-se em uma regra que define o conjunto de lexemas representam um \textit{token}
 na linguagem. Normalmente tais regras são descritas na forma de expressões regulares.
 
 Lexemas são sequências de caracteres descritas por um padrão de um \textit{token}. Lexema é então o valor do
@@ -173,17 +175,17 @@ para produzir significado.
 \subsection{Expressões Regulares}
 
 Como já foi dito a análise léxica é responsável por gerar uma lista de tokens tendo como base
-o código fonte original. Desta forma um meio de representarmos o que a linguagem aceita, ou não,
+o código fonte original. Dessa forma um meio de representarmos o que a linguagem aceita, ou não,
 pode ser neste primeiro passo de abstração representado através de Expressões Regulares.
 
-Expressões regulares são uma forma muito interessante de descrever
+Expressões Regulares são uma forma muito interessante de descrever
 padrões, especialmente aqueles que consistem em cadeias de caracteres. Através
 destas expressões podemos especificar que seqüências de caracteres são aceitas
 em um token, especificando caracteres opcionais e o número de repetições aceitos.
 
-Segundo [S.R] as expressões regulares são muito eficientes no que tange a representação ou espe-
-cificação de tokens. Sendo assim neste primeiro momento o uso destas expressões são suficientemente
-boas para podermos representar os tokens que são aceitos pela linguagem em questão.
+Segundo \cite{Rigo2008} as Expressões Regulares são muito eficientes no que tange a representação ou especificação de tokens.
+Sendo assim neste primeiro momento o uso destas expressões são suficientemente boas para podermos representar os tokens
+que são aceitos pela linguagem em questão.
 
 \subsection{Análise Léxica}
 
@@ -209,8 +211,10 @@ Em \cite{RANGEL1999} temos o seguinte exemplo em Pascal:
 
 Após a análise léxica, a sequência de \textit{tokens} identificadas é:
 
+\begin{table}
 \begin{center}
 \begin{tabular}{cc}
+
 \hline
 \textbf{Tipo do \textit{token}} & \textbf{Valor do \textit{token}}\\
 \hline
@@ -218,7 +222,7 @@ palavra reservada if & if\\
 \hline
 identificador x & x\\
 \hline
-operador maior & >\\
+operador maior & $>$\\
 \hline
 literal numérico & 0\\
 \hline
@@ -245,28 +249,31 @@ identificador & x\\
 delimitador fecha parenteses & )\\
 \hline
 \end{tabular}
+\caption{Sequência de \textit{tokens} identificados após a análise}
 \end{center}
+\end{table}
+
 
 Normalmente os tipos dos \textit{tokens}(na primeira coluna) são representados por valores de um tipo de enumeração
 ou por códigos numéricos apropriados.
 
-O que vemos na grande maioria das vezes é que a implementação de um analisador léxico é baseada em um autômato
+O que se vê na grande maioria das vezes é que a implementação de um analisador léxico é baseada em um autômato
 finito capaz de reconhecer as diversas construções.
 
 \subsection{Análise Sintática}
 
 As linguagens de programação possuem regras que descrevem a estrutura sintática dos programas bem-formados.
-Desta maneira, a partir da sequência de \textit{tokens} gerada pelo analisador léxico, o analisador sintático
+Dessa maneira, a partir da sequência de \textit{tokens} gerada pelo analisador léxico, o analisador sintático
 realiza o seu trabalho, verificando se esta sequência pode ser gerada pela gramática da linguagem-fonte.
 
 A análise sintática envolve o agrupamento dos \textit{tokens} do programa fonte em frases gramaticais, que são
 usadas pelo compilador, a fim de sintetizar a saída. Usualmente, as frases gramaticais do programa fonte são
 representadas por uma árvore gramatical \cite{AHO1995}.
 
-Já em \cite{RANGEL1999} temos que a análise sintática deve reconhecer a estrutura global do programa, por exemplo,
+Já em \cite{RANGEL1999} tem-se que a análise sintática deve reconhecer a estrutura global do programa, por exemplo,
 verificando que programas, comandos, declarações, expressões, etc têm as regras de composição respeitadas.
 
-Vejamos o exemplo:
+Tem-se o exemplo:
 
 \begin{lstlisting}
  se x > 0 entao
@@ -289,15 +296,15 @@ Existem três tipos gerais de analisadores sintáticos. Os métodos universais de a
 de \textit{Cocke-Younger-Casami} e o de \textit{Earley}, podem tratar qualquer gramática. Esses métodos, entretanto, são
 muito ineficientes para se usar num compilador de produção. Os métodos mais comumentes usados nos compiladores
 são classificados como \textit{top-down} ou \textit{bottom-up}. Como indicado por seus nomes, os analisadores
-sintáticos \textit{top-down} constroem árvores do topo(raiz) para o fundo(folhas), enquanto que os \textit{bottom-up}
+sintáticos \textit{top-down} constroem árvores do topo (raiz) para o fundo (folhas), enquanto que os \textit{bottom-up}
 começam pelas folhas e trabalham árvore acima até a raiz. Em ambos os casos, a entrada é varrida da esquerda para
-a direita, um símbolo de cada vez \cite{AHO1995}
+a direita, um símbolo de cada vez \cite{AHO1995}.
 
 Os métodos de análise sintática mais eficientes, tanto \textit{top-down} quanto \textit{bottom-up}, trabalham
 somente em determinadas subclasses de gramáticas, mas várias dessas subclasses, como as das grámaticas LL e LR, são
 suficientemente expressivas para descrever a maioria das construções sintáticas das linguagens de programação.
 Os analisadores implementados manualmente trabalham frequentemente com gramáticas LL. Os da classe mais ampla
-das gramáticas LR são usualmente contruídos através de ferramentas automatizadas. \cite{AHO1995}
+das gramáticas LR são usualmente contruídos através de ferramentas automatizadas \cite{AHO1995}.
 
 \subsubsection{Tratamento dos Erros de Sintaxe}
 
@@ -311,8 +318,8 @@ melhorar sua resposta aos erros.
 Os programas podem conter erros em níveis diferentes. Por exemplo:
 
 \begin{itemize}
- \item Léxicos, tais como errar a grafia de um identificador ou palavra-chave
- \item Sintáticos, tais como uma expressão aritmética com parênteses não fechados
+ \item Léxicos, tais como errar a grafia de um identificador ou palavra-chave;
+ \item Sintáticos, tais como uma expressão aritmética com parênteses não fechados;
  \item Lógicos, tais como uma entrada em um \textit{looping} infinito.
 \end{itemize}
 
@@ -322,7 +329,7 @@ de \textit{tokens} proveniente do analisador léxico desobedece às regras gramati
 de programação. Outra razão está na precisão dos modernos métodos de análise sintática, sendo estes capazes
 de detectar muito eficientemente a presença de erros sintáticos num programa.
 
-Podemos concluir que o tratamento de erros em um analisador sintático tem metas simples de serem estabelecidas:
+Pode-se concluir que o tratamento de erros em um analisador sintático tem metas simples de serem estabelecidas:
 
 \begin{itemize}
  \item Relatar de maneira clara e objetiva qualquer presença de erros
@@ -374,7 +381,7 @@ programação.
 
 Várias linguagens de programação apresentam estruturas que são por sua natureza recursivas e podem ser definidas
 por gramáticas livres de contexto.
-Podemos dar como exemplo uma declaração condicional definida por uma regra como:
+Podem-se dar como exemplo uma declaração condicional definida por uma regra como:
 
 \begin{lstlisting}
  se E entao
@@ -419,7 +426,7 @@ independente da máquina são:
  \item Um otimizador de código independente da máquina pode ser aplicado à representação intermediária.
 \end{itemize}
 
-Na figura abaixo vemos a posição do gerador de código intermediário no processo de compilação:
+Na figura a seguir é possível ver a posição do gerador de código intermediário no processo de compilação:
 
 \begin{figure}[!htb]
  \centering
@@ -429,7 +436,7 @@ Na figura abaixo vemos a posição do gerador de código intermediário no processo 
 
 \subsection{Geração de Código}
 
-A fase final de um compilador é o gerador de código. Este recebe como entrada a representação intermediária
+A fase final de um compilador é o gerador de código. Esse recebe como entrada a representação intermediária
 do programa fonte e produz como saída um programa alvo equivalente, como indicado na figura 1.2. 
 
 \begin{figure}[!htb]
@@ -442,7 +449,7 @@ As exigências tradicionalmente impostas a um gerador de código são severas. O có
 e de alta qualidade, significando que o mesmo deve tornar efetivo o uso dos recursos da máquina alvo. Sobretudo,
 o próprio gerador de código deve rodar eficientemente \cite{AHO1995}.
 
-Matematicamente, o problema de se gerar um código ótimo não pode ser solucionado. Na prática, devemos nos contentar
+Matematicamente, o problema de se gerar um código ótimo não pode ser solucionado. Na prática, deve-se contentar
 com técnicas heurísticas que geram um código bom, mas não necessariamente ótimo. A escolha dos métodos heurísticos
 é importante, na medida em que um algoritmo de geração de código cuidadosamente projetado pode produzir um código
 que seja várias vezes mais rápido do que aquele que produzido por um algoritmo concebido às pressas \cite{AHO1995}.

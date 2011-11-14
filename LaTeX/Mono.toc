@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {1.3.1}Tokens, Padr\~oes e Lexemas}{7}
 \contentsline {subsection}{\numberline {1.3.2}Express\~oes Regulares}{7}
 \contentsline {subsection}{\numberline {1.3.3}An\'alise L\'exica}{7}
-\contentsline {subsection}{\numberline {1.3.4}An\'alise Sint\'atica}{8}
+\contentsline {subsection}{\numberline {1.3.4}An\'alise Sint\'atica}{9}
 \contentsline {subsubsection}{Tratamento dos Erros de Sintaxe}{10}
 \contentsline {subsubsection}{Gram\'aticas Livres de Contexto}{11}
 \contentsline {section}{\numberline {1.4}S\IeC {\'\i }ntese ou Gera\c c\~ao de C\'odigo}{12}
@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Gera\c c\~ao de C\'odigo}{13}
 \contentsline {subsubsection}{Entrada para o Gerador de C\'odigo}{14}
 \contentsline {subsubsection}{Programas Alvo}{14}
-\contentsline {section}{\numberline {1.5}Conclus\~ao}{14}
+\contentsline {section}{\numberline {1.5}Conclus\~ao}{15}
 \contentsline {chapter}{\numberline {2}Portugol}{16}
 \contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{16}
 \contentsline {section}{\numberline {2.2}Estrutura da Linguagem}{16}
@@ -44,8 +44,17 @@
 \contentsline {section}{\numberline {3.2}Compiladores}{23}
 \contentsline {section}{\numberline {3.3}Trabalhos Relacionados}{25}
 \contentsline {subsection}{\numberline {3.3.1}Codepad}{25}
-\contentsline {subsection}{\numberline {3.3.2}Ideone}{26}
-\contentsline {subsection}{\numberline {3.3.3}CodeSchool}{27}
-\contentsline {subsection}{\numberline {3.3.4}Rails for Zombies}{28}
+\contentsline {subsection}{\numberline {3.3.2}Ideone}{27}
+\contentsline {subsection}{\numberline {3.3.3}CodeSchool}{28}
+\contentsline {subsection}{\numberline {3.3.4}Rails for Zombies}{29}
 \contentsline {section}{\numberline {3.4}Conclus\~ao}{29}
-\contentsline {chapter}{Refer\^encias}{30}
+\contentsline {chapter}{\numberline {4}Metodologia e An\'alise do Prot\'otipo Proposto}{30}
+\contentsline {section}{\numberline {4.1}Introdu\c c\~ao}{30}
+\contentsline {section}{\numberline {4.2}Compilador}{31}
+\contentsline {subsection}{\numberline {4.2.1}An\'alise L\'exica}{31}
+\contentsline {subsection}{\numberline {4.2.2}An\'alise Sint\'atica}{31}
+\contentsline {subsection}{\numberline {4.2.3}An\'alise Sem\^antica}{32}
+\contentsline {subsection}{\numberline {4.2.4}Backend}{33}
+\contentsline {section}{\numberline {4.3}Sistema de Programa\c c\~ao Web}{33}
+\contentsline {chapter}{\numberline {5}Teste e An\'alise dos Resultados}{37}
+\contentsline {chapter}{Refer\^encias}{38}

@@ -23,7 +23,7 @@ comum para entrada e saída, para aritmética de ponto flutuante e funções  transc
 endereçamento realocável - pois tais subrotinas seriam usadas em diferentes partes de um programa - foram criadas
 rotinas de montagem para facilitar a tarefa de uso das subrotinas e de endereçamento relativo, idéia desenvolvida por
 Maurice V. Wilkes. Para isso foi inventada uma pseudo linguagem de máquina. Uma rotina interpretativa iria processar
-essas instruções, emulando um computador hipotético  [Gol72] [Knu69]. Esse é o sentido do termo 'compilador' até
+essas instruções, emulando um computador hipotético. Esse é o sentido do termo 'compilador' até
 aqui usado \cite{Cleuzio2007}.
 
 Nos primórdios dos computadores, programar era uma tarefa extremamente complicada e, de certa forma, extenuante.
@@ -32,12 +32,14 @@ a unidade de processamento central (CPU) do computador onde era escrito o código
 de instruções numéricas, denominadas por código binário. Posteriormente, desenvolveram-se algumas mnemónicas que
 resultaram no designado assembly \cite{Abel2000}.
 
-AUTOCODE foi o primeiro 'compilador' real, que tomava uma declaração algébrica e a traduzia em linguagem de máquina.
+O AUTOCODE foi o primeiro 'compilador' real, que tomava uma declaração algébrica e a traduzia em linguagem de máquina.
 Seu desconhecido autor, Alick E. Glennie, das forças armadas da Inglaterra, declarava em Cambridge, em 1953, sua
 motivação para elaborá-lo: 'A dificuldade da programação tornou-se a principal dificuldade para o uso das máquinas.
 Aiken expressou sua opinião dizendo que a solução para esta dificuldade deveria ser buscada pela construção de uma
 máquina especial para codificar(...) Para tornar isso fácil deve-se elaborar um código compreensível. Tal coisa 
-somente pode ser feita melhorando-se a notação da programação' [KP80]. John Backus [Wex80] discute essa distinção
+somente pode ser feita melhorando-se a notação da programação'. 
+
+John Backus discute essa distinção
 que Knuth faz, citando J. Halcomb Laning, Jr. e Niel Zierler como os inventores do primeiro 'compilador' algébrico,
 para o computador Whirlwind. Como esta, são muitas as discussões ainda hoje sobre quem foi o pioneiro no assunto.
 De qualquer maneira esses primeiros sistemas denominados genericamente de programação automática (acima citada)
@@ -69,11 +71,16 @@ ser um especialista em computadores para escrever programas para computador \cit
 \section{Trabalhos Relacionados}
 
 Existem alguns trabalhos semelhantes a este. Uns mais, outro menos, mas todos com a proposta de colocar um compilador
-disponível de maneira online, apenas através de um navegador. A questão a ser discutida sempre é sobre a proposta
+disponível de maneira online, por meio apenas de um navegador. A questão a ser discutida sempre é sobre a proposta
 do trabalho, ou seja, qual o motivo de tê-lo, é isto que muda a perspectiva do trabalho e maneira de implementá-lo.
 Com certeza o projeto que mais se parece com este, o qual tem uma ótima proposta e foi muito bem feito é o
 \textit{CodeSchool}. O ponto que é o difere é a proposta de venda de informação, através de cursos online, sendo
-o compilador uma parte de um todo. Vejamos agora nas seções abaixo alguns trabalhos relacionados.
+o compilador uma parte de um todo.
+
+O grande diferencial do trabalho aqui proposto é que ainda não existe um compilador online para a linguagem de
+programação Portugol, sendo este o primeiro que se tem notícia.
+
+Vejamos agora nas seções abaixo alguns trabalhos relacionados.
 
 \subsection{Codepad}
 
@@ -108,8 +115,11 @@ Na figura abaixo podemos ver a tela inicial do [codepad, 2011]:
 \begin{figure}[!htb]
  \centering
  \includegraphics[scale=0.4]{imagens/fig4.jpg}
- \caption{codepad.org}
+ \caption{Tela do compilador online CodePad. codepad.org}
 \end{figure}
+
+Nessa tela o usuário seleciona a linguagem a qual ele irá utilizar e então coloca o código no campo em branco. Após
+isso o usuário clica em 'submit' e tem a resposta do compilador.
 
 \subsection{Ideone}
 
@@ -132,8 +142,11 @@ Abaixo a tela do Ideone:
 \begin{figure}[!htb]
  \centering
  \includegraphics[scale=0.5]{imagens/fig5.jpg}
- \caption{ideone.com}
+ \caption{Tela do compilador online Ideone.}
 \end{figure}
+
+Essa tela é similar a tela anterior. O usuário deve selecionar a linguagem a ser utilizada e então clicar em 'submit'
+para que o compilador retorne com a resposta.
 
 \subsection{CodeSchool}
 
@@ -154,12 +167,14 @@ Abaixo uma imagem da tela do Code School:
 \begin{figure}[!htb]
  \centering
  \includegraphics[scale=0.4]{imagens/fig6.png}
- \caption{codeschool.com}
+ \caption{Tela de exercícios do compilador CodeSchool.}
 \end{figure}
+
+Nessa página o usuário é capaz de digitar o código e receber a resposta do compilador.
 
 \subsection{Rails for Zombies}
 
-Este é o mais alternativo de todos acima apresentado. Sua intenção é a de ensinar o \textit{Ruby on Rails} através
+Este é o mais alternativo de todos acima apresentado. Sua intenção é a de ensinar o \textit{Ruby on Rails} por meio
 de uma metodologia simples e bem humorada, através de uma interface diferente, com vídeos divertidos e tudo
 muito bem feito. O \textit{Rails for Zombies} foi feito para quem está começando com programação. O usuário
 vai passando por níveis a medida que codifica os exercícios da maneira correta. O seu editor é bem simples e fácil
@@ -178,3 +193,7 @@ Abaixo uma imagem da tela do \textit{Rails for Zombies}:
 
 
 \section{Conclusão}
+
+Pode-se concluir que esta área é ainda nova, mas que se apresenta interessante e vários profissionais da área de
+computação vêm mostrando que ela é importante. O fato é que para vários fins, se faz necessário a presença de um
+compilador online, pois esse poderá ser acessado de qualquer lugar, indepedente da máquina.

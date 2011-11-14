@@ -6,7 +6,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Um Compilador \cite {AHO1995}.}}{23}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces codepad.org}}{26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces ideone.com}}{27}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces codeschool.com}}{28}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Tela do compilador online CodePad. codepad.org}}{26}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tela do compilador online Ideone.}}{27}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Tela de exerc\IeC {\'\i }cios do compilador CodeSchool.}}{28}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces codeschool.com}}{29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces NFA que representa as palavras reservadas da linguagem}}{32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NFA que representa os coment\'arios de linha da linguagem}}{32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces P\'agina inicial do sistema PortugOn}}{33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces P\'agina de cadastro de usu\'ario do sistema PortugOn}}{34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pagina Home do usu\'ario do sistema PortugOn}}{35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces P\'agina Home do usu\'ario, com c\'odigo compilado}}{35}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces P\'agina Programas. Lista os programas j\'a efetuados pelo usu\'ario}}{35}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces P\'agina Exerc\IeC {\'\i }cios. Lista os exerc\IeC {\'\i }cios criados pelo usu\'ario}}{36}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces P\'agina Alunos. Lista os alunos criados pelo usu\'ario}}{36}
+\addvspace {10\p@ }

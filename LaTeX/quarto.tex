@@ -1,0 +1,180 @@
+\section{Introdução}
+
+A criação de um compilador que realiza comunicação com um navegador e realiza suas operações pela internet não
+é tão trivial de se fazer. Os compiladores tem como característica o fato de poderem demorar em uma determinada
+compilação, dependendo é claro da complexidade do algoritmo criado. Já o os navegadores de internet devem sempre
+ter uma resposta imediata e rápida na medida do possível. Faz-se então necessário que um compilador online deva manter
+uma forma simples e limpa, para que facilite esse processo e seja então viável.
+
+Este trabalho propõe uma metodologia de compilador online, ou seja, um sistema que funcione em um navegador para a 
+internet, compilando determinado trecho de código e retornando o resultado para o usuário.
+
+Basicamente o protótipo proposto é baseado em dois módulos principais, sendo eles o compilador e o sistema web.
+Entre estes módulos existe portanto uma comunicação, ou seja, o usuário acessa o sistema através da internet e
+insere o seu código. O sistema então enviará esse código para a compilação e então, depois de compilado, o compilador
+retorna a resposta para sistema web que apresentará a mesma ao usuário.
+
+O compilador foi criado utilizando a linguagem C++, visto que tal linguagem apresentou-se fácil para a construção do
+mesmo, além de possuir uma documentação vasta e ser bastante robusta. Para o processo de \textit{backend} foi utilizado
+o NASM (Netwide Assembler)
+
+\section{Compilador}
+
+Como visto no capítulo 1, o compilador apresenta fases da compilação, sendo elas a fase de análise e fase de síntese.
+Cada uma destas fases são dividas em outras fases menores, sendo cada uma delas responsáveis por tarefas durante
+todo o processo. Na fase de análise (também conhecida como \textit{frontend}) o processo se divide em três, análise
+léxica, sintática e semântica. Tais fases são responsáveis por identificar e informar a grande maioria dos erros por
+parte do programador.
+
+\subsection{Análise Léxica}
+
+A analise léxica é o primeira módulo do \textit{frontend} de um compilador e basicamente este módulo é responsável por
+receber um arquivo de entrada (programa fonte) e "quebrá-lo"em palavras conhecidas como tokens. Os analisadores
+léxicos também têm a função de descartar coisas que não terão importância para a compilação de um arquivo fonte
+tais como: Espaços em branco e comentários.
+
+Como resultado um analisador léxico verifica se um determinado código é ou não válido de acordo com a gramática da 
+linguagem regular descrita e gera uma lista de tokens que será repassada para os outros módulos do processo de 
+compilação A implementação de um analisador léxico requer logicamente que a linguagem regular (a qual o analisador 
+léxico ira obedecer as regras) seja descrita formalmente e para isto faz-se necessário o uso de algumas estruturas de 
+representação desta linguagem tais como as Expressões Regulares que será a base para a construção de um NFA(Autômato 
+Finito Não Determinístico) e a partir deste NFA é contruído um DFA (Autômato Finito Determinístico) que representa a 
+linguagem gramaticamente e é a base para a codificação usando uma linguagem de programação do analisador léxico para
+uma determinado linguagem regular.
+
+Na figura 4.1 vê-se um NFA que tem como função representar os operadores da linguagem.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.6]{imagens/fig10.jpg}
+ \caption{NFA que representa as palavras reservadas da linguagem}
+\end{figure}
+
+Já na figura 4.2 temos um outro NFA, responsável por representar os comentários de linha.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.6]{imagens/fig11.jpg}
+ \caption{NFA que representa os comentários de linha da linguagem}
+\end{figure}
+
+\subsection{Análise Sintática}
+
+Terminada a etapa de análise léxica do nosso compilador, passamos agora para a segunda etapa de construção do mesmo: 
+A análise Sintática. A etapa de análise sintática ou em inglês \textit{parser} recebe como entrada uma sequência de 
+tokens do analisador léxico e determina se a string pode ser gerada através da linguagem fonte. Para este compilador
+foi criado um analisadore sintático do tipo \textit{LALR(1)}.
+
+O analisador sintático preditivo é um algoritmo simples, capaz de fazer o \textit{parsing} de algumas linguagens. 
+Neste tipo de analisador cada produção da linguagem fonte torna-se uma cláusula em uma função recursiva, tendo-se 
+uma função para cada não-terminal da produção. Como visto, cada função relativa a um não-terminal precisa conter um
+cláusula para cada produção. Desta forma faz-se necessário saber escolher qual a produção mais apropriada para tal. 
+Esta escolha é feita baseando-se no próximo \textit{token}. E isto é feito através da \textit{predictive parsing table}.
+
+A maioria das linguagens de programação é LALR(1), sendo esta técnica o tipo mais usado em geradores automáticos de
+parsers, foi usado então um analisador LALR(1) para a linguagem Portugol.
+
+\subsection{Análise Semântica}
+
+A análise semântica é o ultimo módulo do \textit{frontend} de um compilador. Como já foi visto a análise léxica é 
+responsável por quebrar a entrada em palavras conhecidas como \textit{tokens}. Já a análise sintática que é o segundo
+módulo do \textit{frontend}, tem o objetivo de analisar a estrutura de frases de um programa e verificar também se 
+determinada \textit{string} pode ser gerada pelas derivações da gramática em questão. Por fim a análise sintática
+calcula o "significado" do programa realizando verificações de tipos e de declarações e seus respectivos usos.o
+
+\subsection{Backend}
+
+Após o processo de análise, o compilador gera código em assembly para, então, usar o NASM (Netwide Assembler) como
+\textit{backend} para montar e criar um executável válido. Consequentemente, não existe etapa de linkagem. A fase de
+otimização de código também não foi implementada.
+
+Para usar esse recurso, é nescessário que o NASM esteja instalado no sistema. Ele pode ser encontrado em [NASM, 2011].
+
+\section{Sistema de Programação Web}
+
+Como segundo módulo do protótipo proposto, tem-se a criação do Sistema de Programação Web que funciona com um editor de
+programas e também realiza a comunicação com o compilador.
+O sistema tem como nome 'PortugOn'.
+
+O sistema foi criado utilizando a linguagem de programação Ruby, juntamente com o framework Rails, pois é uma linguagem
+de alto nível, capaz de realizar tarefas com menos linhas de código que várias outras linguagens, sendo esta também
+a linguagem a qual sou mais fluente. Foi escrito também código JavaScript, para facilitar na interação com o usuário.
+O banco de dados utilizado para a aplicação foi o MySQL, por ser um banco popular, de fácil integração com o Ruby
+on Rails e também por ser de fácil manuseio.
+
+O PortugOn é dividido em telas, as quais cada uma tem as propriedades.
+A princípio temos a tela inicial (como pode ser observado na figura 4.3), que tem como finalidade apresentar o sistema
+através de algumas de suas características e também, contém um formulário de \textit{login} para que o usuário possa
+realizar sua autenticação no sistema. Caso o usuário ainda não tenha cadastro ele pode clicar em 'Cadastre-se' e aí
+partir para uma outra tela, a de novo cadastro.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela1.jpg}
+ \caption{Página inicial do sistema PortugOn}
+\end{figure}
+
+Se então o usuário que acessar o sistema ainda não tiver cadastro, ele deverá realizar um novo. Ao clicar em
+'Cadastre-se' na página inicial, o usuário irá para uma nova página (figura 4.4). Nessa nova página o usuário deverá
+preencher todos os campos pedidos e então clicar 'Cadastrar'. Após isso o usuário será cadastrado no banco de dados e
+poderá realizar o \textit{login}. Caso o usuário não queira realizar seu cadastro ele pode clicar em 'Cancelar' e
+voltar à pagina inicial.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela2.jpg}
+ \caption{Página de cadastro de usuário do sistema PortugOn}
+\end{figure}
+
+Após o usuário efetuar o seu cadastro e entrar no sistema, ele irá para a página 'Home' (figura 4.5). Nesta página ele irá encontrar
+um menu no topo, podendo navegar pelos links lá visualizados. Nessa mesma página encontra-se o editor onde o usuário
+deve entrar com o código Portugol. Ao entrar com o código do programa e clicar em 'Submit', o código será compilado e
+o retorno poderá ser observado na coluna ao lado, a coluna 'Resultado' (figura 4.6). O usuário receberá a mensagem
+relacionada ao seu programa, se tudo correu bem, será uma mensagem de acerto, caso contrário o usuário receberá um
+aviso de erro e a respectiva mensagem do compilador.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela3.jpg}
+ \caption{Pagina Home do usuário do sistema PortugOn}
+\end{figure}
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela4.jpg}
+ \caption{Página Home do usuário, com código compilado}
+\end{figure}
+
+Cada vez que o usuário compila determinado programa, este fica salvo no banco de dados. O usuário pode então acessar
+tais programas clicando no menu 'Programas' (figura 4.7). Essa tela mostra os programas já feitos com a sua respectiva,
+data, podendo o usuário editar o programa ou excluí-lo.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela5.jpg}
+ \caption{Página Programas. Lista os programas já efetuados pelo usuário}
+\end{figure}
+
+Caso o usuário ao realizar seu cadastro tenha escolhido o seu vínculo como 'Professor', este terá em sua página o menu
+'Exercícios'. Ao acessar tal menu, o usuário será capaz de criar um exercício à ser aplicado e também, listar todos
+os seus exercícios já criados (figura 4.8). As operções de editar e excluir podem também serem utilizadas nessa seção.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela6.jpg}
+ \caption{Página Exercícios. Lista os exercícios criados pelo usuário}
+\end{figure}
+
+Se o usuário for do tipo 'Professor', aparecerá também no seu menu, o link 'Alunos'. Ao acessar este link o usuário
+irá para a página responsável por listar os alunos atrelados aquele professor. Será possível também cadastrar
+um novo aluno, bem como excluir os já existentes (figura 4.9). O usuário pode também, clicar nos exercícios de cada
+aluno para poder ver a resposta do aluno para o determinado exercício.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.35]{imagens/tela7.jpg}
+ \caption{Página Alunos. Lista os alunos criados pelo usuário}
+\end{figure}
+
+Ao encerrar as atividades no sistema, o usuário deve fazer o \textit{logout}, ou seja, encerrar sua sessão no sistema.
+Para isso, basta que ele clique em 'Sair', no menu ao lado direito.

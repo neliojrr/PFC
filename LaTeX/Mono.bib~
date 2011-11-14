@@ -29,7 +29,7 @@
  publisher = {Disponível em: http://paginas.fe.up.pt/~aarh/pc/PC-capitulo2.pdf},
 }
 
-@book{Bachus1957,
+@book{Backus1957,
  author = {J. W. Backus},
  title = {The FORTRAN Automatic Coding System},
  year = {1957},

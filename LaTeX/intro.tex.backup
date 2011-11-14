@@ -1,26 +1,26 @@
-É evidente o crescente número de usuários conectados e dependentes da internet ao longo do tempo. 
-Percebe-se também que estes usuários, estão cada vez mais necessitados de que suas ferramentas, 
+É evidente o crescente número de usuários conectados à internet ao longo do tempo. 
+Percebe-se também que esses usuários estão cada vez mais necessitados de que suas ferramentas, 
 antes usadas em seus desktops, fiquem disponíveis online, de prontidão, sempre que se fizer 
 necessário, mesmo estando conectados longe de casa. Fez-se então necessário que o desenvolvimento
-de softwares caminhasse neste mesmo sentido. [carece de fontes]
+de softwares caminhasse neste mesmo sentido.
 
-Um aspecto interessante deste processo a ser analisado são as aplicações que dependem de um compilador, 
+Um aspecto interessante desse processo a ser analisado são as aplicações que dependem de um compilador, 
 ou seja, programas que quando instalados na máquina sempre fazem uso de um compilador ou então, são eles
- mesmos, compiladores. Um exemplo deste tipo de software seria um compilador para Portugol. 
+ mesmos, compiladores. Um exemplo desse tipo de software seria um compilador para Portugol. 
 Como iria se comportar tal compilador ao ser usado na internet? Como se daria a implementação deste 
-compilador? Quais aspectos a serem tratados? E como seria o sistema na web que necessitasse deste compilador?
+compilador? Quais aspectos a serem tratados? E como seria o sistema na web que necessitasse desse compilador?
 
 O objetivo principal deste trabalho é analisar o comportamento de um compilador feito para a 
-linguagem Portugol[fontes], trabalhando sob um sistema de progamação na Web. A proposta é fazer
-um estudo detalhado da implementação deste compilador, tendo assim uma base sólida para o desenvolvimento
-do mesmo, visando na prática tirar conclusões à respeito das técnicas utilizadas.
+linguagem Portugol, trabalhando sob um sistema de progamação na Web. A proposta é fazer
+um estudo detalhado da implementação desse compilador, tendo assim uma base sólida para o desenvolvimento
+do mesmo, visando na prática tecer conclusões à respeito das técnicas utilizadas.
 
 Este trabalho também tem como objetivo desenvolver uma aplicação Web que irá utilizar o compilador.
-A aplicação será um editor o qual o usuário fará seus programas em Portugol, tendo de imediato a 
+A aplicação é um editor o qual o usuário faz seus programas em Portugol, tendo de imediato a 
 resposta do compilador. A intenção é analisar como irá se comportar o compilador, bem como, 
 verificar a viabilidade de uso de tal aplicação, ao se implementar utilizando as técnicas descritas 
-ao longo deste trabalho. A aplicação terá um caráter educativo, no qual o usuário fará programas e, 
-ele e seus trabalhos, poderão ser acompanhados por um instrutor, visando assim verificar os passos 
+ao longo deste trabalho. A aplicação tem um caráter educativo, no qual o usuário faz programas e, 
+ele e seus trabalhos, podem ser acompanhados por um instrutor, visando assim verificar os passos 
 realizados pelo usuário, bem como a maneira pela qual o compilador tem sido usado.
 
 No capítulo 1 são abordados os conceitos de compiladores, as técnicas utilizadas na criação
