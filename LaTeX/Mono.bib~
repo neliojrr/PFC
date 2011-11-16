@@ -4,6 +4,7 @@
  year = {1995},
  publisher = {Company, Reading},
  address = {Massachusetts, USA},
+ pages = {87}
  }
 
 @book{RANGEL1999,
@@ -81,4 +82,33 @@
  title = {Algoritmos Estruturados: Programação Estruturada de Computadores},
  year = {1999},
  publisher = {LTC - GRUPO GEN},
+ }
+
+@book{Rigo2008,
+ author = {Sandro Rigo},
+ title = {Análise Léxica},
+ year = {2008},
+ publisher = {Unicamp},
+ address = {Campinas, SP, Brasil}
+ }
+
+@book{MOLINARI2008,
+ author = {L. Molinario},
+ title = {Testes Funcionais de Software},
+ year = {2008},
+ publisher = {Visual Books, 1° edição},
+ }
+
+@book{DELAMARO2007,
+ author = {M. Delamaro and J. Maldonado and M.Jino},
+ title = {Introduçao ao Teste de Software},
+ year = {2007},
+ publisher = {Editora Campus},
+ }
+
+@book{BEIZER1995,
+ author = {B. Beizer},
+ title = {Black-Box Testing},
+ year = {1995},
+ publisher = {Wiley-Interscience},
  }

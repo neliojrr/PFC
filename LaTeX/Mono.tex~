@@ -80,7 +80,7 @@ framexrightmargin=10pt
 
 \begin{flushright}
 \begin{minipage}[b]{10cm}
-\it{Dedico este trabalho}
+\it{Dedico este trabalho a minha mãe Lúcia Maria Rosa, ao meu pai Nélio Carneiro Rosa e a minha irmã Natália Rosa}
 \end{minipage}
 \end{flushright}
 
@@ -89,6 +89,28 @@ framexrightmargin=10pt
 
 \centro{AGRADECIMENTOS}
 
+Agradeço primeiramente a Deus por estar sempre presente em minha vida, sendo minha fonte de energia diante
+os obstáculos enfrentados.
+
+Agradeço aos meus pais Nélio Carneiro Rosa e Lúcia Maria pelo carinho a mim dedicado, pelo apoio sempre
+presente e pelo esforço para o meu sucesso.
+
+Agradeço a minha irmã Natália Rosa pelo companheirismo de sempre.
+
+Agradeço aos meus avós que sempre me ajudaram na luta por um futuro bom.
+
+Agradeço aos meus amigos Gustavo Almeida e Mario Nesralla que buscaram sempre me ajudar nos momentos que
+mais precisei, sendo suas presenças indispensáveis para meu sucesso.
+
+Agradeço aos colegas de graduação sempre presentes durante os momentos de alegria e também de tristeza ao longo
+do curso. Em especial os colegas Allan Oliveira, Carla Fernandes, Elaine Aires, Laísa Rodovalho, Leandro
+Guimarães e Salviano Ludgério.
+
+Agradeço a todos os mestres da graduação e em especial ao meu
+orientador
+ professor Ms. Thiago Jabur Bittar, por acreditar em mim
+e tornar possivel a realização deste trabalho.
+Agradeço a todos os tios e tias, primos e primas por pelo apoio incondicional.
 
 Por fim, agradeço a todos que de forma direta ou indireta que
 cotribuíram para a minha formação.
@@ -97,10 +119,11 @@ cotribuíram para a minha formação.
 
 \begin{flushright}
 \begin{minipage}[b]{10cm}
-\it{``Os desafios.}
+\it{``Você nem sempre terás o que desejas, mas enquanto estiveres ajudando aos outros encontrarás os recursos de
+que precise.``}
 \end{minipage}
 
-{\it{Sulamita}}
+{\it{Francisco Cândido Xavier}}
 \end{flushright}
 
 \newpage
@@ -143,7 +166,10 @@ cotribuíram para a minha formação.
 \chapter{Teste e Análise dos Resultados}
 \input{quinto}
 
-
+\newpage
+\addcontentsline{toc}{chapter}{Considerações Finais}
+\chapter*{Considerações Finais}
+\input{sexto}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%
@@ -154,7 +180,13 @@ cotribuíram para a minha formação.
 \bibliographystyle{apalike}
 \bibliography{Mono}
 
+%%%%%%%%%%%%%%%%%
+%%% Apêndices %%%
+%%%%%%%%%%%%%%%%%
+\appendix\addcontentsline{toc}{chapter}{Apêndices}
 
+\chapter{Código Fonte}
+\input{setimo}
 
 
 \label{ultimapagina}

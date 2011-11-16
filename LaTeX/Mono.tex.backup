@@ -3,6 +3,7 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{pfc}
 \usepackage{float}
+\usepackage{listings}                   % para formatar cdigo-fonte (ex. em Java)
 
 \newcommand{\cod}[1]{{\renewcommand{\baselinestretch}{1}\scriptsize\VerbatimInput[xleftmargin=8mm,numbers=left,obeytabs=true]{cod/#1}}}
 
@@ -18,20 +19,50 @@
 \newcommand{\listofcodename}{Lista de Códigos}
 %=========================
 
+% ---------------------------------------------------------------------------- %
+% Opes de listing usados para o cdigo fonte
+% Ref: http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\lstset{ %
+language=Java,                  % choose the language of the code
+basicstyle=\footnotesize,
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=5pt,       % the size of the fonts that are used for the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,	                % adds a frame around the code
+framerule=0.6pt,
+tabsize=2,	                    % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+extendedchars=true,
+xleftmargin=10pt,
+xrightmargin=10pt,
+framexleftmargin=10pt,
+framexrightmargin=10pt
+}
+
+%--------------------------------------------------------%
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                       DADOS PESSOAIS                           %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\titulo{Autenticação Segura Baseada em Biometria Voltada para a
-Dinâmica da Digitação} \area{Segurança da Informação}
-\pchaveA{Biometria} \pchaveB{Dinâmica da Digitação}
-\pchaveC{Segurança da Informação} \autor{Gustavo Batista da C.
-Almeida} \autorsobrenomenome{Almeida, Gustavo Batista da C.}
-\autorsobrenomeiniciais{Almeida, Gustavo Batista da C.}
-\orientador{Márcio de Souza Dias} \avaliadorA{Professor 1}
-\avaliadorB{Professor 2} \ano{2009} \mes{Junho}
+\titulo{Estudo de um compilador sob a perspectiva de um sistema online de programação}
+\area{Compiladores}
+\pchaveA{Compilador} \pchaveB{Sistemas Web}
+\pchaveC{Linguagem de Programação} \autor{Nélio Carneiro Júnior}
+\autorsobrenomenome{Carneiro, Nélio}
+\autorsobrenomeiniciais{Carneiro, Nélio}
+\orientador{Ms. Thiago Jabur Bittar} \avaliadorA{Professor 1}
+\avaliadorB{Professor 2} \ano{2011} \mes{Junho}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                     ELABORA DOCUMENTO                          %%%
@@ -49,8 +80,7 @@ Almeida} \autorsobrenomenome{Almeida, Gustavo Batista da C.}
 
 \begin{flushright}
 \begin{minipage}[b]{10cm}
-\it{Dedico este trabalho a minha Mãe Maria José, ao  meu Pai
-Leonides e ao meu Irmão Chester}
+\it{Dedico este trabalho a minha mãe Lúcia Maria Rosa, ao meu pai Nélio Carneiro Rosa e a minha irmã Natália Rosa}
 \end{minipage}
 \end{flushright}
 
@@ -59,27 +89,6 @@ Leonides e ao meu Irmão Chester}
 
 \centro{AGRADECIMENTOS}
 
-Agradeço primeiramente a Deus, por ser o meu porto seguro e por me
-dar forças para conseguir vencer os obstáculos.
-
-Agradeço aos meus pais, Leonides e Maria José por todo amor,
-carinho e incentivo durante toda a minha vida! Sem eles nada disso
-seria possível.
-
-Agradeço ao meu irmão Chester, pelo companherismo e apoio.
-
-Agradeço  também à minha namorada Bianca Leão, por sua compreensão
-e afeto durante topo o tempo.
-
-Agradeço aos colegas da graduação,que sempre me ajudaram quando
-mais precisei. Em especial aos amigos Nélio Júnior e ao Danilo
-Reis pelo sincero companheirismo.
-
-Agradeço a todos os mestres da graduação e em especial ao meu
-orientador
- professor Ms. Márcio Souza Dias, por acreditar em mim
-e tornar possivel a realização deste trabalho.
-Agradeço a todos os tios e tias, primos e primas por pelo apoio incondicional.
 
 Por fim, agradeço a todos que de forma direta ou indireta que
 cotribuíram para a minha formação.
@@ -88,8 +97,7 @@ cotribuíram para a minha formação.
 
 \begin{flushright}
 \begin{minipage}[b]{10cm}
-\it{``Os desafios foram feitos para serem vencidos. pois se não
-houvessem desafios, não existiriam vitórias".}
+\it{``Os desafios.}
 \end{minipage}
 
 {\it{Sulamita}}
@@ -115,5 +123,49 @@ houvessem desafios, não existiriam vitórias".}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\newpage
+\addcontentsline{toc}{chapter}{Introdução}
+\chapter*{Introdução}
+\input{intro}
+
+\chapter{Compiladores}
+\input{primeiro}
+
+\chapter{Portugol}
+\input{segundo}
+
+\chapter{Estado da Arte}
+\input{terceiro}
+
+\chapter{Metodologia e Análise do Protótipo Proposto}
+\input{quarto}
+
+\chapter{Teste e Análise dos Resultados}
+\input{quinto}
+
+\newpage
+\addcontentsline{toc}{chapter}{Considerações Finais}
+\chapter*{Considerações Finais}
+\input{sexto}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%
+%%% BIBLIOGRAFIA %%%
+%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\addcontentsline{toc}{chapter}{Referências}
+\bibliographystyle{apalike}
+\bibliography{Mono}
+
+%%%%%%%%%%%%%%%%%
+%%% Apêndices %%%
+%%%%%%%%%%%%%%%%%
+\appendix\addcontentsline{toc}{chapter}{Apêndices}
+
+\chapter{Código Fonte}
+\input{setimo}
+
+
+\label{ultimapagina}
 
 \end{document}

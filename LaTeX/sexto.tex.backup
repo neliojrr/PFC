@@ -1,0 +1,20 @@
+Novas tecnologias estão sempre surgindo no cenário computação, tanto a nível de software quando de hardware.
+Todo o processo de compilação tende a evoluir e mudar a cada dia, a partir do momento que novos algoritmos são
+construídos e implementados. A compilação depende muito da estrutura física da máquina e, com a evolução da mesma,
+a compilação ficará mais rápida.
+
+O processo de compilação pela internet é algo que ainda não apresenta grande disceminação, mas tudo indica que irá
+se tornar comum daqui há uns anos. Os cursos de programação online estão crescendo, cursos a distância também e
+tais cursos necessitam um acompanhamento de atividades, e também, de que os usuários acessem seus trabalhos e os
+faça de qualquer lugar que estejam, independente de máquina ou plataforma.
+
+Este trabalho apresentou um estudo das técnicas de compilação, visando ter uma base para a construção do mesmo e então,
+poder utilizar deste compilador para a construção de um sistema online de programação. O compilador foi desenvolvido
+para a linguagem Portugol, utilizando-se da linguagem C++ para a construção do mesmo.
+
+Este trabalho também criou um protótipo de sistema online de programação, chamado PortugOn (abreviatura de 
+Portugol Online). O sistema foi desenvolvido utilizando a linguagem Ruby, linguagem esta robusta, que facilitou
+o desenvolvimento do sistema.
+
+Contribuições foram produzidas durante o desenvolvimento deste trabalho, uma delas é o estudo sobre compiladores
+e principalmente sobre

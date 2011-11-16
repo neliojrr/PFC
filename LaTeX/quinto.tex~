@@ -1,44 +1,198 @@
-É evidente o crescente número de usuários conectados e dependentes da internet ao longo do tempo. 
-Percebe-se também que estes usuários, estão cada vez mais necessitados de que suas ferramentas, 
-antes usadas em seus desktops, fiquem disponíveis online, de prontidão, sempre que se fizer 
-necessário, mesmo estando conectados longe de casa. Fez-se então necessário que o desenvolvimento
-de softwares caminhasse neste mesmo sentido.
+\section{Testes}
+O desenvolvimento de um \textit{software} envolve uma gama de
+atividades nas quais a possibilidade de ocorrerem falhas humanas é
+enorme \cite{MOLINARI2008}. E é por estas razões que o
+desenvolvimento de um \textit{software} deve ser sempre
+acompanhado por atividades de testes que visam garantir a
+qualidade do software. Os testes são indispensáveis para remover
+defeitos e para avaliar o grau de qualidade do \textit{software}
+\cite{DELAMARO2007}.
 
-Um aspecto interessante deste processo a ser analisado são as aplicações que dependem de um compilador, 
-ou seja, programas que quando instalados na máquina sempre fazem uso de um compilador ou então, são eles
- mesmos, compiladores. Um exemplo deste tipo de software seria um compilador para Portugol. 
-Como iria se comportar tal compilador ao ser usado na internet? Como se daria a implementação deste 
-compilador? Quais aspectos a serem tratados? E como seria o sistema na web que necessitasse deste compilador?
+\section{Plano de {Testes}}
 
-O objetivo principal deste trabalho é analisar o comportamento de um compilador feito para a 
-linguagem Portugol, trabalhando sob um sistema de progamação na Web. A proposta é fazer
-um estudo detalhado da implementação deste compilador, tendo assim uma base sólida para o desenvolvimento
-do mesmo, visando na prática tirar conclusões à respeito das técnicas utilizadas.
+O ato de planejar testes é um dos mecanismos mais efetivos na
+prevenção de erros em um \emph{software} \cite{BEIZER1995}. Um
+plano de testes é um forte instrumento estratégico no
+desenvolvimento de um \emph{software}, isso se deve pelo fato de
+que é ele que irá guiar e representar todo o processo de teste
+através de documentos e quanto mais bem documentado o plano
+estiver, melhor ele representará a realidade \cite{DELAMARO2007}.
 
-Este trabalho também tem como objetivo desenvolver uma aplicação Web que irá utilizar o compilador.
-A aplicação será um editor o qual o usuário fará seus programas em Portugol, tendo de imediato a 
-resposta do compilador. A intenção é analisar como irá se comportar o compilador, bem como, 
-verificar a viabilidade de uso de tal aplicação, ao se implementar utilizando as técnicas descritas 
-ao longo deste trabalho. A aplicação terá um caráter educativo, no qual o usuário fará programas e, 
-ele e seus trabalhos, poderão ser acompanhados por um instrutor, visando assim verificar os passos 
-realizados pelo usuário, bem como a maneira pela qual o compilador tem sido usado.
+Segundo \cite{MOLINARI2008}, existem vários padrões
+internacionais, além de um nacional que são padrões específicos
+para a elaboração e uso do plano de testes, como forma de
+sistematizar a produção de documentos relativos aos testes
+realizados na produção de um \emph{software}, dentre estes padrões
+destaca-se as Normas IEEE (\emph{Institute of Eletrical and
+Eletronics Engineers}), o padrão QAI (\emph{Quality Assurance
+Institute}) e o padrão ABNT NBR 12207.
 
-No capítulo 1 são abordados os conceitos de compiladores, as técnicas utilizadas na criação
- do compilador e como se dará o seu funcionamento diante uma aplicação Web.
+As normas IEEE (\emph{Institute of Eletrical and Eletronics
+Engineers}), são padrões estabelecidos pelo \emph{Software
+Engineering Standarts Comittee} e têm como objetivo básico ser
+ponto de apoio para o desenvolvimento de diversas atividades
+industriais de \emph{software}, sugerindo que essas normas sejam
+um guia para as definições dos processos envolvidos.
 
-No capítulo 2 é feita uma apresentação da linguagem do compilador: o Portugol. Suas características
- e o embasamento para a criação do compilador baseado nesta linguagem também fará parte deste capítulo
+O QAI (\emph{Quality Assurance Institute}) é um instituto
+internacional de certificações e padrões em qualidade de
+\emph{software} e tem uma proposta própria de padronização do
+plano de testes.
 
-No capítulo 3 pode-se observar um levantamento sobre o estado da arte dos compiladores e como tem sido
- o uso destes em aplicações na Web. Neste também irei citar casos em que editores/compiladores foram 
-colocados na Web.
+A ABNT NBR 12207 é o único padrão nacional existente no que tange
+a teste de \emph{software}. Porém, na prática não é muito seguida
+\cite{MOLINARI2008}.
 
-No capítulo 4 é discorrido sobre a metodologia proposta para o desenvolvimento do protótipo de 
-editor/compilador Web.
+Ainda segundo \cite{MOLINARI2008}, para testes o padrão mais
+importante e bem é reconhecido o IEEE STD 829-1998. Esta norma foi
+criada em 1998 e tem como objetivo prover uma forma mais
+organizada de montar uma documentação eficaz para testes, sempre
+visando alcançar uma maior qualidade de \emph{software}. Segundo
+dados do IEEE, este documento descreve oito sugestões de
+documentação, não sendo necessário porém, utilizar todos eles, o
+ideal é que o projetista de testes utilize o que mais adequar a
+sua necessidade. Dentre os oito documentos sugeridos pela norma,
+os que serão produzidos por este trabalho como forma de documentar
+e nortear os testes serão:
 
-No capítulo 5 é abordado todo o processo de testes, além de ser realizado uma análise dos resultados. 
-Por fim há uma conclusão do trabalho realizado, levantando os objetivos alcançados, pontos positivos, 
-pontos negativos, dificuldades e trabalhos futuros.
+\begin{itemize}
 
-Ainda é possível encontrar o código fonte do compilador e da aplicação Web criada, além de toda a documentação
- de testes elaborada no apêndice desta monografia.
+\item \textbf{Plano de Testes}: apresenta o planejamento para a
+execução do teste; \item \textbf{Especificação dos Casos de
+Testes}: Definir os casos de teste, incluindo dados de entrada e
+resultados esperados; \item \textbf{Relatório-Resumo de Teste}:
+apresenta os resultados das atividades de testes e prover
+avaliações baseadas nestes resultados;
+\end{itemize}
+
+\section{Documentação do Plano de Testes}
+
+\subsection{Planejamento para a Execução dos Testes}
+
+Ao se realizar programas em Ruby on Rails ele fornece três estruturas: os \textit{models}, os \textit{controllers} e
+as \textit{views}. Os \textit{models} são responsáveis pela comunicação com o banco de dados, sendo na verdade
+objetos que representam uma determinada tabela do banco de dados. As \textit{views} são a parte responsável pela
+estrutura e layout do sistema, sendo o local onde fica o código html, ou seja, a parte vista pelo usuário. E por fim,
+os \textit{controllers} são responsáveis pela comunicação entre estas partes e também pela lógica do negócio. Este
+é o chamado modelo MVC.
+
+\subsection{Recursos}
+
+Os principais recursos utilizados na realização dos testes foram: um microcomputador com o sistema operacional
+\textit{Linux Fedora 15} instalado, 3GB de memória RAM, Disco rígido com capacidade de 250GB e um processador
+Intel \textit{Core 2 Duo} 64\textit{bits}.
+
+\section{Documentação da Especificação dos Casos de Testes}
+
+Ao realizar testes de uma aplicação é necessário realizar testes com as três estruturas. Recomenda-se que se inicie
+pelos \textit{models} - \textbf{testes unitários}, depois pelos \textit{controllers} - \textbf{testes funcionais} - 
+e por fim um teste de integração que envolva as três estruturas - \textbf{testes de integração}.
+
+\subsection{Testes de Unidade}
+
+O sistema PortugOn apresenta 4 \textit{models} que representam a tabela do banco de dados respectiva. Cada um destes
+apresenta características específicas relacionadas às suas funções. Os 4 \textit{models} são:
+
+\begin{itemize}
+ \item Aluno: Representa o cadastro da entidade 'aluno' no banco de dados;
+ \item Exercise: Representa o cadastro da entidade 'exercício' no banco de dados. Quando um novo exercício é cadastrado,
+a busca pelo mesmo acontece através deste \textit{model};
+ \item Program: Cada programa criado por determinado usuário pode ser recuperado acessando esta classe;
+ \item User: \textit{model} que representa um usuário do sistema que não é do tipo 'aluno'.
+\end{itemize}
+
+Como demonstração dos testes realizados, toma-se a classe Aluno como a classe utilizada nos testes. Evita-se assim
+repetições desnecessárias. Os testes com as outras classes são bem similares aos realizados com as outras classes.
+
+Os testes unitários realizados com o \textit{model} aluno presume que o mesmo não possa ser cadastrado sem um nome,
+um email e uma senha. Portanto os testes foram escritos para que se um desses atributos não estiver presente, deve
+ser retornado um erro.
+
+Abaixo na figura 5.1 é possível ver como o teste foi escrito. No primeiro método tenta-se criar um aluno sem qualquer
+atributo e o mesmo retorna uma mensagem de erro. Já no segundo é passado os atributos necessários e o usuário é criado
+com sucesso.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/tela8.jpg}
+ \caption{Código de testes unitários para a classe Aluno.}
+\end{figure}
+
+Já na figura 5.2 é possível ver os testes sendo executados. Caso o teste seja aprovado, apenas um ponto na tela é
+mostrado. No caso, os testes passaram com sucesso.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/tela9.jpg}
+ \caption{Teste unitário da classe Aluno sendo executado.}
+\end{figure}
+
+\subsection{Testes Funcionais}
+
+Os testes funcionais tem como objetivo testar os \textit{controllers} da aplicação. Os \textit{controllers} são
+responsáveis pela comunicação com os \textit{models} e \textit{views}. Também são responsáveis pela lógica do sistema,
+pelos redirecionamentos de cada página e por executar determinadas ações de acordo com a interação do usuário.
+Aí entram os testes funcionais. Verificam para cada ação do \textit{controller} se a mesma está sendo executada de 
+maneira correta.
+
+Na figura 5.3 é possível observar o código escrito para a realização dos testes no \textit{controller} 'Exercise. Cada 
+método refere-se a determinada ação do \textit{controller} (com exceção do primeiro que é responsável pela criação
+da variável global a ser utilizada ao longo dos testes).
+
+O método 'get index' é o mais simples, verificando apenas se ao renderizar a página 'index'
+através de uma requisição 'get', ele irá chamar a ação 'index'. O método 'get new' ocorre de maneira similar. Já o
+método 'create exercise' verifica se ao chamar a ação 'create' ela irá passar como argumento, através de uma requisição
+'post', os parâmetros para a criação de um novo exercício e então, redirecionar para o exercício criado. O método
+'show exercise' verifica se uma requisição 'get' à ação 'show', passando como argumento o 'id' do exercício, irá
+redirecionar à página do determinado exercício. O método 'get edit' verifica se a ação 'edit' é chamada através de
+requisição 'get' pela página. O método 'update exercise' verifica se determinado exercício pode ser atualizado. E por
+fim, o método 'destroy exercise' testa se determinado exercício pode ser excluído.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.4]{imagens/tela10.jpg}
+ \caption{Código dos testes funcionais do \textit{controller} 'Exercise'.}
+\end{figure}
+
+Na figura 5.4 é possível ver os testes sendo executados e então aprovados.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/tela11.jpg}
+ \caption{Testes funcionais realizados e aprovados no \textit{controller} 'Exercise'.}
+\end{figure}
+
+\subsection{Testes de Integração}
+
+Os testes de integração são utilizados quando se tem relacionamentos entre \textit{controllers}. Tais relacionamentos
+podem acontecer com frequência, sendo necessário verificar se estes acontecem de maneira correta, retornando a resposta
+correta, ou então, redirecionando para a página correta. Na figura 5.5 é possível ver um código de teste para
+verificar o relacionamento entre o \textit{controller} 'User' e o \textit{controller} responsável pelo \textit{login}
+no sistema.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/tela12.jpg}
+ \caption{Código dos testes de integração para realização do \textit{login} do usuário.}
+\end{figure}
+
+Na figura 5.6 é possível observar os testes sendo executados com sucesso.
+
+\begin{figure}[!htb]
+ \centering
+ \includegraphics[scale=0.5]{imagens/tela13.jpg}
+ \caption{Teste de integração sendo realizado.}
+\end{figure}
+
+\section{Testes com Usuários}
+
+Foram realizados testes com usuários reais, possibilitando verificar o funcionamento do sistema em um ambiente real.
+O sistema PortugOn foi hospedado em um servidor web com o sistema operacional Ubuntu, sendo possível seu acesso através
+da internet.
+
+O sistema PortugOn recebeu o cadastro de 20 usuários, sendo destes 18 do tipo aluno e os outros 2 usuários comuns.
+Todos os 20 realizaram atividades no sistema, possibilitando verificar se havia erros em alguma função do programa, ou
+então do banco dados.
+
+\section{Conclusão}
+

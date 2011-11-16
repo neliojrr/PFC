@@ -185,17 +185,3 @@ Na figura 5.6 é possível observar os testes sendo executados com sucesso.
 \end{figure}
 
 \section{Testes com Usuários}
-
-Foram realizados testes com usuários reais, possibilitando verificar o funcionamento do sistema em um ambiente real.
-O sistema PortugOn foi hospedado em um servidor web com o sistema operacional Ubuntu, sendo possível seu acesso através
-da internet.
-
-O sistema PortugOn recebeu o cadastro de 20 usuários, sendo destes 18 do tipo aluno e os outros 2 usuários comuns.
-Todos os 20 realizaram atividades no sistema, possibilitando verificar se havia erros em alguma função do programa, ou
-então do banco dados.
-
-\section{Conclusão}
-
-Através da realização dos testes foi possível verificar a integridade do sistema, das suas funções e do banco de dados
-que o acompanha. Tais verificações são de suma importância para que o sistema possa ser utilizado em ambientes reais,
-detectando assim a grande maioria dos erros, podendo então evitá-los.

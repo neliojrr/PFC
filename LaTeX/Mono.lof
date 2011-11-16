@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Tela do compilador online CodePad. codepad.org}}{26}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Tela do compilador online Ideone.}}{27}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Tela de exerc\IeC {\'\i }cios do compilador CodeSchool.}}{28}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces codeschool.com}}{29}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Tela do editor e compilador da p\'agina \textit {Rails for Zombies}}}{29}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces NFA que representa as palavras reservadas da linguagem}}{32}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces NFA que representa os coment\'arios de linha da linguagem}}{32}
@@ -20,4 +20,11 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces P\'agina Programas. Lista os programas j\'a efetuados pelo usu\'ario}}{35}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces P\'agina Exerc\IeC {\'\i }cios. Lista os exerc\IeC {\'\i }cios criados pelo usu\'ario}}{36}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces P\'agina Alunos. Lista os alunos criados pelo usu\'ario}}{36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces C\'odigo de testes unit\'arios para a classe Aluno.}}{40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Teste unit\'ario da classe Aluno sendo executado.}}{40}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces C\'odigo dos testes funcionais do \textit {controller} 'Exercise'.}}{41}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Testes funcionais realizados e aprovados no \textit {controller} 'Exercise'.}}{42}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces C\'odigo dos testes de integra\c c\~ao para realiza\c c\~ao do \textit {login} do usu\'ario.}}{42}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Teste de integra\c c\~ao sendo realizado.}}{43}
 \addvspace {10\p@ }

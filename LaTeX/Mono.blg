@@ -3,45 +3,45 @@ The top-level auxiliary file: Mono.aux
 The style file: apalike.bst
 Database file #1: Mono.bib
 Warning--empty publisher in Rosen1967
-You've used 12 entries,
+You've used 15 entries,
             1935 wiz_defined-function locations,
-            545 strings with 4934 characters,
-and the built_in function-call counts, 3543 in all, are:
-= -- 323
-> -- 112
-< -- 10
-+ -- 40
-- -- 34
-* -- 242
-:= -- 658
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 65
-chr.to.int$ -- 12
-cite$ -- 13
-duplicate$ -- 168
-empty$ -- 277
-format.name$ -- 48
-if$ -- 688
+            561 strings with 5196 characters,
+and the built_in function-call counts, 4434 in all, are:
+= -- 403
+> -- 144
+< -- 12
++ -- 50
+- -- 44
+* -- 303
+:= -- 823
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 82
+chr.to.int$ -- 15
+cite$ -- 16
+duplicate$ -- 210
+empty$ -- 346
+format.name$ -- 61
+if$ -- 861
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 63
-num.names$ -- 36
-pop$ -- 94
+missing$ -- 30
+newline$ -- 78
+num.names$ -- 45
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 97
 quote$ -- 0
-skip$ -- 119
+skip$ -- 148
 stack$ -- 0
-substring$ -- 150
-swap$ -- 12
+substring$ -- 186
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 60
 warning$ -- 1
-while$ -- 24
+while$ -- 30
 width$ -- 0
-write$ -- 155
+write$ -- 191
 (There was 1 warning)

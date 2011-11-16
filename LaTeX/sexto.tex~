@@ -1,0 +1,47 @@
+Novas tecnologias estão sempre surgindo no cenário computação, tanto a nível de software quando de hardware.
+Todo o processo de compilação tende a evoluir e mudar a cada dia, a partir do momento que novos algoritmos são
+construídos e implementados. A compilação depende muito da estrutura física da máquina e, com a evolução da mesma,
+a compilação ficará mais rápida.
+
+O processo de compilação pela internet é algo que ainda não apresenta grande disceminação, mas tudo indica que irá
+se tornar comum daqui há uns anos. Os cursos de programação online estão crescendo, cursos a distância também e
+tais cursos necessitam um acompanhamento de atividades, e também, de que os usuários acessem seus trabalhos e os
+faça de qualquer lugar que estejam, independente de máquina ou plataforma.
+
+Este trabalho apresentou um estudo das técnicas de compilação, visando ter uma base para a construção do mesmo e então,
+poder utilizar deste compilador para a construção de um sistema online de programação. O compilador foi desenvolvido
+para a linguagem Portugol, utilizando-se da linguagem C++ para a construção do mesmo.
+
+Este trabalho também criou um protótipo de sistema online de programação, chamado PortugOn (abreviatura de 
+Portugol Online). O sistema foi desenvolvido utilizando a linguagem Ruby, linguagem esta robusta, que facilitou
+o desenvolvimento do sistema.
+
+Contribuições foram produzidas durante o desenvolvimento deste trabalho, uma delas é o estudo sobre compiladores
+e principalmente sobre a implementação do mesmo diante um sistema online de programação. Tal estudo é relativamente
+novo, não havendo muito material sobre este. Para a linguagem Portugol não existem um compilador online, sendo este
+o primeiro.
+
+Dentre as dificuldades encontradas para a realização deste trabalho pode-se citar a dificuldade de encontrar público
+alvo para a realização dos testes. Isso ficou evidente pelo fato de demandar um pouco de tempo por parte do usuário
+para a realização do cadastro no sistema e utilização do mesmo. A escolha de uma linguagem de programação adequada
+para o desenvolvimento do protótipo também não foi uma tarefa das mais fáceis, tendo em vista a grande possibilidade
+de escolhas possíveis. A bibliografia também pode ser considerada outra dificuldade, já que a construção de compiladores
+para sistemas online de programação ainda é uma área de pesquisa em desenvolvimento, sendo essa muito mais comuns em
+empresas privadas do que em instituições públicas.
+
+Um ponto bastante positivo deste trabalho foi o fato do mesmo conseguir apresentar um ótimo tempo de resposta para o
+usuário. A velocidade com a qual ocorre o processo de compilação e resposta é rápida, não havendo grande espera do
+usuário. Isso contribui para que o seu uso seja disceminado.
+
+Outro ponto positivo observado foi que o protótipo desenvolvido pode ser acessado de qualquer dispositivo,
+mostrando a sua robustez. O seu acesso através de \textit{tablets} e \textit{smartphones} contribui para que o mesmo
+possa ser utilizado por um número maior de pessoas. É sem dúvida alguma, uma grande vantagem poder compilar programas
+de computadores sem a necessidade de estar usando um computador.
+
+Para trabalhos futuros têm-se a perspectiva de criar um compilador online para uma linguagem de maior porte, já que
+Portugol é uma linguagem relativamente simples, focada no aprendizado de programação. Uma linguagem de maior porte
+poderia aumentar a utilização do mesmo.
+
+Outra intenção de trabalho futuro seria a de criar uma IDE para programação online, facilitando a programação,
+aumentando a produtividade e também aproximando o compilador online de outras IDEs, como o Eclipse para a linguagem
+Java.

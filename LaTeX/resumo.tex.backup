@@ -1,0 +1,10 @@
+Usuários de computadores estão cada vez mais conectados à internet. Necessitam então que as ferramentas por eles
+utilizadas estejam também dispostas de maneira online, para que possam ser acessadas de qualquer computador
+ou dispositivo computacional.
+
+Uma ferramenta bastante utilizada entre programadores e profissionais da área de computação é o compilador.
+Mas para a criação de programas é sempre necessário que o computador utilizado tenha instalado ferramentas específicas.
+No entanto pode ocorrer de se usar um computador que não tenha tais ferramentas. É baseado nesse problema que este
+trabalho propõe a criação de um compilador e um sistema online de programação para a linguagem Portugol, visando
+facilitar a programação, deixando-a independente de sistemas ou dispositivos computacionais.
+

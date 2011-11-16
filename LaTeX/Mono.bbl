@@ -11,6 +11,16 @@ Backus, J.~W. (1957).
 \newblock Western joint computer conference: Techniques for reliability, Los
   Angeles, California, USA.
 
+\bibitem[Beizer, 1995]{BEIZER1995}
+Beizer, B. (1995).
+\newblock {\em Black-Box Testing}.
+\newblock Wiley-Interscience.
+
+\bibitem[Delamaro et~al., 2007]{DELAMARO2007}
+Delamaro, M., Maldonado, J., and M.Jino (2007).
+\newblock {\em Introduçao ao Teste de Software}.
+\newblock Editora Campus.
+
 \bibitem[Farrer, 1999]{Farrer1999}
 Farrer, H. (1999).
 \newblock {\em Algoritmos Estruturados: Programação Estruturada de
@@ -26,6 +36,11 @@ Filho, C.~F. (2007).
 Henriques, A. A.~R. (2000).
 \newblock {\em Breve história da linguagem Fortran}.
 \newblock Disponível em: http://paginas.fe.up.pt/~aarh/pc/PC-capitulo2.pdf.
+
+\bibitem[Molinario, 2008]{MOLINARI2008}
+Molinario, L. (2008).
+\newblock {\em Testes Funcionais de Software}.
+\newblock Visual Books, 1° edição.
 
 \bibitem[Naur, 1963]{Naur1963}
 Naur, P. (1963).
